@@ -23,7 +23,7 @@
             <meta name="viewport" content="width=device-width,
                 initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
             <style>
-                #map_bf8cd2a9996040f49f59fe95076c867c {
+                #map_1002165a8b0d463194530cac65732301 {
                     position: relative;
                     width: 100.0%;
                     height: 100.0%;
@@ -35,7 +35,7 @@
 </head>
 <body>    
     
-            <div class="folium-map" id="map_bf8cd2a9996040f49f59fe95076c867c" ></div>
+            <div class="folium-map" id="map_1002165a8b0d463194530cac65732301" ></div>
         
     
 
@@ -68,7 +68,7 @@ bottom: "auto"
 <body>
 
 
-<div id='maplegend' class='maplegend' 
+<div id='maplegend' class='maplegend'
 style='position: absolute; z-index:9999; border:2px solid grey; background-color:rgba(255, 255, 255, 0.8);
 border-radius:6px; padding: 10px; font-size:14px; right: 20px; bottom: 20px;'>
 
@@ -128,17 +128,74 @@ clear: both;
 color: #777;
 }
 </style>
+    
+
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>jQuery UI Draggable - Default functionality</title>
+<link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+
+<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+
+<script>
+$( function() {
+		$( "#maplegend" ).draggable({
+start: function (event, ui) {
+$(this).css({
+right: "auto",
+top: "auto",
+bottom: "auto"
+});
+}
+});
+		});
+
+</script>
+</head>
+<body>
+
+
+<div id='maplegend' class='maplegend' 
+style='position: absolute; z-index:9998; border:2px solid grey; background-color:rgba(255, 255, 255, 0.8);
+border-radius:6px; padding: 10px; font-size:14px; right: 20px; top: 20px;'>
+
+<div class='legend-title'>0 miles<br>2019-06-08</div>
+</div>
+
+</body>
+</html>
+
+<style type='text/css'>
+.maplegend .legend-title {
+	text-align: left;
+	margin-bottom: 5px;
+	font-weight: bold;
+	font-size: 90%;
+}
+.maplegend .legend-source {
+	font-size: 80%;
+color: #777;
+clear: both;
+}
+.maplegend a {
+color: #777;
+}
+</style>
 </body>
 <script>    
     
-            var map_bf8cd2a9996040f49f59fe95076c867c = L.map(
-                "map_bf8cd2a9996040f49f59fe95076c867c",
+            var map_1002165a8b0d463194530cac65732301 = L.map(
+                "map_1002165a8b0d463194530cac65732301",
                 {
                     center: [40.1096814, -88.2184257],
                     crs: L.CRS.EPSG3857,
                     zoomControl: true,
-                    preferCanvas: false,
                     zoom: 14,
+                    preferCanvas: false,
                 }
             );
 
@@ -146,34 +203,31 @@ color: #777;
 
         
     
-            var tile_layer_10e454fa8c7c4414ac878875e2e066c5 = L.tileLayer(
+            var tile_layer_0468da7ddf95428392fe76e53b6ec91f = L.tileLayer(
                 "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
                 {"attribution": "Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
-            ).addTo(map_bf8cd2a9996040f49f59fe95076c867c);
+            ).addTo(map_1002165a8b0d463194530cac65732301);
         
     
-            var circle_marker_affd376d6ac24c1a8f1531911d45d17b = L.circleMarker(
+            var marker_0914007690df472f936697e00e4d79d9 = L.marker(
+                [40.1092314, -88.2183757],
+                {}
+            ).addTo(map_1002165a8b0d463194530cac65732301);
+        
+    
+            var div_icon_4703b2e7b32f4d2b8c5d177de7c1127f = L.divIcon({"className": "empty", "html": "\u003cdiv style=\"font-size: 12pt\"\u003e\u003cb\u003eHome (804 W Illinois St)\u003c/b\u003e\u003c/div\u003e", "iconAncher": [0, 0], "iconSize": [160, 30]});
+            marker_0914007690df472f936697e00e4d79d9.setIcon(div_icon_4703b2e7b32f4d2b8c5d177de7c1127f);
+        
+    
+            var circle_marker_c13d3f528b4243ef803c4a4493e5420f = L.circleMarker(
                 [40.1096814, -88.2184257],
                 {"bubblingMouseEvents": true, "color": "gray", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3186cc", "fillOpacity": 1, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
-            ).addTo(map_bf8cd2a9996040f49f59fe95076c867c);
+            ).addTo(map_1002165a8b0d463194530cac65732301);
         
     
-        var popup_90bbbfd186f74c0a82ac6cef6d5b4e28 = L.popup({"autoClose": false, "closeOnClick": false, "maxWidth": 80});
-
-        
-            var html_5b534a3a4b75476f988e844b488d03ce = $(`<div id="html_5b534a3a4b75476f988e844b488d03ce" style="width: 100.0%; height: 100.0%;">Home (804 W Illinois St)</div>`)[0];
-            popup_90bbbfd186f74c0a82ac6cef6d5b4e28.setContent(html_5b534a3a4b75476f988e844b488d03ce);
-        
-
-        circle_marker_affd376d6ac24c1a8f1531911d45d17b.bindPopup(popup_90bbbfd186f74c0a82ac6cef6d5b4e28)
-        .openPopup();
-
-        
-    
-    
-            circle_marker_affd376d6ac24c1a8f1531911d45d17b.bindTooltip(
+            circle_marker_c13d3f528b4243ef803c4a4493e5420f.bindTooltip(
                 `<div>
-                     arrived: 23:28, left: 09:55
+                     Arrived: 23:28, Left: 09:55
                  </div>`,
                 {"sticky": false}
             );

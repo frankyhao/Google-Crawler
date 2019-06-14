@@ -23,7 +23,7 @@
             <meta name="viewport" content="width=device-width,
                 initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
             <style>
-                #map_32eb34e6fbc648538fe7d6211fadee4a {
+                #map_52cef423e97d49159cf9281816494e5c {
                     position: relative;
                     width: 100.0%;
                     height: 100.0%;
@@ -35,7 +35,7 @@
 </head>
 <body>    
     
-            <div class="folium-map" id="map_32eb34e6fbc648538fe7d6211fadee4a" ></div>
+            <div class="folium-map" id="map_52cef423e97d49159cf9281816494e5c" ></div>
         
     
 
@@ -128,17 +128,74 @@ clear: both;
 color: #777;
 }
 </style>
+    
+
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>jQuery UI Draggable - Default functionality</title>
+<link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+
+<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+
+<script>
+$( function() {
+		$( "#maplegend" ).draggable({
+start: function (event, ui) {
+$(this).css({
+right: "auto",
+top: "auto",
+bottom: "auto"
+});
+}
+});
+		});
+
+</script>
+</head>
+<body>
+
+
+<div id='maplegend' class='maplegend' 
+style='position: absolute; z-index:9998; border:2px solid grey; background-color:rgba(255, 255, 255, 0.8);
+border-radius:6px; padding: 10px; font-size:14px; right: 20px; top: 20px;'>
+
+<div class='legend-title'>50.418059168 miles<br>2019-05-22</div>
+</div>
+
+</body>
+</html>
+
+<style type='text/css'>
+.maplegend .legend-title {
+	text-align: left;
+	margin-bottom: 5px;
+	font-weight: bold;
+	font-size: 90%;
+}
+.maplegend .legend-source {
+	font-size: 80%;
+color: #777;
+clear: both;
+}
+.maplegend a {
+color: #777;
+}
+</style>
 </body>
 <script>    
     
-            var map_32eb34e6fbc648538fe7d6211fadee4a = L.map(
-                "map_32eb34e6fbc648538fe7d6211fadee4a",
+            var map_52cef423e97d49159cf9281816494e5c = L.map(
+                "map_52cef423e97d49159cf9281816494e5c",
                 {
                     center: [30.05166114248368, 31.325377891830083],
                     crs: L.CRS.EPSG3857,
-                    preferCanvas: false,
                     zoomControl: true,
                     zoom: 14,
+                    preferCanvas: false,
                 }
             );
 
@@ -146,29 +203,29 @@ color: #777;
 
         
     
-            var tile_layer_f4869402aff240ed8f987036f8bfcba1 = L.tileLayer(
+            var tile_layer_1937a3d3e0fb4dac9131d079bacb18f9 = L.tileLayer(
                 "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
                 {"attribution": "Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
-            ).addTo(map_32eb34e6fbc648538fe7d6211fadee4a);
+            ).addTo(map_52cef423e97d49159cf9281816494e5c);
         
     
-            var marker_30812c24357441b7b62ce0a3f51fb937 = L.marker(
+            var marker_9b95363e21664da7b249b4fafe5e79ed = L.marker(
                 [30.056661, 31.2251311],
                 {}
-            ).addTo(map_32eb34e6fbc648538fe7d6211fadee4a);
+            ).addTo(map_52cef423e97d49159cf9281816494e5c);
         
     
-            var div_icon_e42400269b424c0fa24c67302de5b649 = L.divIcon({"className": "empty", "html": "\u003cdiv style=\"font-size: 12pt\"\u003e\u003cb\u003eCairo Marriott Hotel \u0026 Omar Khayyam Casino\u003c/b\u003e\u003c/div\u003e", "iconAncher": [0, 0], "iconSize": [160, 30]});
-            marker_30812c24357441b7b62ce0a3f51fb937.setIcon(div_icon_e42400269b424c0fa24c67302de5b649);
+            var div_icon_7fa749c489ab4a848d9b4bd6a7882a82 = L.divIcon({"className": "empty", "html": "\u003cdiv style=\"font-size: 12pt\"\u003e\u003cb\u003eCairo Marriott Hotel \u0026 Omar Khayyam Casino\u003c/b\u003e\u003c/div\u003e", "iconAncher": [0, 0], "iconSize": [160, 30]});
+            marker_9b95363e21664da7b249b4fafe5e79ed.setIcon(div_icon_7fa749c489ab4a848d9b4bd6a7882a82);
         
     
-            var circle_marker_01413425f94a41c3bf5a4433b7824f94 = L.circleMarker(
+            var circle_marker_eeb782bd967c436295b0296f74a0bcc7 = L.circleMarker(
                 [30.057111, 31.225081099999997],
                 {"bubblingMouseEvents": true, "color": "gray", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3186cc", "fillOpacity": 1, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
-            ).addTo(map_32eb34e6fbc648538fe7d6211fadee4a);
+            ).addTo(map_52cef423e97d49159cf9281816494e5c);
         
     
-            circle_marker_01413425f94a41c3bf5a4433b7824f94.bindTooltip(
+            circle_marker_eeb782bd967c436295b0296f74a0bcc7.bindTooltip(
                 `<div>
                      Arrived: 14:42, Left: 08:37
                  </div>`,
@@ -176,42 +233,42 @@ color: #777;
             );
         
     
-            var poly_line_1411cbdea41148998fe012ce30514dc0 = L.polyline(
+            var poly_line_171a732d9e4a46618dd2810fde3eeee8 = L.polyline(
                 [[30.057111000000003, 31.225081099999997], [30.057111000000003, 31.225081099999997], [30.0561937, 31.2244413], [30.0542293, 31.2191236], [30.0494248, 31.2172876], [30.0479688, 31.2195337], [30.0463641, 31.219948], [30.0447392, 31.2205329], [30.0440424, 31.2218472], [30.0440091, 31.2219414], [30.0439892, 31.2220395], [30.0437331, 31.2232502], [30.0438184, 31.2243004], [30.0438907, 31.2254779], [30.0437474, 31.2261893], [30.0437339, 31.2262148], [30.0436579, 31.2263371], [30.0436598, 31.2263163], [30.0436078, 31.2264936], [30.0432757, 31.2270731], [30.0432746, 31.2271333], [30.0435543, 31.2285066], [30.0437845, 31.2304259], [30.0439053, 31.2317818], [30.0430519, 31.2316459], [30.0429608, 31.2316482], [30.0429039, 31.231627], [30.0416963, 31.231532], [30.0406617, 31.2311552], [30.0392191, 31.2304214], [30.0382546, 31.2299194], [30.036801, 31.2293576], [30.036187, 31.2293055], [30.0348615, 31.2293607], [30.0333901, 31.2295936], [30.0320069, 31.2302169], [30.0310406, 31.230759], [30.0297968, 31.2310152], [30.0293134, 31.2310911], [30.0293176, 31.231087], [30.0293607, 31.231002], [30.0293605, 31.2309968], [30.0279225, 31.2311892], [30.0266265, 31.2309726], [30.0249697, 31.2306223], [30.0241395, 31.2304367], [30.0219162, 31.2298932], [30.019871, 31.2293188], [30.0196985, 31.2292858], [30.0164302, 31.2287085], [30.0139119, 31.2283262], [30.0111627, 31.2277184], [30.0089523, 31.2270427], [30.0087611, 31.226959], [30.0069518, 31.2265537], [30.005204, 31.2263488], [30.0029734, 31.2268811], [30.0008053, 31.2276317], [30.0006473, 31.2276747], [29.9987017, 31.2282854], [29.9978242, 31.2285884], [29.9978235, 31.2286063], [29.9977998, 31.2286114], [29.9977966, 31.2286117], [29.9977924, 31.2286128], [29.9977634, 31.2286265], [29.9969427, 31.2295498], [29.9955537, 31.230675], [29.9950788, 31.2311759], [29.995067, 31.2312191], [29.9939488, 31.2321108], [29.9924296, 31.2330592], [29.9911882, 31.2332328], [29.9910249, 31.2326265], [29.9910651, 31.2325322], [29.9910314, 31.2324212], [29.990525, 31.2324799], [29.9899164, 31.2331216], [29.9889703, 31.2345015], [29.9892713, 31.2348305], [29.9893342, 31.2347845], [29.9897839, 31.2345675], [29.9898195, 31.2577951], [29.9902853, 31.2745306], [29.9916196, 31.2849885], [29.9907076, 31.3030922], [30.0159675, 31.4075581], [30.0159915, 31.4190023], [30.0156233, 31.4340114], [30.0174248, 31.444368], [30.0276614, 31.4734213], [30.0215053, 31.4950662], [30.0163392, 31.5003709], [30.0172828, 31.5008742], [30.018923, 31.499674000000002], [30.018923, 31.499674000000002]],
                 {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
-            ).addTo(map_32eb34e6fbc648538fe7d6211fadee4a);
+            ).addTo(map_52cef423e97d49159cf9281816494e5c);
         
     
-        var popup_2b535fb349e947958cc7d0e2ae78fa4b = L.popup({"autoClose": false, "closeOnClick": false, "maxWidth": 80});
+        var popup_3341f1336caa425d902190bbc3dc6282 = L.popup({"autoClose": false, "closeOnClick": false, "maxWidth": 60});
 
         
-            var html_97963ad9a19945b49f1ffbfda32370d1 = $(`<div id="html_97963ad9a19945b49f1ffbfda32370d1" style="width: 100.0%; height: 100.0%;">56 minutes, 22.76 miles</div>`)[0];
-            popup_2b535fb349e947958cc7d0e2ae78fa4b.setContent(html_97963ad9a19945b49f1ffbfda32370d1);
+            var html_32078af940794984a0367935e5423980 = $(`<div id="html_32078af940794984a0367935e5423980" style="width: 100.0%; height: 100.0%;">56 minutes, 22.76 miles</div>`)[0];
+            popup_3341f1336caa425d902190bbc3dc6282.setContent(html_32078af940794984a0367935e5423980);
         
 
-        poly_line_1411cbdea41148998fe012ce30514dc0.bindPopup(popup_2b535fb349e947958cc7d0e2ae78fa4b)
+        poly_line_171a732d9e4a46618dd2810fde3eeee8.bindPopup(popup_3341f1336caa425d902190bbc3dc6282)
         .openPopup();
 
         
     
     
-            var marker_df171b0f7b8546778a47ed0953233b3b = L.marker(
+            var marker_eecfaa62599a4e76917851278abd5bde = L.marker(
                 [30.018472999999997, 31.499724],
                 {}
-            ).addTo(map_32eb34e6fbc648538fe7d6211fadee4a);
+            ).addTo(map_52cef423e97d49159cf9281816494e5c);
         
     
-            var div_icon_a82b469f4308475f83e93ebd678c2419 = L.divIcon({"className": "empty", "html": "\u003cdiv style=\"font-size: 12pt\"\u003e\u003cb\u003eThe American University in Cairo\u003c/b\u003e\u003c/div\u003e", "iconAncher": [0, 0], "iconSize": [160, 30]});
-            marker_df171b0f7b8546778a47ed0953233b3b.setIcon(div_icon_a82b469f4308475f83e93ebd678c2419);
+            var div_icon_94612bc7275645b08aa674c487e484dc = L.divIcon({"className": "empty", "html": "\u003cdiv style=\"font-size: 12pt\"\u003e\u003cb\u003eThe American University in Cairo\u003c/b\u003e\u003c/div\u003e", "iconAncher": [0, 0], "iconSize": [160, 30]});
+            marker_eecfaa62599a4e76917851278abd5bde.setIcon(div_icon_94612bc7275645b08aa674c487e484dc);
         
     
-            var circle_marker_1ac081799aa7458da479ee410d0bdbfc = L.circleMarker(
+            var circle_marker_a802a82a3dd64f54a87651703a63c3a9 = L.circleMarker(
                 [30.018922999999997, 31.499674],
                 {"bubblingMouseEvents": true, "color": "gray", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3186cc", "fillOpacity": 1, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
-            ).addTo(map_32eb34e6fbc648538fe7d6211fadee4a);
+            ).addTo(map_52cef423e97d49159cf9281816494e5c);
         
     
-            circle_marker_1ac081799aa7458da479ee410d0bdbfc.bindTooltip(
+            circle_marker_a802a82a3dd64f54a87651703a63c3a9.bindTooltip(
                 `<div>
                      Arrived: 09:33, Left: 18:11
                  </div>`,
@@ -219,61 +276,61 @@ color: #777;
             );
         
     
-            var poly_line_cb727a6fa77b47e18d8553514db68508 = L.polyline(
+            var poly_line_c017574246e342e6a7ffbee96bf54a39 = L.polyline(
                 [[30.018923, 31.499674000000002], [30.018923, 31.499674000000002], [30.0185688, 31.5008178], [30.0178657, 31.5009411], [30.0172828, 31.5008742], [30.0172491, 31.5008994], [30.0172094, 31.5009642], [30.0171132, 31.500903], [30.016976, 31.5008718], [30.0169073, 31.5008855], [30.0167059, 31.5007396], [30.0172828, 31.5008742], [30.0172828, 31.5008742]],
                 {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
-            ).addTo(map_32eb34e6fbc648538fe7d6211fadee4a);
+            ).addTo(map_52cef423e97d49159cf9281816494e5c);
         
     
-        var popup_2daa5083dc344d8c8559df3ab06f2c36 = L.popup({"autoClose": false, "closeOnClick": false, "maxWidth": 80});
+        var popup_2c2fbd13d3544ffb9e7aaf11f5fd16f5 = L.popup({"autoClose": false, "closeOnClick": false, "maxWidth": 60});
 
         
-            var html_1ed7e4652ec24ea29dbb81e3be1308ac = $(`<div id="html_1ed7e4652ec24ea29dbb81e3be1308ac" style="width: 100.0%; height: 100.0%;">4 minutes, 0.25 miles</div>`)[0];
-            popup_2daa5083dc344d8c8559df3ab06f2c36.setContent(html_1ed7e4652ec24ea29dbb81e3be1308ac);
+            var html_368ed5423fea484fa834011fa3d85402 = $(`<div id="html_368ed5423fea484fa834011fa3d85402" style="width: 100.0%; height: 100.0%;">4 minutes, 0.25 miles</div>`)[0];
+            popup_2c2fbd13d3544ffb9e7aaf11f5fd16f5.setContent(html_368ed5423fea484fa834011fa3d85402);
         
 
-        poly_line_cb727a6fa77b47e18d8553514db68508.bindPopup(popup_2daa5083dc344d8c8559df3ab06f2c36)
+        poly_line_c017574246e342e6a7ffbee96bf54a39.bindPopup(popup_2c2fbd13d3544ffb9e7aaf11f5fd16f5)
         .openPopup();
 
         
     
     
-            var poly_line_0dd939f29c78468da3636b07a64576e9 = L.polyline(
+            var poly_line_d9af297d35ff453e958c050009cfb6e9 = L.polyline(
                 [[30.0172828, 31.5008742], [30.0171901, 31.5004411], [30.0290476, 31.4833716], [30.0289525, 31.4795239], [30.028943, 31.4761669], [30.028975, 31.4723124], [30.0298335, 31.4686788], [30.0307612, 31.4650847], [30.030799, 31.4633294], [30.0307989, 31.4610458], [30.0404754, 31.4404423], [30.0407484, 31.4404695], [30.0547392, 31.442192], [30.0555327, 31.4427255], [30.0573059, 31.4431933], [30.0578589, 31.4433398], [30.0580081, 31.4433969], [30.0600242, 31.4441958], [30.0580153, 31.443052], [30.0571271, 31.4428585], [30.0557113, 31.44244], [30.0544063, 31.4420828], [30.0542371, 31.4420597], [30.0530858, 31.4416307], [30.0530012, 31.4399772], [30.0530078, 31.4383903], [30.0530006, 31.4378187], [30.0530057, 31.4365064], [30.0535283, 31.4358956], [30.0538009, 31.4358526], [30.0538217, 31.4358521], [30.0539889, 31.4358174], [30.0536952, 31.4359017], [30.0533744, 31.4360207], [30.0530144, 31.4367726], [30.0529984, 31.4377986], [30.0530733, 31.4384543], [30.052995, 31.4398536], [30.0530427, 31.4399949], [30.0545375, 31.4443757], [30.0568756, 31.442547], [30.0576162, 31.4427191], [30.0578783, 31.4427338], [30.0570179, 31.4438498], [30.057457, 31.4426747], [30.0566471, 31.4423851], [30.0540507, 31.4420614], [30.0531778, 31.4319041], [30.0531735, 31.4309554], [30.0531735, 31.4309554]],
                 {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
-            ).addTo(map_32eb34e6fbc648538fe7d6211fadee4a);
+            ).addTo(map_52cef423e97d49159cf9281816494e5c);
         
     
-        var popup_2330e8496cbf4e62af116b34508d77d5 = L.popup({"autoClose": false, "closeOnClick": false, "maxWidth": 80});
+        var popup_7356f798c3264cea916c0383b304d9da = L.popup({"autoClose": false, "closeOnClick": false, "maxWidth": 60});
 
         
-            var html_5c3b7043613742e39354f604617a07c1 = $(`<div id="html_5c3b7043613742e39354f604617a07c1" style="width: 100.0%; height: 100.0%;">28 minutes, 8.27 miles</div>`)[0];
-            popup_2330e8496cbf4e62af116b34508d77d5.setContent(html_5c3b7043613742e39354f604617a07c1);
+            var html_eb84505969c44d56be4063089f1313c6 = $(`<div id="html_eb84505969c44d56be4063089f1313c6" style="width: 100.0%; height: 100.0%;">28 minutes, 8.27 miles</div>`)[0];
+            popup_7356f798c3264cea916c0383b304d9da.setContent(html_eb84505969c44d56be4063089f1313c6);
         
 
-        poly_line_0dd939f29c78468da3636b07a64576e9.bindPopup(popup_2330e8496cbf4e62af116b34508d77d5)
+        poly_line_d9af297d35ff453e958c050009cfb6e9.bindPopup(popup_7356f798c3264cea916c0383b304d9da)
         .openPopup();
 
         
     
     
-            var marker_f3990fc57a624396b61c7d833063c3a1 = L.marker(
+            var marker_cdcede89de5a4be697042d6dd0fc1402 = L.marker(
                 [30.0527235, 31.4310054],
                 {}
-            ).addTo(map_32eb34e6fbc648538fe7d6211fadee4a);
+            ).addTo(map_52cef423e97d49159cf9281816494e5c);
         
     
-            var div_icon_5dfd70c8c1ff461e80ca0d523cab0086 = L.divIcon({"className": "empty", "html": "\u003cdiv style=\"font-size: 12pt\"\u003e\u003cb\u003eEmerald Twin Plaza Mall\u003c/b\u003e\u003c/div\u003e", "iconAncher": [0, 0], "iconSize": [160, 30]});
-            marker_f3990fc57a624396b61c7d833063c3a1.setIcon(div_icon_5dfd70c8c1ff461e80ca0d523cab0086);
+            var div_icon_72283f07ca9e4e12b7e4a0e281dd007a = L.divIcon({"className": "empty", "html": "\u003cdiv style=\"font-size: 12pt\"\u003e\u003cb\u003eEmerald Twin Plaza Mall\u003c/b\u003e\u003c/div\u003e", "iconAncher": [0, 0], "iconSize": [160, 30]});
+            marker_cdcede89de5a4be697042d6dd0fc1402.setIcon(div_icon_72283f07ca9e4e12b7e4a0e281dd007a);
         
     
-            var circle_marker_fa419c3acd6746dcb102fde641a0c247 = L.circleMarker(
+            var circle_marker_a9429bc5b77a4dfab58ede2ad4ffc7ae = L.circleMarker(
                 [30.0531735, 31.4309554],
                 {"bubblingMouseEvents": true, "color": "gray", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3186cc", "fillOpacity": 1, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
-            ).addTo(map_32eb34e6fbc648538fe7d6211fadee4a);
+            ).addTo(map_52cef423e97d49159cf9281816494e5c);
         
     
-            circle_marker_fa419c3acd6746dcb102fde641a0c247.bindTooltip(
+            circle_marker_a9429bc5b77a4dfab58ede2ad4ffc7ae.bindTooltip(
                 `<div>
                      Arrived: 18:44, Left: 20:10
                  </div>`,
@@ -281,42 +338,42 @@ color: #777;
             );
         
     
-            var poly_line_22458f2a1dd1488891176ea205de790c = L.polyline(
+            var poly_line_a26f4114be8a4f178ef33d3c6e3b8454 = L.polyline(
                 [[30.0531735, 31.4309554], [30.0531735, 31.4309554], [30.0529893, 31.4309828], [30.0725745, 31.4309279], [30.0790973, 31.42545], [30.0790939, 31.4251912], [30.0824602, 31.4117324], [30.0810652, 31.380403], [30.0816495, 31.3796768], [30.0824098, 31.3790053], [30.0842126, 31.3782602], [30.0843244, 31.3781929], [30.0860991, 31.3775436], [30.0886074, 31.3769448], [30.0903589, 31.37637], [30.0909877, 31.3761363], [30.0910038, 31.3761411], [30.0910605, 31.3762127], [30.0910909, 31.3762476], [30.0911119, 31.376259], [30.0911377, 31.376259], [30.0911711, 31.3763561], [30.091191, 31.3763841], [30.0912001, 31.376471], [30.0914206, 31.3770518], [30.0912784, 31.3782178], [30.0913459, 31.3786606], [30.0913496, 31.3788932], [30.0913787, 31.3797018], [30.0914579, 31.3802272], [30.0919337, 31.381421], [30.0927172, 31.3821804], [30.0937588, 31.3826728], [30.0958192, 31.3829831], [30.09668, 31.382670999999995], [30.09668, 31.382670999999995]],
                 {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
-            ).addTo(map_32eb34e6fbc648538fe7d6211fadee4a);
+            ).addTo(map_52cef423e97d49159cf9281816494e5c);
         
     
-        var popup_aefd5a78e6744058bc9b673200fe7d6c = L.popup({"autoClose": false, "closeOnClick": false, "maxWidth": 80});
+        var popup_7a3b42a5cd754ca79893cafd9c0707ac = L.popup({"autoClose": false, "closeOnClick": false, "maxWidth": 60});
 
         
-            var html_4b5586fc8a314b529df68406f2656c4f = $(`<div id="html_4b5586fc8a314b529df68406f2656c4f" style="width: 100.0%; height: 100.0%;">15 minutes, 6.08 miles</div>`)[0];
-            popup_aefd5a78e6744058bc9b673200fe7d6c.setContent(html_4b5586fc8a314b529df68406f2656c4f);
+            var html_bba97de186704aafafa3277a61595aa7 = $(`<div id="html_bba97de186704aafafa3277a61595aa7" style="width: 100.0%; height: 100.0%;">15 minutes, 6.08 miles</div>`)[0];
+            popup_7a3b42a5cd754ca79893cafd9c0707ac.setContent(html_bba97de186704aafafa3277a61595aa7);
         
 
-        poly_line_22458f2a1dd1488891176ea205de790c.bindPopup(popup_aefd5a78e6744058bc9b673200fe7d6c)
+        poly_line_a26f4114be8a4f178ef33d3c6e3b8454.bindPopup(popup_7a3b42a5cd754ca79893cafd9c0707ac)
         .openPopup();
 
         
     
     
-            var marker_f05530ae968a40d0a8aa313df9d80c13 = L.marker(
+            var marker_454d108732eb4232b6fa078398f88226 = L.marker(
                 [30.09623, 31.382721],
                 {}
-            ).addTo(map_32eb34e6fbc648538fe7d6211fadee4a);
+            ).addTo(map_52cef423e97d49159cf9281816494e5c);
         
     
-            var div_icon_2040286e4f6b443ca151d239235081ba = L.divIcon({"className": "empty", "html": "\u003cdiv style=\"font-size: 12pt\"\u003e\u003cb\u003eTahya Misr\u003c/b\u003e\u003c/div\u003e", "iconAncher": [0, 0], "iconSize": [160, 30]});
-            marker_f05530ae968a40d0a8aa313df9d80c13.setIcon(div_icon_2040286e4f6b443ca151d239235081ba);
+            var div_icon_bffbd5f9a1534b36b0155594bf47c40a = L.divIcon({"className": "empty", "html": "\u003cdiv style=\"font-size: 12pt\"\u003e\u003cb\u003eTahya Misr\u003c/b\u003e\u003c/div\u003e", "iconAncher": [0, 0], "iconSize": [160, 30]});
+            marker_454d108732eb4232b6fa078398f88226.setIcon(div_icon_bffbd5f9a1534b36b0155594bf47c40a);
         
     
-            var circle_marker_20e3748460354070a3e44dc992e0e1af = L.circleMarker(
+            var circle_marker_124afd6187514b31b99e9850400c6df0 = L.circleMarker(
                 [30.09668, 31.382671],
                 {"bubblingMouseEvents": true, "color": "gray", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3186cc", "fillOpacity": 1, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
-            ).addTo(map_32eb34e6fbc648538fe7d6211fadee4a);
+            ).addTo(map_52cef423e97d49159cf9281816494e5c);
         
     
-            circle_marker_20e3748460354070a3e44dc992e0e1af.bindTooltip(
+            circle_marker_124afd6187514b31b99e9850400c6df0.bindTooltip(
                 `<div>
                      Arrived: 20:26, Left: 22:24
                  </div>`,
@@ -324,42 +381,42 @@ color: #777;
             );
         
     
-            var poly_line_14d4c73410b54134a5f65c7810907a42 = L.polyline(
+            var poly_line_fec3230e10274c92b9a789072eb6d473 = L.polyline(
                 [[30.09668, 31.382670999999995], [30.09668, 31.382670999999995], [30.0966205, 31.3830543], [30.0916471, 31.3783044], [30.082708, 31.3635462], [30.0858371, 31.3527636], [30.0943053, 31.3446903], [30.0904406, 31.3422467], [30.0922049, 31.3410592], [30.0918822, 31.3415269], [30.0908102, 31.341286], [30.0900922, 31.3400742], [30.0896343, 31.3392817], [30.089596, 31.3392353], [30.0891525, 31.3384678], [30.0886239, 31.3375532], [30.0873677, 31.3352784], [30.0858, 31.3334336], [30.0844262, 31.3274308], [30.0844223, 31.3273458], [30.0844279, 31.3271484], [30.0844882, 31.325417], [30.0850477, 31.3242581], [30.0859786, 31.3226536], [30.0869277, 31.3211105], [30.0870299, 31.320972], [30.0882553, 31.3188911], [30.0885743, 31.3182137], [30.0874784, 31.3199636], [30.0863688, 31.3217746], [30.0862779, 31.3219197], [30.0852727, 31.3234779], [30.084443, 31.3226692], [30.0834333, 31.3208256], [30.0826671, 31.31949], [30.082558, 31.319257], [30.0811921, 31.3171397], [30.0771406, 31.3110222], [30.077002, 31.3106847], [30.0759067, 31.3078727], [30.0748167, 31.3047823], [30.0737076, 31.3016169], [30.0728924, 31.2992638], [30.0722061, 31.2972691], [30.0713111, 31.2945661], [30.0701355, 31.2925729], [30.0703438, 31.2912231], [30.0705129, 31.2910845], [30.0706202, 31.2909876], [30.0722505, 31.2890129], [30.0738578, 31.2867502], [30.0756791, 31.2842526], [30.0772964, 31.2818289], [30.0773828, 31.2816795], [30.0780336, 31.2791937], [30.0774612, 31.2769135], [30.0748499, 31.2724438], [30.0747736, 31.2723141], [30.0747004, 31.2722077], [30.073707, 31.2708966], [30.073293, 31.2704894], [30.0726835, 31.2698005], [30.0716758, 31.2687254], [30.0716256, 31.2686577], [30.0709689, 31.2678033], [30.0704584, 31.2670033], [30.0698573, 31.2655993], [30.069327, 31.2641523], [30.0692217, 31.2639709], [30.0684445, 31.2623208], [30.0675208, 31.2599274], [30.0674859, 31.2576257], [30.0675307, 31.2560642], [30.0675123, 31.2559002], [30.0668239, 31.2540086], [30.0650637, 31.2531226], [30.0640085, 31.2514131], [30.0634517, 31.2499537], [30.0628956, 31.2487153], [30.0624345, 31.247547], [30.0620233, 31.2469988], [30.0619859, 31.2469555], [30.06195, 31.2469181], [30.0615894, 31.246275], [30.0612941, 31.2455311], [30.0606651, 31.2448335], [30.0599637, 31.2440487], [30.0598279, 31.2439006], [30.058494, 31.2425043], [30.0569337, 31.2408816], [30.0547449, 31.2386406], [30.0537496, 31.2376132], [30.0533637, 31.2372006], [30.0511833, 31.2350587], [30.0495423, 31.2333636], [30.0492547, 31.2291598], [30.0492493, 31.2290008], [30.0504155, 31.226687], [30.0520853, 31.2265463], [30.0530768, 31.2265051], [30.0531264, 31.2264859], [30.053622, 31.2262781], [30.054598, 31.2258128], [30.0552996, 31.2251762], [30.057111000000003, 31.225081099999997], [30.057111000000003, 31.225081099999997]],
                 {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
-            ).addTo(map_32eb34e6fbc648538fe7d6211fadee4a);
+            ).addTo(map_52cef423e97d49159cf9281816494e5c);
         
     
-        var popup_a7352a22d02948b2b0dce7048edc4ddb = L.popup({"autoClose": false, "closeOnClick": false, "maxWidth": 80});
+        var popup_fe548a7f8df84c2faa138013baff2036 = L.popup({"autoClose": false, "closeOnClick": false, "maxWidth": 60});
 
         
-            var html_2e6836b14bf7426db2585623a7f138db = $(`<div id="html_2e6836b14bf7426db2585623a7f138db" style="width: 100.0%; height: 100.0%;">32 minutes, 13.05 miles</div>`)[0];
-            popup_a7352a22d02948b2b0dce7048edc4ddb.setContent(html_2e6836b14bf7426db2585623a7f138db);
+            var html_e4094887392f4f319d057d58f7442e0c = $(`<div id="html_e4094887392f4f319d057d58f7442e0c" style="width: 100.0%; height: 100.0%;">32 minutes, 13.05 miles</div>`)[0];
+            popup_fe548a7f8df84c2faa138013baff2036.setContent(html_e4094887392f4f319d057d58f7442e0c);
         
 
-        poly_line_14d4c73410b54134a5f65c7810907a42.bindPopup(popup_a7352a22d02948b2b0dce7048edc4ddb)
+        poly_line_fec3230e10274c92b9a789072eb6d473.bindPopup(popup_fe548a7f8df84c2faa138013baff2036)
         .openPopup();
 
         
     
     
-            var marker_b7eb022d796e4ebf921d5af2a77fe472 = L.marker(
+            var marker_1fca8c6e8330407cae4e933dac5fe827 = L.marker(
                 [30.056661, 31.2251311],
                 {}
-            ).addTo(map_32eb34e6fbc648538fe7d6211fadee4a);
+            ).addTo(map_52cef423e97d49159cf9281816494e5c);
         
     
-            var div_icon_3974afb40c4a4994bb27884e9d83518f = L.divIcon({"className": "empty", "html": "\u003cdiv style=\"font-size: 12pt\"\u003e\u003cb\u003eCairo Marriott Hotel \u0026 Omar Khayyam Casino\u003c/b\u003e\u003c/div\u003e", "iconAncher": [0, 0], "iconSize": [160, 30]});
-            marker_b7eb022d796e4ebf921d5af2a77fe472.setIcon(div_icon_3974afb40c4a4994bb27884e9d83518f);
+            var div_icon_4e538fbec07d4d51979e0126bb2d939a = L.divIcon({"className": "empty", "html": "\u003cdiv style=\"font-size: 12pt\"\u003e\u003cb\u003eCairo Marriott Hotel \u0026 Omar Khayyam Casino\u003c/b\u003e\u003c/div\u003e", "iconAncher": [0, 0], "iconSize": [160, 30]});
+            marker_1fca8c6e8330407cae4e933dac5fe827.setIcon(div_icon_4e538fbec07d4d51979e0126bb2d939a);
         
     
-            var circle_marker_bf60f8e6b5f4438fb84973fd1f3c2c59 = L.circleMarker(
+            var circle_marker_8765b10924b64ec8be9d63f07b405631 = L.circleMarker(
                 [30.057111, 31.225081099999997],
                 {"bubblingMouseEvents": true, "color": "gray", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3186cc", "fillOpacity": 1, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
-            ).addTo(map_32eb34e6fbc648538fe7d6211fadee4a);
+            ).addTo(map_52cef423e97d49159cf9281816494e5c);
         
     
-            circle_marker_bf60f8e6b5f4438fb84973fd1f3c2c59.bindTooltip(
+            circle_marker_8765b10924b64ec8be9d63f07b405631.bindTooltip(
                 `<div>
                      Arrived: 22:56, Left: 09:26
                  </div>`,

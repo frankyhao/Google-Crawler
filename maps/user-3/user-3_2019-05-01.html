@@ -1,0 +1,512 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.4.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.4.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://rawcdn.githack.com/python-visualization/folium/master/folium/templates/leaflet.awesome.rotate.css"/>
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_eff052e3a48e47a59058ce1c7a32b673 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_eff052e3a48e47a59058ce1c7a32b673" ></div>
+        
+    
+
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>jQuery UI Draggable - Default functionality</title>
+<link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+
+<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+
+<script>
+$( function() {
+		$( "#maplegend" ).draggable({
+start: function (event, ui) {
+$(this).css({
+right: "auto",
+top: "auto",
+bottom: "auto"
+});
+}
+});
+		});
+
+</script>
+</head>
+<body>
+
+
+<div id='maplegend' class='maplegend'
+style='position: absolute; z-index:9999; border:2px solid grey; background-color:rgba(255, 255, 255, 0.8);
+border-radius:6px; padding: 10px; font-size:14px; right: 20px; bottom: 20px;'>
+
+<div class='legend-title'>Travel Mode</div>
+<div class='legend-scale'>
+<ul class='legend-labels'>
+<li><span style='background:red;opacity:0.7;'></span>Walking</li>
+<li><span style='background:blue;opacity:0.7;'></span>Driving</li>
+<li><span style='background:green;opacity:0.7;'></span>On a bus</li>
+<li><span style='background:purple;opacity:0.7;'></span>Cycling</li>
+<li><span style='background:orange;opacity:0.7;'></span>Flying</li>
+<li><span style='background:pink;opacity:0.7;'></span>On a train</li>
+
+</ul>
+</div>
+</div>
+
+</body>
+</html>
+
+<style type='text/css'>
+.maplegend .legend-title {
+	text-align: left;
+	margin-bottom: 5px;
+	font-weight: bold;
+	font-size: 90%;
+}
+.maplegend .legend-scale ul {
+margin: 0;
+	margin-bottom: 5px;
+padding: 0;
+float: left;
+       list-style: none;
+}
+.maplegend .legend-scale ul li {
+	font-size: 80%;
+	list-style: none;
+	margin-left: 0;
+	line-height: 18px;
+	margin-bottom: 2px;
+}
+.maplegend ul.legend-labels li span {
+display: block;
+float: left;
+height: 16px;
+width: 30px;
+       margin-right: 5px;
+       margin-left: 0;
+border: 1px solid #999;
+}
+.maplegend .legend-source {
+	font-size: 80%;
+color: #777;
+clear: both;
+}
+.maplegend a {
+color: #777;
+}
+</style>
+    
+
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>jQuery UI Draggable - Default functionality</title>
+<link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+
+<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+
+<script>
+$( function() {
+		$( "#maplegend" ).draggable({
+start: function (event, ui) {
+$(this).css({
+right: "auto",
+top: "auto",
+bottom: "auto"
+});
+}
+});
+		});
+
+</script>
+</head>
+<body>
+
+
+<div id='maplegend' class='maplegend' 
+style='position: absolute; z-index:9998; border:2px solid grey; background-color:rgba(255, 255, 255, 0.8);
+border-radius:6px; padding: 10px; font-size:14px; right: 20px; top: 20px;'>
+
+<div class='legend-title'>8.97881384 miles<br>2019-05-01</div>
+</div>
+
+</body>
+</html>
+
+<style type='text/css'>
+.maplegend .legend-title {
+	text-align: left;
+	margin-bottom: 5px;
+	font-weight: bold;
+	font-size: 90%;
+}
+.maplegend .legend-source {
+	font-size: 80%;
+color: #777;
+clear: both;
+}
+.maplegend a {
+color: #777;
+}
+</style>
+</body>
+<script>    
+    
+            var map_eff052e3a48e47a59058ce1c7a32b673 = L.map(
+                "map_eff052e3a48e47a59058ce1c7a32b673",
+                {
+                    center: [40.095224050419716, -88.244345260324],
+                    crs: L.CRS.EPSG3857,
+                    zoomControl: true,
+                    zoom: 14,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_fa639899555945f195a18c2067924ba8 = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_eff052e3a48e47a59058ce1c7a32b673);
+        
+    
+            var marker_1bae5961b97e45379bf4e664bf380d3b = L.marker(
+                [40.0862182, -88.2588512],
+                {}
+            ).addTo(map_eff052e3a48e47a59058ce1c7a32b673);
+        
+    
+            var div_icon_2780f33612e146cabb83ea2beeac598a = L.divIcon({"className": "empty", "html": "\u003cdiv style=\"font-size: 12pt\"\u003e\u003cb\u003eHome (1004 Harrington Dr)\u003c/b\u003e\u003c/div\u003e", "iconAncher": [0, 0], "iconSize": [160, 30]});
+            marker_1bae5961b97e45379bf4e664bf380d3b.setIcon(div_icon_2780f33612e146cabb83ea2beeac598a);
+        
+    
+            var circle_marker_50e2643215f44a569cc9e7f913d268fe = L.circleMarker(
+                [40.0866682, -88.2589012],
+                {"bubblingMouseEvents": true, "color": "gray", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3186cc", "fillOpacity": 1, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_eff052e3a48e47a59058ce1c7a32b673);
+        
+    
+            circle_marker_50e2643215f44a569cc9e7f913d268fe.bindTooltip(
+                `<div>
+                     Arrived: 17:28, Left: 08:23
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var poly_line_d78053b24b4847d18f5ec4e7cd929b7e = L.polyline(
+                [[40.0866682, -88.2589012], [40.0866682, -88.2589012], [40.0866125, -88.2590509], [40.0833947, -88.2574547], [40.0721898, -88.2532938], [40.0803717, -88.2476388], [40.0984046, -88.234738], [40.1037541, -88.2283822]],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_eff052e3a48e47a59058ce1c7a32b673);
+        
+    
+        var popup_42340a45f13542f7a4c53b81435b52f0 = L.popup({"autoClose": false, "closeOnClick": false, "maxWidth": 60});
+
+        
+            var html_b9d0b843d9ce47448b5442c876d278d9 = $(`<div id="html_b9d0b843d9ce47448b5442c876d278d9" style="width: 100.0%; height: 100.0%;">22 minutes, 3.61 miles</div>`)[0];
+            popup_42340a45f13542f7a4c53b81435b52f0.setContent(html_b9d0b843d9ce47448b5442c876d278d9);
+        
+
+        poly_line_d78053b24b4847d18f5ec4e7cd929b7e.bindPopup(popup_42340a45f13542f7a4c53b81435b52f0)
+        .openPopup();
+
+        
+    
+    
+            var poly_line_b8f63b2f08fc4037a005b1f5f3cf78c4 = L.polyline(
+                [[40.1037541, -88.2283822], [40.1037541, -88.2283822], [40.103764612833494, -88.22836225610754], [40.103764612833494, -88.22836225610754]],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_eff052e3a48e47a59058ce1c7a32b673);
+        
+    
+        var popup_50de3d37e41a49e4badda87a131ad04b = L.popup({"autoClose": false, "closeOnClick": false, "maxWidth": 60});
+
+        
+            var html_1acfae100801491fb45aaa853bdd8809 = $(`<div id="html_1acfae100801491fb45aaa853bdd8809" style="width: 100.0%; height: 100.0%;">2 minutes, 0.0 miles</div>`)[0];
+            popup_50de3d37e41a49e4badda87a131ad04b.setContent(html_1acfae100801491fb45aaa853bdd8809);
+        
+
+        poly_line_b8f63b2f08fc4037a005b1f5f3cf78c4.bindPopup(popup_50de3d37e41a49e4badda87a131ad04b)
+        .openPopup();
+
+        
+    
+    
+            var marker_8f20c2bb81094d05891b9672089fbfa6 = L.marker(
+                [40.103176399999995, -88.22830429999999],
+                {}
+            ).addTo(map_eff052e3a48e47a59058ce1c7a32b673);
+        
+    
+            var div_icon_3853de4b8d0445f29528ab716cee92de = L.divIcon({"className": "empty", "html": "\u003cdiv style=\"font-size: 12pt\"\u003e\u003cb\u003eWork (David Kinley Hall)\u003c/b\u003e\u003c/div\u003e", "iconAncher": [0, 0], "iconSize": [160, 30]});
+            marker_8f20c2bb81094d05891b9672089fbfa6.setIcon(div_icon_3853de4b8d0445f29528ab716cee92de);
+        
+    
+            var circle_marker_381542f13ad546e6b96aa1645fe253bb = L.circleMarker(
+                [40.103626399999996, -88.22835429999999],
+                {"bubblingMouseEvents": true, "color": "gray", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3186cc", "fillOpacity": 1, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_eff052e3a48e47a59058ce1c7a32b673);
+        
+    
+            circle_marker_381542f13ad546e6b96aa1645fe253bb.bindTooltip(
+                `<div>
+                     Arrived: 08:48, Left: 11:26
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var poly_line_6424f567efc04e668d28d158ede12d4f = L.polyline(
+                [[40.103764612833494, -88.22836225610754], [40.103764612833494, -88.22836225610754], [40.1026744, -88.2284984], [40.1025451, -88.2285813], [40.1025355, -88.2286072], [40.10172, -88.2286941], [40.1015474, -88.2299304], [40.1008645, -88.2302075], [40.1006379, -88.2318802], [40.0954868, -88.2451361], [40.09546275484399, -88.24516197687586], [40.09546275484399, -88.24516197687586]],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_eff052e3a48e47a59058ce1c7a32b673);
+        
+    
+        var popup_7c2a965ad91c436e8130875c0290117d = L.popup({"autoClose": false, "closeOnClick": false, "maxWidth": 60});
+
+        
+            var html_eeddbd3090884b45b0d6d363200fb222 = $(`<div id="html_eeddbd3090884b45b0d6d363200fb222" style="width: 100.0%; height: 100.0%;">4 minutes, 1.14 miles</div>`)[0];
+            popup_7c2a965ad91c436e8130875c0290117d.setContent(html_eeddbd3090884b45b0d6d363200fb222);
+        
+
+        poly_line_6424f567efc04e668d28d158ede12d4f.bindPopup(popup_7c2a965ad91c436e8130875c0290117d)
+        .openPopup();
+
+        
+    
+    
+            var marker_896b1790dccc4f85990b2740c0c1240d = L.marker(
+                [40.1013082, -88.2752644],
+                {}
+            ).addTo(map_eff052e3a48e47a59058ce1c7a32b673);
+        
+    
+            var div_icon_25acc58c704e47e0845d238fbb06c3c0 = L.divIcon({"className": "empty", "html": "\u003cdiv style=\"font-size: 12pt\"\u003e\u003cb\u003eChampaign City Township\u003c/b\u003e\u003c/div\u003e", "iconAncher": [0, 0], "iconSize": [160, 30]});
+            marker_896b1790dccc4f85990b2740c0c1240d.setIcon(div_icon_25acc58c704e47e0845d238fbb06c3c0);
+        
+    
+            var circle_marker_dfc8b8b1f2e4449da23fa378e9ad5856 = L.circleMarker(
+                [40.1017582, -88.2753144],
+                {"bubblingMouseEvents": true, "color": "gray", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3186cc", "fillOpacity": 1, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_eff052e3a48e47a59058ce1c7a32b673);
+        
+    
+            circle_marker_dfc8b8b1f2e4449da23fa378e9ad5856.bindTooltip(
+                `<div>
+                     Arrived: 11:31, Left: 11:47
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var poly_line_2304637b9ba3476b8e4da7f92235858a = L.polyline(
+                [[40.09546275484399, -88.24516197687586], [40.09546275484399, -88.24516197687586], [40.0982195, -88.2346965], [40.1032239, -88.2286642], [40.10372222559353, -88.22835859647212], [40.10372222559353, -88.22835859647212]],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_eff052e3a48e47a59058ce1c7a32b673);
+        
+    
+        var popup_5c95e6d1fce4477bb1d6e1a5a0dd6a60 = L.popup({"autoClose": false, "closeOnClick": false, "maxWidth": 60});
+
+        
+            var html_13bff737e8f040728baecb59134f0e61 = $(`<div id="html_13bff737e8f040728baecb59134f0e61" style="width: 100.0%; height: 100.0%;">6 minutes, 1.09 miles</div>`)[0];
+            popup_5c95e6d1fce4477bb1d6e1a5a0dd6a60.setContent(html_13bff737e8f040728baecb59134f0e61);
+        
+
+        poly_line_2304637b9ba3476b8e4da7f92235858a.bindPopup(popup_5c95e6d1fce4477bb1d6e1a5a0dd6a60)
+        .openPopup();
+
+        
+    
+    
+            var marker_e959ff3bf5c042a2860d1962c95dbf01 = L.marker(
+                [40.103176399999995, -88.22830429999999],
+                {}
+            ).addTo(map_eff052e3a48e47a59058ce1c7a32b673);
+        
+    
+            var div_icon_4a050ce036fc459fbb60b3030c9f484c = L.divIcon({"className": "empty", "html": "\u003cdiv style=\"font-size: 12pt\"\u003e\u003cb\u003eWork (David Kinley Hall)\u003c/b\u003e\u003c/div\u003e", "iconAncher": [0, 0], "iconSize": [160, 30]});
+            marker_e959ff3bf5c042a2860d1962c95dbf01.setIcon(div_icon_4a050ce036fc459fbb60b3030c9f484c);
+        
+    
+            var circle_marker_5b85fe366b5e44858f4a391d5e6a0444 = L.circleMarker(
+                [40.103626399999996, -88.22835429999999],
+                {"bubblingMouseEvents": true, "color": "gray", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3186cc", "fillOpacity": 1, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_eff052e3a48e47a59058ce1c7a32b673);
+        
+    
+            circle_marker_5b85fe366b5e44858f4a391d5e6a0444.bindTooltip(
+                `<div>
+                     Arrived: 11:53, Left: 16:35
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var poly_line_509eefb33cd240eb8f67667cba4f87cf = L.polyline(
+                [[40.10372222559353, -88.22835859647212], [40.10372222559353, -88.22835859647212], [40.1003024, -88.2335707], [40.0942289, -88.2427215], [40.0898283, -88.2570036], [40.0866401, -88.2590606], [40.0866682, -88.2589012], [40.0866682, -88.2589012]],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_eff052e3a48e47a59058ce1c7a32b673);
+        
+    
+        var popup_d9d4e7f0ef1c448fb63440208be4ca1e = L.popup({"autoClose": false, "closeOnClick": false, "maxWidth": 60});
+
+        
+            var html_aa8219137d894ae1bbe6acce6b7aaec5 = $(`<div id="html_aa8219137d894ae1bbe6acce6b7aaec5" style="width: 100.0%; height: 100.0%;">8 minutes, 2.07 miles</div>`)[0];
+            popup_d9d4e7f0ef1c448fb63440208be4ca1e.setContent(html_aa8219137d894ae1bbe6acce6b7aaec5);
+        
+
+        poly_line_509eefb33cd240eb8f67667cba4f87cf.bindPopup(popup_d9d4e7f0ef1c448fb63440208be4ca1e)
+        .openPopup();
+
+        
+    
+    
+            var marker_7bab407c72134caa994cb6b3663e7f8f = L.marker(
+                [40.0862182, -88.2588512],
+                {}
+            ).addTo(map_eff052e3a48e47a59058ce1c7a32b673);
+        
+    
+            var div_icon_046b4cbc6c7d40bc80eaab02a7000d33 = L.divIcon({"className": "empty", "html": "\u003cdiv style=\"font-size: 12pt\"\u003e\u003cb\u003eHome (1004 Harrington Dr)\u003c/b\u003e\u003c/div\u003e", "iconAncher": [0, 0], "iconSize": [160, 30]});
+            marker_7bab407c72134caa994cb6b3663e7f8f.setIcon(div_icon_046b4cbc6c7d40bc80eaab02a7000d33);
+        
+    
+            var circle_marker_5fac63658b0e475285070f94ba9c5181 = L.circleMarker(
+                [40.0866682, -88.2589012],
+                {"bubblingMouseEvents": true, "color": "gray", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3186cc", "fillOpacity": 1, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_eff052e3a48e47a59058ce1c7a32b673);
+        
+    
+            circle_marker_5fac63658b0e475285070f94ba9c5181.bindTooltip(
+                `<div>
+                     Arrived: 16:43, Left: 16:57
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var poly_line_4a61dd5fb67a49469482647898a5cae0 = L.polyline(
+                [[40.0866682, -88.2589012], [40.0866682, -88.2589012], [40.086676, -88.2590051], [40.0936429, -88.2571461], [40.0940308, -88.2581591], [40.0940308, -88.2581591]],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_eff052e3a48e47a59058ce1c7a32b673);
+        
+    
+        var popup_b16705be8a06410fb3f4badd3b116a0d = L.popup({"autoClose": false, "closeOnClick": false, "maxWidth": 60});
+
+        
+            var html_11549ed7f5d34c09ac2bc6e699b177e5 = $(`<div id="html_11549ed7f5d34c09ac2bc6e699b177e5" style="width: 100.0%; height: 100.0%;">3 minutes, 0.56 miles</div>`)[0];
+            popup_b16705be8a06410fb3f4badd3b116a0d.setContent(html_11549ed7f5d34c09ac2bc6e699b177e5);
+        
+
+        poly_line_4a61dd5fb67a49469482647898a5cae0.bindPopup(popup_b16705be8a06410fb3f4badd3b116a0d)
+        .openPopup();
+
+        
+    
+    
+            var marker_68e9371f40844768921eb12bfe149b59 = L.marker(
+                [40.0935808, -88.2581091],
+                {}
+            ).addTo(map_eff052e3a48e47a59058ce1c7a32b673);
+        
+    
+            var div_icon_094a653deb0f49faba41960bb3572a06 = L.divIcon({"className": "empty", "html": "\u003cdiv style=\"font-size: 12pt\"\u003e\u003cb\u003eBottenfield Elementary School\u003c/b\u003e\u003c/div\u003e", "iconAncher": [0, 0], "iconSize": [160, 30]});
+            marker_68e9371f40844768921eb12bfe149b59.setIcon(div_icon_094a653deb0f49faba41960bb3572a06);
+        
+    
+            var circle_marker_ba76e940ccf14bec93dc0956bc19bc58 = L.circleMarker(
+                [40.0940308, -88.2581591],
+                {"bubblingMouseEvents": true, "color": "gray", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3186cc", "fillOpacity": 1, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_eff052e3a48e47a59058ce1c7a32b673);
+        
+    
+            circle_marker_ba76e940ccf14bec93dc0956bc19bc58.bindTooltip(
+                `<div>
+                     Arrived: 17:00, Left: 18:39
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var poly_line_6461fb2de4cd45d182ad55c54e50a32c = L.polyline(
+                [[40.0940308, -88.2581591], [40.0940308, -88.2581591], [40.0866682, -88.2589012], [40.0866682, -88.2589012]],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_eff052e3a48e47a59058ce1c7a32b673);
+        
+    
+        var popup_4c58aeb5f94346d9a1bc435199a2fb76 = L.popup({"autoClose": false, "closeOnClick": false, "maxWidth": 60});
+
+        
+            var html_ff865ee2780041a58559496c73e6048f = $(`<div id="html_ff865ee2780041a58559496c73e6048f" style="width: 100.0%; height: 100.0%;">6 minutes, 0.51 miles</div>`)[0];
+            popup_4c58aeb5f94346d9a1bc435199a2fb76.setContent(html_ff865ee2780041a58559496c73e6048f);
+        
+
+        poly_line_6461fb2de4cd45d182ad55c54e50a32c.bindPopup(popup_4c58aeb5f94346d9a1bc435199a2fb76)
+        .openPopup();
+
+        
+    
+    
+            var marker_5d7c9fc6be014baf9ff8245c87d8be31 = L.marker(
+                [40.0862182, -88.2588512],
+                {}
+            ).addTo(map_eff052e3a48e47a59058ce1c7a32b673);
+        
+    
+            var div_icon_18d42cd2b7224b79adbdbb1507c0ad86 = L.divIcon({"className": "empty", "html": "\u003cdiv style=\"font-size: 12pt\"\u003e\u003cb\u003eHome (1004 Harrington Dr)\u003c/b\u003e\u003c/div\u003e", "iconAncher": [0, 0], "iconSize": [160, 30]});
+            marker_5d7c9fc6be014baf9ff8245c87d8be31.setIcon(div_icon_18d42cd2b7224b79adbdbb1507c0ad86);
+        
+    
+            var circle_marker_bde2682506aa4d5e9680b6dfc977a7d8 = L.circleMarker(
+                [40.0866682, -88.2589012],
+                {"bubblingMouseEvents": true, "color": "gray", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3186cc", "fillOpacity": 1, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_eff052e3a48e47a59058ce1c7a32b673);
+        
+    
+            circle_marker_bde2682506aa4d5e9680b6dfc977a7d8.bindTooltip(
+                `<div>
+                     Arrived: 18:45, Left: 08:24
+                 </div>`,
+                {"sticky": false}
+            );
+        
+</script>

@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.4.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.4.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://rawcdn.githack.com/python-visualization/folium/master/folium/templates/leaflet.awesome.rotate.css"/>
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_d11fb2eee4574c55850a0d6b3d89f9f8 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_d11fb2eee4574c55850a0d6b3d89f9f8" ></div>
+        
+    
+
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>jQuery UI Draggable - Default functionality</title>
+<link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+
+<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+
+<script>
+$( function() {
+		$( "#maplegend" ).draggable({
+start: function (event, ui) {
+$(this).css({
+right: "auto",
+top: "auto",
+bottom: "auto"
+});
+}
+});
+		});
+
+</script>
+</head>
+<body>
+
+
+<div id='maplegend' class='maplegend'
+style='position: absolute; z-index:9999; border:2px solid grey; background-color:rgba(255, 255, 255, 0.8);
+border-radius:6px; padding: 10px; font-size:14px; right: 20px; bottom: 20px;'>
+
+<div class='legend-title'>Travel Mode</div>
+<div class='legend-scale'>
+<ul class='legend-labels'>
+<li><span style='background:red;opacity:0.7;'></span>Walking</li>
+<li><span style='background:blue;opacity:0.7;'></span>Driving</li>
+<li><span style='background:green;opacity:0.7;'></span>On a bus</li>
+<li><span style='background:purple;opacity:0.7;'></span>Cycling</li>
+<li><span style='background:orange;opacity:0.7;'></span>Flying</li>
+<li><span style='background:pink;opacity:0.7;'></span>On a train</li>
+
+</ul>
+</div>
+</div>
+
+</body>
+</html>
+
+<style type='text/css'>
+.maplegend .legend-title {
+	text-align: left;
+	margin-bottom: 5px;
+	font-weight: bold;
+	font-size: 90%;
+}
+.maplegend .legend-scale ul {
+margin: 0;
+	margin-bottom: 5px;
+padding: 0;
+float: left;
+       list-style: none;
+}
+.maplegend .legend-scale ul li {
+	font-size: 80%;
+	list-style: none;
+	margin-left: 0;
+	line-height: 18px;
+	margin-bottom: 2px;
+}
+.maplegend ul.legend-labels li span {
+display: block;
+float: left;
+height: 16px;
+width: 30px;
+       margin-right: 5px;
+       margin-left: 0;
+border: 1px solid #999;
+}
+.maplegend .legend-source {
+	font-size: 80%;
+color: #777;
+clear: both;
+}
+.maplegend a {
+color: #777;
+}
+</style>
+    
+
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>jQuery UI Draggable - Default functionality</title>
+<link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+
+<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+
+<script>
+$( function() {
+		$( "#maplegend" ).draggable({
+start: function (event, ui) {
+$(this).css({
+right: "auto",
+top: "auto",
+bottom: "auto"
+});
+}
+});
+		});
+
+</script>
+</head>
+<body>
+
+
+<div id='maplegend' class='maplegend' 
+style='position: absolute; z-index:9998; border:2px solid grey; background-color:rgba(255, 255, 255, 0.8);
+border-radius:6px; padding: 10px; font-size:14px; right: 20px; top: 20px;'>
+
+<div class='legend-title'>2.5078541632 miles<br>2019-05-02</div>
+</div>
+
+</body>
+</html>
+
+<style type='text/css'>
+.maplegend .legend-title {
+	text-align: left;
+	margin-bottom: 5px;
+	font-weight: bold;
+	font-size: 90%;
+}
+.maplegend .legend-source {
+	font-size: 80%;
+color: #777;
+clear: both;
+}
+.maplegend a {
+color: #777;
+}
+</style>
+</body>
+<script>    
+    
+            var map_d11fb2eee4574c55850a0d6b3d89f9f8 = L.map(
+                "map_d11fb2eee4574c55850a0d6b3d89f9f8",
+                {
+                    center: [40.10749590769231, -88.23144096153844],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 14,
+                    preferCanvas: false,
+                    zoomControl: true,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_dba47dee89de49f698dda0c172916bda = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_d11fb2eee4574c55850a0d6b3d89f9f8);
+        
+    
+            var poly_line_db8c4c0f94b74f89bd647a6ef1623e09 = L.polyline(
+                [[40.1083249, -88.2354149], [40.1083764, -88.2352882], [40.1066584, -88.2354105], [40.1060047, -88.23542], [40.1054178, -88.2354004], [40.1052671, -88.2342141], [40.1043865, -88.2341837], [40.1043865, -88.2341837]],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_d11fb2eee4574c55850a0d6b3d89f9f8);
+        
+    
+        var popup_9d94c5547d4c487c8d6df9e118f51ce4 = L.popup({"autoClose": false, "closeOnClick": false, "maxWidth": 60});
+
+        
+            var html_422b9cd23c1f4cbe8ac32620b3c3f1d1 = $(`<div id="html_422b9cd23c1f4cbe8ac32620b3c3f1d1" style="width: 100.0%; height: 100.0%;">7 minutes, 0.39 miles</div>`)[0];
+            popup_9d94c5547d4c487c8d6df9e118f51ce4.setContent(html_422b9cd23c1f4cbe8ac32620b3c3f1d1);
+        
+
+        poly_line_db8c4c0f94b74f89bd647a6ef1623e09.bindPopup(popup_9d94c5547d4c487c8d6df9e118f51ce4)
+        .openPopup();
+
+        
+    
+    
+            var marker_69a94b3e84cc422fac1081edf965625f = L.marker(
+                [40.103936499999996, -88.2341337],
+                {}
+            ).addTo(map_d11fb2eee4574c55850a0d6b3d89f9f8);
+        
+    
+            var div_icon_660048035dac4f8ca9bfe94f818c289e = L.divIcon({"className": "empty", "html": "\u003cdiv style=\"font-size: 12pt\"\u003e\u003cb\u003ePhi Kappa Tau\u003c/b\u003e\u003c/div\u003e", "iconAncher": [0, 0], "iconSize": [160, 30]});
+            marker_69a94b3e84cc422fac1081edf965625f.setIcon(div_icon_660048035dac4f8ca9bfe94f818c289e);
+        
+    
+            var circle_marker_1909015ca3f04ac48415b639812efdb3 = L.circleMarker(
+                [40.1043865, -88.2341837],
+                {"bubblingMouseEvents": true, "color": "gray", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3186cc", "fillOpacity": 1, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_d11fb2eee4574c55850a0d6b3d89f9f8);
+        
+    
+            circle_marker_1909015ca3f04ac48415b639812efdb3.bindTooltip(
+                `<div>
+                     Arrived: 02:10, Left: 16:18
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var poly_line_228580d82e27418ba8ca4731e43e378c = L.polyline(
+                [[40.1043865, -88.2341837], [40.1043865, -88.2341837], [40.104514, -88.2339901], [40.1054843, -88.2334996], [40.1065023, -88.2291545], [40.1094405, -88.2257433], [40.1149215, -88.2248604], [40.1149215, -88.2248604]],
+                {"bubblingMouseEvents": true, "color": "purple", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "purple", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_d11fb2eee4574c55850a0d6b3d89f9f8);
+        
+    
+        var popup_b6850ae6f7214fdcae9099e34cfd9e20 = L.popup({"autoClose": false, "closeOnClick": false, "maxWidth": 60});
+
+        
+            var html_49f07f3ff7a0439ebba112ff40584fd1 = $(`<div id="html_49f07f3ff7a0439ebba112ff40584fd1" style="width: 100.0%; height: 100.0%;">7 minutes, 0.98 miles</div>`)[0];
+            popup_b6850ae6f7214fdcae9099e34cfd9e20.setContent(html_49f07f3ff7a0439ebba112ff40584fd1);
+        
+
+        poly_line_228580d82e27418ba8ca4731e43e378c.bindPopup(popup_b6850ae6f7214fdcae9099e34cfd9e20)
+        .openPopup();
+
+        
+    
+    
+            var marker_206078e210b749e39ace77d408b07f76 = L.marker(
+                [40.1144715, -88.2248104],
+                {}
+            ).addTo(map_d11fb2eee4574c55850a0d6b3d89f9f8);
+        
+    
+            var div_icon_d65b11a9f5864f6eb2256b4ccc7015e2 = L.divIcon({"className": "empty", "html": "\u003cdiv style=\"font-size: 12pt\"\u003e\u003cb\u003eWork (National Center for Supercomputing Applications)\u003c/b\u003e\u003c/div\u003e", "iconAncher": [0, 0], "iconSize": [160, 30]});
+            marker_206078e210b749e39ace77d408b07f76.setIcon(div_icon_d65b11a9f5864f6eb2256b4ccc7015e2);
+        
+    
+            var circle_marker_43cf1a4c82d94fc9960ad8ab9a584b3c = L.circleMarker(
+                [40.1149215, -88.2248604],
+                {"bubblingMouseEvents": true, "color": "gray", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3186cc", "fillOpacity": 1, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_d11fb2eee4574c55850a0d6b3d89f9f8);
+        
+    
+            circle_marker_43cf1a4c82d94fc9960ad8ab9a584b3c.bindTooltip(
+                `<div>
+                     Arrived: 16:26, Left: 18:58
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var poly_line_a28b9bb73acf4de28df81ebf4fb6db65 = L.polyline(
+                [[40.1149215, -88.2248604], [40.1132475, -88.2255974], [40.1106524, -88.2259538], [40.105611, -88.2252749], [40.1046143, -88.2341921], [40.1043865, -88.2341837], [40.1043865, -88.2341837]],
+                {"bubblingMouseEvents": true, "color": "purple", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "purple", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_d11fb2eee4574c55850a0d6b3d89f9f8);
+        
+    
+        var popup_3f8ab34ea0c2428289e0fe7b094a9460 = L.popup({"autoClose": false, "closeOnClick": false, "maxWidth": 60});
+
+        
+            var html_d54dc7d87988497490a51f1b188b8502 = $(`<div id="html_d54dc7d87988497490a51f1b188b8502" style="width: 100.0%; height: 100.0%;">7 minutes, 1.14 miles</div>`)[0];
+            popup_3f8ab34ea0c2428289e0fe7b094a9460.setContent(html_d54dc7d87988497490a51f1b188b8502);
+        
+
+        poly_line_a28b9bb73acf4de28df81ebf4fb6db65.bindPopup(popup_3f8ab34ea0c2428289e0fe7b094a9460)
+        .openPopup();
+
+        
+    
+    
+            var marker_5cdc6855980f4f1d8564e17994fc6db8 = L.marker(
+                [40.103936499999996, -88.2341337],
+                {}
+            ).addTo(map_d11fb2eee4574c55850a0d6b3d89f9f8);
+        
+    
+            var div_icon_b1c91e6d2111410bad6cfdcf860aaa39 = L.divIcon({"className": "empty", "html": "\u003cdiv style=\"font-size: 12pt\"\u003e\u003cb\u003ePhi Kappa Tau\u003c/b\u003e\u003c/div\u003e", "iconAncher": [0, 0], "iconSize": [160, 30]});
+            marker_5cdc6855980f4f1d8564e17994fc6db8.setIcon(div_icon_b1c91e6d2111410bad6cfdcf860aaa39);
+        
+    
+            var circle_marker_1cb268ccccc542af8064d5e49cffb3af = L.circleMarker(
+                [40.1043865, -88.2341837],
+                {"bubblingMouseEvents": true, "color": "gray", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3186cc", "fillOpacity": 1, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_d11fb2eee4574c55850a0d6b3d89f9f8);
+        
+    
+            circle_marker_1cb268ccccc542af8064d5e49cffb3af.bindTooltip(
+                `<div>
+                     Arrived: 19:05, Left: 17:00
+                 </div>`,
+                {"sticky": false}
+            );
+        
+</script>

@@ -23,7 +23,7 @@
             <meta name="viewport" content="width=device-width,
                 initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
             <style>
-                #map_9498dd1fca3f42fa9d1af83a7b7e7cae {
+                #map_6775d8da503249d1bc0b29e1ff3db4a4 {
                     position: relative;
                     width: 100.0%;
                     height: 100.0%;
@@ -35,7 +35,7 @@
 </head>
 <body>    
     
-            <div class="folium-map" id="map_9498dd1fca3f42fa9d1af83a7b7e7cae" ></div>
+            <div class="folium-map" id="map_6775d8da503249d1bc0b29e1ff3db4a4" ></div>
         
     
 
@@ -68,7 +68,7 @@ bottom: "auto"
 <body>
 
 
-<div id='maplegend' class='maplegend' 
+<div id='maplegend' class='maplegend'
 style='position: absolute; z-index:9999; border:2px solid grey; background-color:rgba(255, 255, 255, 0.8);
 border-radius:6px; padding: 10px; font-size:14px; right: 20px; bottom: 20px;'>
 
@@ -128,17 +128,74 @@ clear: both;
 color: #777;
 }
 </style>
+    
+
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>jQuery UI Draggable - Default functionality</title>
+<link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+
+<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+
+<script>
+$( function() {
+		$( "#maplegend" ).draggable({
+start: function (event, ui) {
+$(this).css({
+right: "auto",
+top: "auto",
+bottom: "auto"
+});
+}
+});
+		});
+
+</script>
+</head>
+<body>
+
+
+<div id='maplegend' class='maplegend' 
+style='position: absolute; z-index:9998; border:2px solid grey; background-color:rgba(255, 255, 255, 0.8);
+border-radius:6px; padding: 10px; font-size:14px; right: 20px; top: 20px;'>
+
+<div class='legend-title'>1.3489968752 miles<br>2019-06-05</div>
+</div>
+
+</body>
+</html>
+
+<style type='text/css'>
+.maplegend .legend-title {
+	text-align: left;
+	margin-bottom: 5px;
+	font-weight: bold;
+	font-size: 90%;
+}
+.maplegend .legend-source {
+	font-size: 80%;
+color: #777;
+clear: both;
+}
+.maplegend a {
+color: #777;
+}
+</style>
 </body>
 <script>    
     
-            var map_9498dd1fca3f42fa9d1af83a7b7e7cae = L.map(
-                "map_9498dd1fca3f42fa9d1af83a7b7e7cae",
+            var map_6775d8da503249d1bc0b29e1ff3db4a4 = L.map(
+                "map_6775d8da503249d1bc0b29e1ff3db4a4",
                 {
-                    center: [40.1116010329023, -88.22187145195066],
+                    center: [40.11158703618391, -88.2220161964678],
                     crs: L.CRS.EPSG3857,
                     zoomControl: true,
-                    preferCanvas: false,
                     zoom: 14,
+                    preferCanvas: false,
                 }
             );
 
@@ -146,116 +203,117 @@ color: #777;
 
         
     
-            var tile_layer_374cdb3586fa4e5b9c2526d019c638ea = L.tileLayer(
+            var tile_layer_80807dbd1f7f4fdeba505148088f55e1 = L.tileLayer(
                 "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
                 {"attribution": "Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
-            ).addTo(map_9498dd1fca3f42fa9d1af83a7b7e7cae);
+            ).addTo(map_6775d8da503249d1bc0b29e1ff3db4a4);
         
     
-            var circle_marker_a2837468828b4212915d67ff08e0f927 = L.circleMarker(
+            var marker_16931f9f48974b81a5d257b850732772 = L.marker(
+                [40.1092314, -88.2183757],
+                {}
+            ).addTo(map_6775d8da503249d1bc0b29e1ff3db4a4);
+        
+    
+            var div_icon_e0ec5734e068412a8fa49ab48dc53bf5 = L.divIcon({"className": "empty", "html": "\u003cdiv style=\"font-size: 12pt\"\u003e\u003cb\u003eHome (804 W Illinois St)\u003c/b\u003e\u003c/div\u003e", "iconAncher": [0, 0], "iconSize": [160, 30]});
+            marker_16931f9f48974b81a5d257b850732772.setIcon(div_icon_e0ec5734e068412a8fa49ab48dc53bf5);
+        
+    
+            var circle_marker_fa34a0ec22f441628ac78908044dfece = L.circleMarker(
                 [40.1096814, -88.2184257],
                 {"bubblingMouseEvents": true, "color": "gray", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3186cc", "fillOpacity": 1, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
-            ).addTo(map_9498dd1fca3f42fa9d1af83a7b7e7cae);
+            ).addTo(map_6775d8da503249d1bc0b29e1ff3db4a4);
         
     
-        var popup_d2d01efa817e4a2d9d95522a6d696a29 = L.popup({"autoClose": false, "closeOnClick": false, "maxWidth": 80});
-
-        
-            var html_0740f88d97ea413c8bc24989e3e4b4aa = $(`<div id="html_0740f88d97ea413c8bc24989e3e4b4aa" style="width: 100.0%; height: 100.0%;">Home (804 W Illinois St)</div>`)[0];
-            popup_d2d01efa817e4a2d9d95522a6d696a29.setContent(html_0740f88d97ea413c8bc24989e3e4b4aa);
-        
-
-        circle_marker_a2837468828b4212915d67ff08e0f927.bindPopup(popup_d2d01efa817e4a2d9d95522a6d696a29)
-        .openPopup();
-
-        
-    
-    
-            circle_marker_a2837468828b4212915d67ff08e0f927.bindTooltip(
+            circle_marker_fa34a0ec22f441628ac78908044dfece.bindTooltip(
                 `<div>
-                     arrived: 22:52, left: 10:29
+                     Arrived: 22:52, Left: 10:29
                  </div>`,
                 {"sticky": false}
             );
         
     
-            var poly_line_afbaccad27884400967a0d8652095e80 = L.polyline(
+            var poly_line_e204481dcc7645baaa79f68318418dfb = L.polyline(
                 [[40.10951599547417, -88.21826884548204], [40.10951599547417, -88.21826884548204], [40.1091652, -88.2192161], [40.1091448, -88.2224135], [40.1103795, -88.223849], [40.1115015, -88.2239827], [40.114022, -88.2240278], [40.1149215, -88.2248604], [40.1149215, -88.2248604]],
-                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.7, "smoothFactor": 1.0, "stroke": true, "weight": 6}
-            ).addTo(map_9498dd1fca3f42fa9d1af83a7b7e7cae);
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_6775d8da503249d1bc0b29e1ff3db4a4);
         
     
-            poly_line_afbaccad27884400967a0d8652095e80.bindTooltip(
-                `<div>
-                     duration: 0:10:32, distance: 0.67
-                 </div>`,
-                {"sticky": true}
-            );
+        var popup_f2d7b7f82465458fadee339577f2c69c = L.popup({"autoClose": false, "closeOnClick": false, "maxWidth": 60});
+
+        
+            var html_6b5c6cdf8deb4b27a1edd013e1c22152 = $(`<div id="html_6b5c6cdf8deb4b27a1edd013e1c22152" style="width: 100.0%; height: 100.0%;">10 minutes, 0.67 miles</div>`)[0];
+            popup_f2d7b7f82465458fadee339577f2c69c.setContent(html_6b5c6cdf8deb4b27a1edd013e1c22152);
+        
+
+        poly_line_e204481dcc7645baaa79f68318418dfb.bindPopup(popup_f2d7b7f82465458fadee339577f2c69c)
+        .openPopup();
+
         
     
-            var circle_marker_93bf7be302b74f9787762f079e4d71ea = L.circleMarker(
+    
+            var marker_46cf5c16de5449538fc5d1428990ae64 = L.marker(
+                [40.1144715, -88.2248104],
+                {}
+            ).addTo(map_6775d8da503249d1bc0b29e1ff3db4a4);
+        
+    
+            var div_icon_51fc6e26687b4716b14ad818b2891e2e = L.divIcon({"className": "empty", "html": "\u003cdiv style=\"font-size: 12pt\"\u003e\u003cb\u003eWork (National Center for Supercomputing Applications)\u003c/b\u003e\u003c/div\u003e", "iconAncher": [0, 0], "iconSize": [160, 30]});
+            marker_46cf5c16de5449538fc5d1428990ae64.setIcon(div_icon_51fc6e26687b4716b14ad818b2891e2e);
+        
+    
+            var circle_marker_831e8f9aa05347e9b770edc0f997336a = L.circleMarker(
                 [40.1149215, -88.2248604],
                 {"bubblingMouseEvents": true, "color": "gray", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3186cc", "fillOpacity": 1, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
-            ).addTo(map_9498dd1fca3f42fa9d1af83a7b7e7cae);
+            ).addTo(map_6775d8da503249d1bc0b29e1ff3db4a4);
         
     
-        var popup_d453ed714afd4bb7920af06572b7cbfe = L.popup({"autoClose": false, "closeOnClick": false, "maxWidth": 80});
-
-        
-            var html_7f3ad73d349a4580939857646ca4dd80 = $(`<div id="html_7f3ad73d349a4580939857646ca4dd80" style="width: 100.0%; height: 100.0%;">Work (National Center for Supercomputing Applications)</div>`)[0];
-            popup_d453ed714afd4bb7920af06572b7cbfe.setContent(html_7f3ad73d349a4580939857646ca4dd80);
-        
-
-        circle_marker_93bf7be302b74f9787762f079e4d71ea.bindPopup(popup_d453ed714afd4bb7920af06572b7cbfe)
-        .openPopup();
-
-        
-    
-    
-            circle_marker_93bf7be302b74f9787762f079e4d71ea.bindTooltip(
+            circle_marker_831e8f9aa05347e9b770edc0f997336a.bindTooltip(
                 `<div>
-                     arrived: 10:40, left: 15:57
+                     Arrived: 10:40, Left: 15:57
                  </div>`,
                 {"sticky": false}
             );
         
     
-            var poly_line_61b84acb7ac64ebfb0dd8e7daf50da23 = L.polyline(
-                [[40.1149215, -88.2248604], [40.1149215, -88.2248604], [40.1142635, -88.2241683], [40.1127939, -88.2241682], [40.1094502, -88.2237278], [40.1089921, -88.2202807], [40.1095522, -88.2185471], [40.1103453, -88.2185513], [40.1103453, -88.2185513]],
-                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.7, "smoothFactor": 1.0, "stroke": true, "weight": 6}
-            ).addTo(map_9498dd1fca3f42fa9d1af83a7b7e7cae);
+            var poly_line_7c7d7bd3b8a54b1786e1ab2051ddf766 = L.polyline(
+                [[40.1149215, -88.2248604], [40.1149215, -88.2248604], [40.1142635, -88.2241683], [40.1127939, -88.2241682], [40.1094502, -88.2237278], [40.1089921, -88.2202807], [40.109512866364966, -88.21839936919615], [40.109512866364966, -88.21839936919615]],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_6775d8da503249d1bc0b29e1ff3db4a4);
         
     
-            poly_line_61b84acb7ac64ebfb0dd8e7daf50da23.bindTooltip(
-                `<div>
-                     duration: 0:14:51, distance: 0.73
-                 </div>`,
-                {"sticky": true}
-            );
-        
-    
-            var circle_marker_545bfa196e19430ea3146b95f712efcf = L.circleMarker(
-                [40.1103453, -88.2185513],
-                {"bubblingMouseEvents": true, "color": "gray", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3186cc", "fillOpacity": 1, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
-            ).addTo(map_9498dd1fca3f42fa9d1af83a7b7e7cae);
-        
-    
-        var popup_2ec0feba54984a179b1f347bbc628cbe = L.popup({"autoClose": false, "closeOnClick": false, "maxWidth": 80});
+        var popup_a043843a2a8f41b6845b70097155a2ed = L.popup({"autoClose": false, "closeOnClick": false, "maxWidth": 60});
 
         
-            var html_81679b67a8414eb7ba8c23ea838f4bfc = $(`<div id="html_81679b67a8414eb7ba8c23ea838f4bfc" style="width: 100.0%; height: 100.0%;">Busey Court Apartments</div>`)[0];
-            popup_2ec0feba54984a179b1f347bbc628cbe.setContent(html_81679b67a8414eb7ba8c23ea838f4bfc);
+            var html_0715047668364f7abb27fca761174aeb = $(`<div id="html_0715047668364f7abb27fca761174aeb" style="width: 100.0%; height: 100.0%;">14 minutes, 0.68 miles</div>`)[0];
+            popup_a043843a2a8f41b6845b70097155a2ed.setContent(html_0715047668364f7abb27fca761174aeb);
         
 
-        circle_marker_545bfa196e19430ea3146b95f712efcf.bindPopup(popup_2ec0feba54984a179b1f347bbc628cbe)
+        poly_line_7c7d7bd3b8a54b1786e1ab2051ddf766.bindPopup(popup_a043843a2a8f41b6845b70097155a2ed)
         .openPopup();
 
         
     
     
-            circle_marker_545bfa196e19430ea3146b95f712efcf.bindTooltip(
+            var marker_302903070bd743ac9b36ed17651ead63 = L.marker(
+                [40.1092314, -88.2183757],
+                {}
+            ).addTo(map_6775d8da503249d1bc0b29e1ff3db4a4);
+        
+    
+            var div_icon_8de66e40cd464bdb9e484ec13ffd547a = L.divIcon({"className": "empty", "html": "\u003cdiv style=\"font-size: 12pt\"\u003e\u003cb\u003eHome (804 W Illinois St)\u003c/b\u003e\u003c/div\u003e", "iconAncher": [0, 0], "iconSize": [160, 30]});
+            marker_302903070bd743ac9b36ed17651ead63.setIcon(div_icon_8de66e40cd464bdb9e484ec13ffd547a);
+        
+    
+            var circle_marker_b0ba1df9b1e04b50a7eb071a76832c05 = L.circleMarker(
+                [40.1096814, -88.2184257],
+                {"bubblingMouseEvents": true, "color": "gray", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3186cc", "fillOpacity": 1, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_6775d8da503249d1bc0b29e1ff3db4a4);
+        
+    
+            circle_marker_b0ba1df9b1e04b50a7eb071a76832c05.bindTooltip(
                 `<div>
-                     arrived: 16:12, left: 10:22
+                     Arrived: 16:12, Left: 10:22
                  </div>`,
                 {"sticky": false}
             );

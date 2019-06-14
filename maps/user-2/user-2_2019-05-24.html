@@ -23,7 +23,7 @@
             <meta name="viewport" content="width=device-width,
                 initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
             <style>
-                #map_db51e81b484a4178aa55905ccde1d8c9 {
+                #map_19ef89593c854eebbe293e030d5cfb93 {
                     position: relative;
                     width: 100.0%;
                     height: 100.0%;
@@ -35,7 +35,7 @@
 </head>
 <body>    
     
-            <div class="folium-map" id="map_db51e81b484a4178aa55905ccde1d8c9" ></div>
+            <div class="folium-map" id="map_19ef89593c854eebbe293e030d5cfb93" ></div>
         
     
 
@@ -68,7 +68,7 @@ bottom: "auto"
 <body>
 
 
-<div id='maplegend' class='maplegend' 
+<div id='maplegend' class='maplegend'
 style='position: absolute; z-index:9999; border:2px solid grey; background-color:rgba(255, 255, 255, 0.8);
 border-radius:6px; padding: 10px; font-size:14px; right: 20px; bottom: 20px;'>
 
@@ -128,17 +128,74 @@ clear: both;
 color: #777;
 }
 </style>
+    
+
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>jQuery UI Draggable - Default functionality</title>
+<link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+
+<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+
+<script>
+$( function() {
+		$( "#maplegend" ).draggable({
+start: function (event, ui) {
+$(this).css({
+right: "auto",
+top: "auto",
+bottom: "auto"
+});
+}
+});
+		});
+
+</script>
+</head>
+<body>
+
+
+<div id='maplegend' class='maplegend' 
+style='position: absolute; z-index:9998; border:2px solid grey; background-color:rgba(255, 255, 255, 0.8);
+border-radius:6px; padding: 10px; font-size:14px; right: 20px; top: 20px;'>
+
+<div class='legend-title'>2.7719369231999997 miles<br>2019-05-24</div>
+</div>
+
+</body>
+</html>
+
+<style type='text/css'>
+.maplegend .legend-title {
+	text-align: left;
+	margin-bottom: 5px;
+	font-weight: bold;
+	font-size: 90%;
+}
+.maplegend .legend-source {
+	font-size: 80%;
+color: #777;
+clear: both;
+}
+.maplegend a {
+color: #777;
+}
+</style>
 </body>
 <script>    
     
-            var map_db51e81b484a4178aa55905ccde1d8c9 = L.map(
-                "map_db51e81b484a4178aa55905ccde1d8c9",
+            var map_19ef89593c854eebbe293e030d5cfb93 = L.map(
+                "map_19ef89593c854eebbe293e030d5cfb93",
                 {
                     center: [40.10895349259259, -88.22193144814813],
                     crs: L.CRS.EPSG3857,
                     zoomControl: true,
-                    preferCanvas: false,
                     zoom: 14,
+                    preferCanvas: false,
                 }
             );
 
@@ -146,157 +203,160 @@ color: #777;
 
         
     
-            var tile_layer_7f3b9ce8625c41949094f899a262fcdb = L.tileLayer(
+            var tile_layer_61892d4f53bf4cb2be0f5b712c48971c = L.tileLayer(
                 "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
                 {"attribution": "Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
-            ).addTo(map_db51e81b484a4178aa55905ccde1d8c9);
+            ).addTo(map_19ef89593c854eebbe293e030d5cfb93);
         
     
-            var circle_marker_eaacb3a4ca314680af8e0e1e607d5861 = L.circleMarker(
+            var marker_81d42307062246439feeae29e5c939d6 = L.marker(
+                [40.1092314, -88.2183757],
+                {}
+            ).addTo(map_19ef89593c854eebbe293e030d5cfb93);
+        
+    
+            var div_icon_171a86ac9a2b4851bad06c49cbfd0476 = L.divIcon({"className": "empty", "html": "\u003cdiv style=\"font-size: 12pt\"\u003e\u003cb\u003eHome (804 W Illinois St)\u003c/b\u003e\u003c/div\u003e", "iconAncher": [0, 0], "iconSize": [160, 30]});
+            marker_81d42307062246439feeae29e5c939d6.setIcon(div_icon_171a86ac9a2b4851bad06c49cbfd0476);
+        
+    
+            var circle_marker_780be3d5c85143019d6d86c7e559ec55 = L.circleMarker(
                 [40.1096814, -88.2184257],
                 {"bubblingMouseEvents": true, "color": "gray", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3186cc", "fillOpacity": 1, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
-            ).addTo(map_db51e81b484a4178aa55905ccde1d8c9);
+            ).addTo(map_19ef89593c854eebbe293e030d5cfb93);
         
     
-        var popup_55825c892ce646bdbdcc3ebf7f10fac1 = L.popup({"autoClose": false, "closeOnClick": false, "maxWidth": 80});
-
-        
-            var html_01ec5a722ea448678db699bc05fe2999 = $(`<div id="html_01ec5a722ea448678db699bc05fe2999" style="width: 100.0%; height: 100.0%;">Home (804 W Illinois St)</div>`)[0];
-            popup_55825c892ce646bdbdcc3ebf7f10fac1.setContent(html_01ec5a722ea448678db699bc05fe2999);
-        
-
-        circle_marker_eaacb3a4ca314680af8e0e1e607d5861.bindPopup(popup_55825c892ce646bdbdcc3ebf7f10fac1)
-        .openPopup();
-
-        
-    
-    
-            circle_marker_eaacb3a4ca314680af8e0e1e607d5861.bindTooltip(
+            circle_marker_780be3d5c85143019d6d86c7e559ec55.bindTooltip(
                 `<div>
-                     arrived: 22:41, left: 10:28
+                     Arrived: 22:41, Left: 10:28
                  </div>`,
                 {"sticky": false}
             );
         
     
-            var poly_line_7f4874dd2ab842e0b55e11eb0b5a744d = L.polyline(
+            var poly_line_7637818fdf084c69bbf2bfd85fe17f9d = L.polyline(
                 [[40.10947989999999, -88.2182539], [40.10947989999999, -88.2182539], [40.1091709, -88.2192075], [40.1093255, -88.2230181], [40.1108838, -88.2240207], [40.112823, -88.2239791], [40.1146141, -88.2245545], [40.11043, -88.22983599999999], [40.11043, -88.22983599999999]],
-                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.7, "smoothFactor": 1.0, "stroke": true, "weight": 6}
-            ).addTo(map_db51e81b484a4178aa55905ccde1d8c9);
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_19ef89593c854eebbe293e030d5cfb93);
         
     
-            poly_line_7f4874dd2ab842e0b55e11eb0b5a744d.bindTooltip(
-                `<div>
-                     duration: 0:10:21, distance: 1.04
-                 </div>`,
-                {"sticky": true}
-            );
+        var popup_e56d872807554e8ab216a01dbf20e004 = L.popup({"autoClose": false, "closeOnClick": false, "maxWidth": 60});
+
+        
+            var html_4012abfc9c5a4ffc9e37f9935fe2384a = $(`<div id="html_4012abfc9c5a4ffc9e37f9935fe2384a" style="width: 100.0%; height: 100.0%;">10 minutes, 1.04 miles</div>`)[0];
+            popup_e56d872807554e8ab216a01dbf20e004.setContent(html_4012abfc9c5a4ffc9e37f9935fe2384a);
+        
+
+        poly_line_7637818fdf084c69bbf2bfd85fe17f9d.bindPopup(popup_e56d872807554e8ab216a01dbf20e004)
+        .openPopup();
+
         
     
-            var circle_marker_0d95c8adefe74b0aa360e619efafad3e = L.circleMarker(
+    
+            var marker_372a107309de4d84b3fa5f70b3330640 = L.marker(
+                [40.10998, -88.22978599999999],
+                {}
+            ).addTo(map_19ef89593c854eebbe293e030d5cfb93);
+        
+    
+            var div_icon_25a48eb5d0594a17bb0c610f9e22300b = L.divIcon({"className": "empty", "html": "\u003cdiv style=\"font-size: 12pt\"\u003e\u003cb\u003eMcDonald\u0027s\u003c/b\u003e\u003c/div\u003e", "iconAncher": [0, 0], "iconSize": [160, 30]});
+            marker_372a107309de4d84b3fa5f70b3330640.setIcon(div_icon_25a48eb5d0594a17bb0c610f9e22300b);
+        
+    
+            var circle_marker_71cc25d3d38e4c55a2b9a1348b274a34 = L.circleMarker(
                 [40.11043, -88.22983599999999],
                 {"bubblingMouseEvents": true, "color": "gray", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3186cc", "fillOpacity": 1, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
-            ).addTo(map_db51e81b484a4178aa55905ccde1d8c9);
+            ).addTo(map_19ef89593c854eebbe293e030d5cfb93);
         
     
-        var popup_eebd52bfca96413b968000188a589d75 = L.popup({"autoClose": false, "closeOnClick": false, "maxWidth": 80});
-
-        
-            var html_37989ebf087d4bac8843e88858e5daf1 = $(`<div id="html_37989ebf087d4bac8843e88858e5daf1" style="width: 100.0%; height: 100.0%;">McDonald's</div>`)[0];
-            popup_eebd52bfca96413b968000188a589d75.setContent(html_37989ebf087d4bac8843e88858e5daf1);
-        
-
-        circle_marker_0d95c8adefe74b0aa360e619efafad3e.bindPopup(popup_eebd52bfca96413b968000188a589d75)
-        .openPopup();
-
-        
-    
-    
-            circle_marker_0d95c8adefe74b0aa360e619efafad3e.bindTooltip(
+            circle_marker_71cc25d3d38e4c55a2b9a1348b274a34.bindTooltip(
                 `<div>
-                     arrived: 10:38, left: 16:45
+                     Arrived: 10:38, Left: 16:45
                  </div>`,
                 {"sticky": false}
             );
         
     
-            var poly_line_6ff54a27f69b46dda08b5e93dec83fbe = L.polyline(
+            var poly_line_2ce3b5096bc74e688c60ae6f2c7762f9 = L.polyline(
                 [[40.11043, -88.22983599999999], [40.11043, -88.22983599999999], [40.1119389, -88.2272733], [40.1102861, -88.226997], [40.1104382, -88.2247097], [40.1103599, -88.2178496], [40.1074108, -88.2179233], [40.103946199999996, -88.216732], [40.103946199999996, -88.216732]],
-                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.7, "smoothFactor": 1.0, "stroke": true, "weight": 6}
-            ).addTo(map_db51e81b484a4178aa55905ccde1d8c9);
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_19ef89593c854eebbe293e030d5cfb93);
         
     
-            poly_line_6ff54a27f69b46dda08b5e93dec83fbe.bindTooltip(
-                `<div>
-                     duration: 1:31:45, distance: 1.22
-                 </div>`,
-                {"sticky": true}
-            );
+        var popup_81eeafd4a568443099c97bd759635ac0 = L.popup({"autoClose": false, "closeOnClick": false, "maxWidth": 60});
+
+        
+            var html_f39e4fdac28e425684d90cd2890e9620 = $(`<div id="html_f39e4fdac28e425684d90cd2890e9620" style="width: 100.0%; height: 100.0%;">91 minutes, 1.22 miles</div>`)[0];
+            popup_81eeafd4a568443099c97bd759635ac0.setContent(html_f39e4fdac28e425684d90cd2890e9620);
+        
+
+        poly_line_2ce3b5096bc74e688c60ae6f2c7762f9.bindPopup(popup_81eeafd4a568443099c97bd759635ac0)
+        .openPopup();
+
         
     
-            var circle_marker_39771baa6b7542098fdb96a845f9c362 = L.circleMarker(
+    
+            var marker_a2fcc31d12674cb491e53a53c378802a = L.marker(
+                [40.103496199999995, -88.21668199999999],
+                {}
+            ).addTo(map_19ef89593c854eebbe293e030d5cfb93);
+        
+    
+            var div_icon_cebc12e52ed44c46a50cd89fe7c0d8d5 = L.divIcon({"className": "empty", "html": "\u003cdiv style=\"font-size: 12pt\"\u003e\u003cb\u003eDelta Zeta\u003c/b\u003e\u003c/div\u003e", "iconAncher": [0, 0], "iconSize": [160, 30]});
+            marker_a2fcc31d12674cb491e53a53c378802a.setIcon(div_icon_cebc12e52ed44c46a50cd89fe7c0d8d5);
+        
+    
+            var circle_marker_a8f46fabfb1143c0a5cc1e466a5425e0 = L.circleMarker(
                 [40.103946199999996, -88.216732],
                 {"bubblingMouseEvents": true, "color": "gray", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3186cc", "fillOpacity": 1, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
-            ).addTo(map_db51e81b484a4178aa55905ccde1d8c9);
+            ).addTo(map_19ef89593c854eebbe293e030d5cfb93);
         
     
-        var popup_ca10fa21f68944e1b7f4cb6d99a879f1 = L.popup({"autoClose": false, "closeOnClick": false, "maxWidth": 80});
-
-        
-            var html_0b577f4111184824974ea9680a5184b5 = $(`<div id="html_0b577f4111184824974ea9680a5184b5" style="width: 100.0%; height: 100.0%;">Delta Zeta</div>`)[0];
-            popup_ca10fa21f68944e1b7f4cb6d99a879f1.setContent(html_0b577f4111184824974ea9680a5184b5);
-        
-
-        circle_marker_39771baa6b7542098fdb96a845f9c362.bindPopup(popup_ca10fa21f68944e1b7f4cb6d99a879f1)
-        .openPopup();
-
-        
-    
-    
-            circle_marker_39771baa6b7542098fdb96a845f9c362.bindTooltip(
+            circle_marker_a8f46fabfb1143c0a5cc1e466a5425e0.bindTooltip(
                 `<div>
-                     arrived: 18:17, left: 18:58
+                     Arrived: 18:17, Left: 18:58
                  </div>`,
                 {"sticky": false}
             );
         
     
-            var poly_line_a90c853583834ece915c9fe4177c9148 = L.polyline(
+            var poly_line_2dbc0808190d4b16aa167d5883b49c42 = L.polyline(
                 [[40.103946199999996, -88.216732], [40.1035051, -88.2170077], [40.1053678, -88.21929], [40.1096814, -88.2184257], [40.1096814, -88.2184257]],
-                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.7, "smoothFactor": 1.0, "stroke": true, "weight": 6}
-            ).addTo(map_db51e81b484a4178aa55905ccde1d8c9);
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_19ef89593c854eebbe293e030d5cfb93);
         
     
-            poly_line_a90c853583834ece915c9fe4177c9148.bindTooltip(
-                `<div>
-                     duration: 5:21:19, distance: 0.51
-                 </div>`,
-                {"sticky": true}
-            );
-        
-    
-            var circle_marker_64a1ce4c70114084829c36f9bdc3a395 = L.circleMarker(
-                [40.1096814, -88.2184257],
-                {"bubblingMouseEvents": true, "color": "gray", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3186cc", "fillOpacity": 1, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
-            ).addTo(map_db51e81b484a4178aa55905ccde1d8c9);
-        
-    
-        var popup_b33137d7a9f14deb95737bb0d1fa35f2 = L.popup({"autoClose": false, "closeOnClick": false, "maxWidth": 80});
+        var popup_92931f9f0027433a8551a5eec71d5c05 = L.popup({"autoClose": false, "closeOnClick": false, "maxWidth": 60});
 
         
-            var html_5d7a9901fbf942569c2f21df2e8ed2d5 = $(`<div id="html_5d7a9901fbf942569c2f21df2e8ed2d5" style="width: 100.0%; height: 100.0%;">Home (804 W Illinois St)</div>`)[0];
-            popup_b33137d7a9f14deb95737bb0d1fa35f2.setContent(html_5d7a9901fbf942569c2f21df2e8ed2d5);
+            var html_7f7c600edcde4708ad9a91b29b194f70 = $(`<div id="html_7f7c600edcde4708ad9a91b29b194f70" style="width: 100.0%; height: 100.0%;">321 minutes, 0.51 miles</div>`)[0];
+            popup_92931f9f0027433a8551a5eec71d5c05.setContent(html_7f7c600edcde4708ad9a91b29b194f70);
         
 
-        circle_marker_64a1ce4c70114084829c36f9bdc3a395.bindPopup(popup_b33137d7a9f14deb95737bb0d1fa35f2)
+        poly_line_2dbc0808190d4b16aa167d5883b49c42.bindPopup(popup_92931f9f0027433a8551a5eec71d5c05)
         .openPopup();
 
         
     
     
-            circle_marker_64a1ce4c70114084829c36f9bdc3a395.bindTooltip(
+            var marker_3c2c53ed1a5b473dbb3cd2d6d8bb1f2d = L.marker(
+                [40.1092314, -88.2183757],
+                {}
+            ).addTo(map_19ef89593c854eebbe293e030d5cfb93);
+        
+    
+            var div_icon_73f773cdfcd74bd2a91e3e6d121c1e08 = L.divIcon({"className": "empty", "html": "\u003cdiv style=\"font-size: 12pt\"\u003e\u003cb\u003eHome (804 W Illinois St)\u003c/b\u003e\u003c/div\u003e", "iconAncher": [0, 0], "iconSize": [160, 30]});
+            marker_3c2c53ed1a5b473dbb3cd2d6d8bb1f2d.setIcon(div_icon_73f773cdfcd74bd2a91e3e6d121c1e08);
+        
+    
+            var circle_marker_e631bda1fe604be89a1bfed430502f39 = L.circleMarker(
+                [40.1096814, -88.2184257],
+                {"bubblingMouseEvents": true, "color": "gray", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3186cc", "fillOpacity": 1, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_19ef89593c854eebbe293e030d5cfb93);
+        
+    
+            circle_marker_e631bda1fe604be89a1bfed430502f39.bindTooltip(
                 `<div>
-                     arrived: 00:19, left: 19:13
+                     Arrived: 00:19, Left: 19:13
                  </div>`,
                 {"sticky": false}
             );

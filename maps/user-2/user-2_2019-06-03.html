@@ -23,7 +23,7 @@
             <meta name="viewport" content="width=device-width,
                 initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
             <style>
-                #map_60398354e9ac4499947e36b1c093b7de {
+                #map_e5f6f80874c84618bcb70a75397395b3 {
                     position: relative;
                     width: 100.0%;
                     height: 100.0%;
@@ -35,7 +35,7 @@
 </head>
 <body>    
     
-            <div class="folium-map" id="map_60398354e9ac4499947e36b1c093b7de" ></div>
+            <div class="folium-map" id="map_e5f6f80874c84618bcb70a75397395b3" ></div>
         
     
 
@@ -68,7 +68,7 @@ bottom: "auto"
 <body>
 
 
-<div id='maplegend' class='maplegend' 
+<div id='maplegend' class='maplegend'
 style='position: absolute; z-index:9999; border:2px solid grey; background-color:rgba(255, 255, 255, 0.8);
 border-radius:6px; padding: 10px; font-size:14px; right: 20px; bottom: 20px;'>
 
@@ -128,17 +128,74 @@ clear: both;
 color: #777;
 }
 </style>
+    
+
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>jQuery UI Draggable - Default functionality</title>
+<link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+
+<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+
+<script>
+$( function() {
+		$( "#maplegend" ).draggable({
+start: function (event, ui) {
+$(this).css({
+right: "auto",
+top: "auto",
+bottom: "auto"
+});
+}
+});
+		});
+
+</script>
+</head>
+<body>
+
+
+<div id='maplegend' class='maplegend' 
+style='position: absolute; z-index:9998; border:2px solid grey; background-color:rgba(255, 255, 255, 0.8);
+border-radius:6px; padding: 10px; font-size:14px; right: 20px; top: 20px;'>
+
+<div class='legend-title'>2.2922383568 miles<br>2019-06-03</div>
+</div>
+
+</body>
+</html>
+
+<style type='text/css'>
+.maplegend .legend-title {
+	text-align: left;
+	margin-bottom: 5px;
+	font-weight: bold;
+	font-size: 90%;
+}
+.maplegend .legend-source {
+	font-size: 80%;
+color: #777;
+clear: both;
+}
+.maplegend a {
+color: #777;
+}
+</style>
 </body>
 <script>    
     
-            var map_60398354e9ac4499947e36b1c093b7de = L.map(
-                "map_60398354e9ac4499947e36b1c093b7de",
+            var map_e5f6f80874c84618bcb70a75397395b3 = L.map(
+                "map_e5f6f80874c84618bcb70a75397395b3",
                 {
                     center: [40.11172453529411, -88.22324147058826],
                     crs: L.CRS.EPSG3857,
                     zoomControl: true,
-                    preferCanvas: false,
                     zoom: 14,
+                    preferCanvas: false,
                 }
             );
 
@@ -146,91 +203,95 @@ color: #777;
 
         
     
-            var tile_layer_25641956d71340758dfa713c23d191c3 = L.tileLayer(
+            var tile_layer_a630f5ef783949d2bdec1d4cb5fde75d = L.tileLayer(
                 "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
                 {"attribution": "Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
-            ).addTo(map_60398354e9ac4499947e36b1c093b7de);
+            ).addTo(map_e5f6f80874c84618bcb70a75397395b3);
         
     
-            var circle_marker_c688206e78324de9afd6d36bfaa056e9 = L.circleMarker(
+            var marker_bd9f83083a154afc840e74fe3938ae01 = L.marker(
+                [40.1092314, -88.2183757],
+                {}
+            ).addTo(map_e5f6f80874c84618bcb70a75397395b3);
+        
+    
+            var div_icon_9428a2c5d2bc4c5484d159602fe08bd3 = L.divIcon({"className": "empty", "html": "\u003cdiv style=\"font-size: 12pt\"\u003e\u003cb\u003eHome (804 W Illinois St)\u003c/b\u003e\u003c/div\u003e", "iconAncher": [0, 0], "iconSize": [160, 30]});
+            marker_bd9f83083a154afc840e74fe3938ae01.setIcon(div_icon_9428a2c5d2bc4c5484d159602fe08bd3);
+        
+    
+            var circle_marker_11ab0f0204c6407492acd18929d23853 = L.circleMarker(
                 [40.1096814, -88.2184257],
                 {"bubblingMouseEvents": true, "color": "gray", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3186cc", "fillOpacity": 1, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
-            ).addTo(map_60398354e9ac4499947e36b1c093b7de);
+            ).addTo(map_e5f6f80874c84618bcb70a75397395b3);
         
     
-        var popup_1074d5dc4f284faca431e91cecb2a1d3 = L.popup({"autoClose": false, "closeOnClick": false, "maxWidth": 80});
-
-        
-            var html_5b773486c7264e8ab7f6eea6cdc5883f = $(`<div id="html_5b773486c7264e8ab7f6eea6cdc5883f" style="width: 100.0%; height: 100.0%;">Home (804 W Illinois St)</div>`)[0];
-            popup_1074d5dc4f284faca431e91cecb2a1d3.setContent(html_5b773486c7264e8ab7f6eea6cdc5883f);
-        
-
-        circle_marker_c688206e78324de9afd6d36bfaa056e9.bindPopup(popup_1074d5dc4f284faca431e91cecb2a1d3)
-        .openPopup();
-
-        
-    
-    
-            circle_marker_c688206e78324de9afd6d36bfaa056e9.bindTooltip(
+            circle_marker_11ab0f0204c6407492acd18929d23853.bindTooltip(
                 `<div>
-                     arrived: 18:42, left: 09:54
+                     Arrived: 18:42, Left: 09:54
                  </div>`,
                 {"sticky": false}
             );
         
     
-            var poly_line_87f21fac76074b738241cf1860502a71 = L.polyline(
+            var poly_line_baa65ee0c1b24796b14db94257a77798 = L.polyline(
                 [[40.1096814, -88.2184257], [40.1096814, -88.2184257], [40.1091763, -88.219151], [40.1092324, -88.2230199], [40.1125418, -88.2240465], [40.1149215, -88.2248604], [40.1149215, -88.2248604]],
-                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.7, "smoothFactor": 1.0, "stroke": true, "weight": 6}
-            ).addTo(map_60398354e9ac4499947e36b1c093b7de);
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_e5f6f80874c84618bcb70a75397395b3);
         
     
-            poly_line_87f21fac76074b738241cf1860502a71.bindTooltip(
-                `<div>
-                     duration: 0:12:12, distance: 0.66
-                 </div>`,
-                {"sticky": true}
-            );
+        var popup_f0b3d21633f84714ba63b6911eec10d7 = L.popup({"autoClose": false, "closeOnClick": false, "maxWidth": 60});
+
+        
+            var html_63c1a00e5c52466ab21b63a89d82c7cb = $(`<div id="html_63c1a00e5c52466ab21b63a89d82c7cb" style="width: 100.0%; height: 100.0%;">12 minutes, 0.66 miles</div>`)[0];
+            popup_f0b3d21633f84714ba63b6911eec10d7.setContent(html_63c1a00e5c52466ab21b63a89d82c7cb);
+        
+
+        poly_line_baa65ee0c1b24796b14db94257a77798.bindPopup(popup_f0b3d21633f84714ba63b6911eec10d7)
+        .openPopup();
+
         
     
-            var circle_marker_ff0767214dd5445e84569f31e692b3ab = L.circleMarker(
+    
+            var marker_03f56d8bc75b4531956296126592dd0e = L.marker(
+                [40.1144715, -88.2248104],
+                {}
+            ).addTo(map_e5f6f80874c84618bcb70a75397395b3);
+        
+    
+            var div_icon_0925cbc7154548038dc158750d925159 = L.divIcon({"className": "empty", "html": "\u003cdiv style=\"font-size: 12pt\"\u003e\u003cb\u003eWork (National Center for Supercomputing Applications)\u003c/b\u003e\u003c/div\u003e", "iconAncher": [0, 0], "iconSize": [160, 30]});
+            marker_03f56d8bc75b4531956296126592dd0e.setIcon(div_icon_0925cbc7154548038dc158750d925159);
+        
+    
+            var circle_marker_8cc287b4c2ae4f17b056ae2089483d22 = L.circleMarker(
                 [40.1149215, -88.2248604],
                 {"bubblingMouseEvents": true, "color": "gray", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3186cc", "fillOpacity": 1, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
-            ).addTo(map_60398354e9ac4499947e36b1c093b7de);
+            ).addTo(map_e5f6f80874c84618bcb70a75397395b3);
         
     
-        var popup_510407753faf4644ba2164131576c829 = L.popup({"autoClose": false, "closeOnClick": false, "maxWidth": 80});
-
-        
-            var html_8e9cc77b4560458cb7ccdfea71b41537 = $(`<div id="html_8e9cc77b4560458cb7ccdfea71b41537" style="width: 100.0%; height: 100.0%;">Work (National Center for Supercomputing Applications)</div>`)[0];
-            popup_510407753faf4644ba2164131576c829.setContent(html_8e9cc77b4560458cb7ccdfea71b41537);
-        
-
-        circle_marker_ff0767214dd5445e84569f31e692b3ab.bindPopup(popup_510407753faf4644ba2164131576c829)
-        .openPopup();
-
-        
-    
-    
-            circle_marker_ff0767214dd5445e84569f31e692b3ab.bindTooltip(
+            circle_marker_8cc287b4c2ae4f17b056ae2089483d22.bindTooltip(
                 `<div>
-                     arrived: 10:06, left: 10:15
+                     Arrived: 10:06, Left: 10:15
                  </div>`,
                 {"sticky": false}
             );
         
     
-            var poly_line_0759e4c9c0cc4e75a4f1c3590662920c = L.polyline(
+            var poly_line_2a9969f39fe24d528ec0e3cc46082697 = L.polyline(
                 [[40.1149215, -88.2248604], [40.1149227, -88.2248216], [40.1125055, -88.2257065], [40.1114014, -88.2281516], [40.1103079, -88.2295422], [40.1103628, -88.2267925], [40.1104741, -88.2207939], [40.109662, -88.2183606]],
-                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.7, "smoothFactor": 1.0, "stroke": true, "weight": 6}
-            ).addTo(map_60398354e9ac4499947e36b1c093b7de);
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_e5f6f80874c84618bcb70a75397395b3);
         
     
-            poly_line_0759e4c9c0cc4e75a4f1c3590662920c.bindTooltip(
-                `<div>
-                     duration: 23:58:34, distance: 1.63
-                 </div>`,
-                {"sticky": true}
-            );
+        var popup_056d7466e6514b95a4f205cf78a6743c = L.popup({"autoClose": false, "closeOnClick": false, "maxWidth": 60});
+
         
+            var html_56df0dc7d47b4736af445b89e7e08fbb = $(`<div id="html_56df0dc7d47b4736af445b89e7e08fbb" style="width: 100.0%; height: 100.0%;">1438 minutes, 1.63 miles</div>`)[0];
+            popup_056d7466e6514b95a4f205cf78a6743c.setContent(html_56df0dc7d47b4736af445b89e7e08fbb);
+        
+
+        poly_line_2a9969f39fe24d528ec0e3cc46082697.bindPopup(popup_056d7466e6514b95a4f205cf78a6743c)
+        .openPopup();
+
+        
+    
 </script>

@@ -23,7 +23,7 @@
             <meta name="viewport" content="width=device-width,
                 initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
             <style>
-                #map_9741c6ea1c54496c9692e0c9bdca1a79 {
+                #map_d5fb20411827499993cd589616de1fbb {
                     position: relative;
                     width: 100.0%;
                     height: 100.0%;
@@ -35,7 +35,7 @@
 </head>
 <body>    
     
-            <div class="folium-map" id="map_9741c6ea1c54496c9692e0c9bdca1a79" ></div>
+            <div class="folium-map" id="map_d5fb20411827499993cd589616de1fbb" ></div>
         
     
 
@@ -128,17 +128,74 @@ clear: both;
 color: #777;
 }
 </style>
+    
+
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>jQuery UI Draggable - Default functionality</title>
+<link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+
+<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+
+<script>
+$( function() {
+		$( "#maplegend" ).draggable({
+start: function (event, ui) {
+$(this).css({
+right: "auto",
+top: "auto",
+bottom: "auto"
+});
+}
+});
+		});
+
+</script>
+</head>
+<body>
+
+
+<div id='maplegend' class='maplegend' 
+style='position: absolute; z-index:9998; border:2px solid grey; background-color:rgba(255, 255, 255, 0.8);
+border-radius:6px; padding: 10px; font-size:14px; right: 20px; top: 20px;'>
+
+<div class='legend-title'>0 miles<br>2019-05-27</div>
+</div>
+
+</body>
+</html>
+
+<style type='text/css'>
+.maplegend .legend-title {
+	text-align: left;
+	margin-bottom: 5px;
+	font-weight: bold;
+	font-size: 90%;
+}
+.maplegend .legend-source {
+	font-size: 80%;
+color: #777;
+clear: both;
+}
+.maplegend a {
+color: #777;
+}
+</style>
 </body>
 <script>    
     
-            var map_9741c6ea1c54496c9692e0c9bdca1a79 = L.map(
-                "map_9741c6ea1c54496c9692e0c9bdca1a79",
+            var map_d5fb20411827499993cd589616de1fbb = L.map(
+                "map_d5fb20411827499993cd589616de1fbb",
                 {
                     center: [40.0866682, -88.2589012],
                     crs: L.CRS.EPSG3857,
                     zoomControl: true,
-                    preferCanvas: false,
                     zoom: 14,
+                    preferCanvas: false,
                 }
             );
 
@@ -146,29 +203,29 @@ color: #777;
 
         
     
-            var tile_layer_0c78caf43d08474badf8ce30de26948e = L.tileLayer(
+            var tile_layer_75372fdcf98d45b182279df92f8c04cc = L.tileLayer(
                 "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
                 {"attribution": "Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
-            ).addTo(map_9741c6ea1c54496c9692e0c9bdca1a79);
+            ).addTo(map_d5fb20411827499993cd589616de1fbb);
         
     
-            var marker_bdc003120e0d4eedbfcb0c4c196dc777 = L.marker(
+            var marker_0447fc69d02449afa9e9a5e5beec7a24 = L.marker(
                 [40.0862182, -88.2588512],
                 {}
-            ).addTo(map_9741c6ea1c54496c9692e0c9bdca1a79);
+            ).addTo(map_d5fb20411827499993cd589616de1fbb);
         
     
-            var div_icon_7d7da07cf40c44909e1b854b0cc0de5e = L.divIcon({"className": "empty", "html": "\u003cdiv style=\"font-size: 12pt\"\u003e\u003cb\u003eHome (1004 Harrington Dr)\u003c/b\u003e\u003c/div\u003e", "iconAncher": [0, 0], "iconSize": [160, 30]});
-            marker_bdc003120e0d4eedbfcb0c4c196dc777.setIcon(div_icon_7d7da07cf40c44909e1b854b0cc0de5e);
+            var div_icon_53064f2cdb294609bf6d98df0c439500 = L.divIcon({"className": "empty", "html": "\u003cdiv style=\"font-size: 12pt\"\u003e\u003cb\u003eHome (1004 Harrington Dr)\u003c/b\u003e\u003c/div\u003e", "iconAncher": [0, 0], "iconSize": [160, 30]});
+            marker_0447fc69d02449afa9e9a5e5beec7a24.setIcon(div_icon_53064f2cdb294609bf6d98df0c439500);
         
     
-            var circle_marker_588848d63deb47b1894a7d1e4da18fef = L.circleMarker(
+            var circle_marker_3cdb0f05a40d4afda5b135276b241cf0 = L.circleMarker(
                 [40.0866682, -88.2589012],
                 {"bubblingMouseEvents": true, "color": "gray", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3186cc", "fillOpacity": 1, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
-            ).addTo(map_9741c6ea1c54496c9692e0c9bdca1a79);
+            ).addTo(map_d5fb20411827499993cd589616de1fbb);
         
     
-            circle_marker_588848d63deb47b1894a7d1e4da18fef.bindTooltip(
+            circle_marker_3cdb0f05a40d4afda5b135276b241cf0.bindTooltip(
                 `<div>
                      Arrived: 17:54, Left: 15:24
                  </div>`,
