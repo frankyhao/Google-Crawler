@@ -1,0 +1,12 @@
+kml_files/*
+csv_files/*
+json_files/*
+R_Packages/*
+__pycache__/*
+*.png
+*.pyc
+cookie.txt
+cookie_Adam.txt
+cookie_Andrew.txt
+ua_file.txt
+

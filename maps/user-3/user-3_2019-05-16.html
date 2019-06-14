@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.4.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.4.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://rawcdn.githack.com/python-visualization/folium/master/folium/templates/leaflet.awesome.rotate.css"/>
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_b91174b1e7474f95b7cd5da9314b9a0d {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_b91174b1e7474f95b7cd5da9314b9a0d" ></div>
+        
+    
+
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>jQuery UI Draggable - Default functionality</title>
+<link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+
+<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+
+<script>
+$( function() {
+		$( "#maplegend" ).draggable({
+start: function (event, ui) {
+$(this).css({
+right: "auto",
+top: "auto",
+bottom: "auto"
+});
+}
+});
+		});
+
+</script>
+</head>
+<body>
+
+
+<div id='maplegend' class='maplegend' 
+style='position: absolute; z-index:9999; border:2px solid grey; background-color:rgba(255, 255, 255, 0.8);
+border-radius:6px; padding: 10px; font-size:14px; right: 20px; bottom: 20px;'>
+
+<div class='legend-title'>Travel Mode</div>
+<div class='legend-scale'>
+<ul class='legend-labels'>
+<li><span style='background:red;opacity:0.7;'></span>Walking</li>
+<li><span style='background:blue;opacity:0.7;'></span>Driving</li>
+<li><span style='background:green;opacity:0.7;'></span>On a bus</li>
+<li><span style='background:purple;opacity:0.7;'></span>Cycling</li>
+<li><span style='background:orange;opacity:0.7;'></span>Flying</li>
+<li><span style='background:pink;opacity:0.7;'></span>On a train</li>
+
+</ul>
+</div>
+</div>
+
+</body>
+</html>
+
+<style type='text/css'>
+.maplegend .legend-title {
+	text-align: left;
+	margin-bottom: 5px;
+	font-weight: bold;
+	font-size: 90%;
+}
+.maplegend .legend-scale ul {
+margin: 0;
+	margin-bottom: 5px;
+padding: 0;
+float: left;
+       list-style: none;
+}
+.maplegend .legend-scale ul li {
+	font-size: 80%;
+	list-style: none;
+	margin-left: 0;
+	line-height: 18px;
+	margin-bottom: 2px;
+}
+.maplegend ul.legend-labels li span {
+display: block;
+float: left;
+height: 16px;
+width: 30px;
+       margin-right: 5px;
+       margin-left: 0;
+border: 1px solid #999;
+}
+.maplegend .legend-source {
+	font-size: 80%;
+color: #777;
+clear: both;
+}
+.maplegend a {
+color: #777;
+}
+</style>
+</body>
+<script>    
+    
+            var map_b91174b1e7474f95b7cd5da9314b9a0d = L.map(
+                "map_b91174b1e7474f95b7cd5da9314b9a0d",
+                {
+                    center: [40.08739789147021, -88.24723987891456],
+                    crs: L.CRS.EPSG3857,
+                    zoomControl: true,
+                    preferCanvas: false,
+                    zoom: 14,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_2efdd3fd10264f22b1741d4966b3a84c = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_b91174b1e7474f95b7cd5da9314b9a0d);
+        
+    
+            var circle_marker_7186b0180da049fa9938fef965d833bc = L.circleMarker(
+                [40.0866682, -88.2589012],
+                {"bubblingMouseEvents": true, "color": "gray", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3186cc", "fillOpacity": 1, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_b91174b1e7474f95b7cd5da9314b9a0d);
+        
+    
+        var popup_f915c521093c4a98afa8e80405fd3b6d = L.popup({"autoClose": false, "closeOnClick": false, "maxWidth": "100%"});
+
+        
+            var html_777b2089a16c4bf59e95e851b3e55570 = $(`<div id="html_777b2089a16c4bf59e95e851b3e55570" style="width: 100.0%; height: 100.0%;">Arrived: 17:25, Left: 08:32</div>`)[0];
+            popup_f915c521093c4a98afa8e80405fd3b6d.setContent(html_777b2089a16c4bf59e95e851b3e55570);
+        
+
+        circle_marker_7186b0180da049fa9938fef965d833bc.bindPopup(popup_f915c521093c4a98afa8e80405fd3b6d)
+        .openPopup();
+
+        
+    
+    
+            circle_marker_7186b0180da049fa9938fef965d833bc.bindTooltip(
+                `<div>
+                     Home (1004 Harrington Dr)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_aad0ed07e15546ddac4d1be09d8419ca = L.polyline(
+                [[40.0866682, -88.2589012], [40.0866682, -88.2589012], [40.0863317, -88.2584107], [40.0840031, -88.2552365], [40.0745381, -88.2507274], [40.0724753, -88.2535324], [40.072362999999996, -88.2540739], [40.072362999999996, -88.2540739]],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.7, "smoothFactor": 1.0, "stroke": true, "weight": 6}
+            ).addTo(map_b91174b1e7474f95b7cd5da9314b9a0d);
+        
+    
+        var popup_1f6f8df6e8c840d7aa8d5598293013bd = L.popup({"autoClose": false, "closeOnClick": false, "maxWidth": "100%"});
+
+        
+            var html_9bc6097b1e7b4d71a12ac3abfa199341 = $(`<div id="html_9bc6097b1e7b4d71a12ac3abfa199341" style="width: 100.0%; height: 100.0%;">Duration: 0:05:08, Distance: 1.2</div>`)[0];
+            popup_1f6f8df6e8c840d7aa8d5598293013bd.setContent(html_9bc6097b1e7b4d71a12ac3abfa199341);
+        
+
+        poly_line_aad0ed07e15546ddac4d1be09d8419ca.bindPopup(popup_1f6f8df6e8c840d7aa8d5598293013bd)
+        .openPopup();
+
+        
+    
+    
+            var circle_marker_2bd89beb285a44d1b674f52886724aab = L.circleMarker(
+                [40.072362999999996, -88.2540739],
+                {"bubblingMouseEvents": true, "color": "gray", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3186cc", "fillOpacity": 1, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_b91174b1e7474f95b7cd5da9314b9a0d);
+        
+    
+        var popup_b8f2c35997ce4ad68db472555115512f = L.popup({"autoClose": false, "closeOnClick": false, "maxWidth": "100%"});
+
+        
+            var html_9713b7cb686046ef9fd04fb5cbb27b39 = $(`<div id="html_9713b7cb686046ef9fd04fb5cbb27b39" style="width: 100.0%; height: 100.0%;">Arrived: 08:37, Left: 08:45</div>`)[0];
+            popup_b8f2c35997ce4ad68db472555115512f.setContent(html_9713b7cb686046ef9fd04fb5cbb27b39);
+        
+
+        circle_marker_2bd89beb285a44d1b674f52886724aab.bindPopup(popup_b8f2c35997ce4ad68db472555115512f)
+        .openPopup();
+
+        
+    
+    
+            circle_marker_2bd89beb285a44d1b674f52886724aab.bindTooltip(
+                `<div>
+                     Montessori School of Champaign-Urbana
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_16d08d4712fd4690b230f401bf8acba5 = L.polyline(
+                [[40.072362999999996, -88.2540739], [40.072362999999996, -88.2540739], [40.0721602, -88.2536285], [40.0746039, -88.2506514], [40.0861623, -88.2453068], [40.0910525, -88.2361074], [40.103218, -88.2287694], [40.103768736026545, -88.22836676685924], [40.103768736026545, -88.22836676685924]],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.7, "smoothFactor": 1.0, "stroke": true, "weight": 6}
+            ).addTo(map_b91174b1e7474f95b7cd5da9314b9a0d);
+        
+    
+        var popup_290a44a8cbfd4c3c813d18039eefa379 = L.popup({"autoClose": false, "closeOnClick": false, "maxWidth": "100%"});
+
+        
+            var html_7a38d02e83f844d1b242a706e0bd8b01 = $(`<div id="html_7a38d02e83f844d1b242a706e0bd8b01" style="width: 100.0%; height: 100.0%;">Duration: 0:10:33, Distance: 2.67</div>`)[0];
+            popup_290a44a8cbfd4c3c813d18039eefa379.setContent(html_7a38d02e83f844d1b242a706e0bd8b01);
+        
+
+        poly_line_16d08d4712fd4690b230f401bf8acba5.bindPopup(popup_290a44a8cbfd4c3c813d18039eefa379)
+        .openPopup();
+
+        
+    
+    
+            var circle_marker_f4b38c4e65454efe9060308714e33c87 = L.circleMarker(
+                [40.103626399999996, -88.22835429999999],
+                {"bubblingMouseEvents": true, "color": "gray", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3186cc", "fillOpacity": 1, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_b91174b1e7474f95b7cd5da9314b9a0d);
+        
+    
+        var popup_8146b04e7b7b4f03aad3d4433b90bf5c = L.popup({"autoClose": false, "closeOnClick": false, "maxWidth": "100%"});
+
+        
+            var html_dff6e268e0a44030bc204dd2ff6851bf = $(`<div id="html_dff6e268e0a44030bc204dd2ff6851bf" style="width: 100.0%; height: 100.0%;">Arrived: 08:56, Left: 16:09</div>`)[0];
+            popup_8146b04e7b7b4f03aad3d4433b90bf5c.setContent(html_dff6e268e0a44030bc204dd2ff6851bf);
+        
+
+        circle_marker_f4b38c4e65454efe9060308714e33c87.bindPopup(popup_8146b04e7b7b4f03aad3d4433b90bf5c)
+        .openPopup();
+
+        
+    
+    
+            circle_marker_f4b38c4e65454efe9060308714e33c87.bindTooltip(
+                `<div>
+                     Work (David Kinley Hall)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_b9e790eb32f940edac453ca7327375a9 = L.polyline(
+                [[40.103768736026545, -88.22836676685924], [40.103768736026545, -88.22836676685924], [40.1037609, -88.2283698], [40.1019242, -88.2295689], [40.0947142, -88.2452466], [40.0897861, -88.2570383], [40.0866807, -88.2590042], [40.0866682, -88.2589012], [40.0866682, -88.2589012]],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.7, "smoothFactor": 1.0, "stroke": true, "weight": 6}
+            ).addTo(map_b91174b1e7474f95b7cd5da9314b9a0d);
+        
+    
+        var popup_6a913bb873c44bf084f4fdfee833fa84 = L.popup({"autoClose": false, "closeOnClick": false, "maxWidth": "100%"});
+
+        
+            var html_c9568951fc994f55a72346d7a83e9208 = $(`<div id="html_c9568951fc994f55a72346d7a83e9208" style="width: 100.0%; height: 100.0%;">Duration: 0:10:08, Distance: 2.06</div>`)[0];
+            popup_6a913bb873c44bf084f4fdfee833fa84.setContent(html_c9568951fc994f55a72346d7a83e9208);
+        
+
+        poly_line_b9e790eb32f940edac453ca7327375a9.bindPopup(popup_6a913bb873c44bf084f4fdfee833fa84)
+        .openPopup();
+
+        
+    
+    
+            var circle_marker_473607cb439846f3b028f2becf9b8997 = L.circleMarker(
+                [40.0866682, -88.2589012],
+                {"bubblingMouseEvents": true, "color": "gray", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3186cc", "fillOpacity": 1, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_b91174b1e7474f95b7cd5da9314b9a0d);
+        
+    
+        var popup_7fdaff67e7264939a8040fad1868563a = L.popup({"autoClose": false, "closeOnClick": false, "maxWidth": "100%"});
+
+        
+            var html_cc7bb94b521b4cb8baf27c34bf3a1f04 = $(`<div id="html_cc7bb94b521b4cb8baf27c34bf3a1f04" style="width: 100.0%; height: 100.0%;">Arrived: 16:19, Left: 10:09</div>`)[0];
+            popup_7fdaff67e7264939a8040fad1868563a.setContent(html_cc7bb94b521b4cb8baf27c34bf3a1f04);
+        
+
+        circle_marker_473607cb439846f3b028f2becf9b8997.bindPopup(popup_7fdaff67e7264939a8040fad1868563a)
+        .openPopup();
+
+        
+    
+    
+            circle_marker_473607cb439846f3b028f2becf9b8997.bindTooltip(
+                `<div>
+                     Home (1004 Harrington Dr)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+</script>

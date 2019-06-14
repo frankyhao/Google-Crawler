@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.4.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.4.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://rawcdn.githack.com/python-visualization/folium/master/folium/templates/leaflet.awesome.rotate.css"/>
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_9889877d4dc345c1a353155f909377f4 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_9889877d4dc345c1a353155f909377f4" ></div>
+        
+    
+
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>jQuery UI Draggable - Default functionality</title>
+<link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+
+<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+
+<script>
+$( function() {
+		$( "#maplegend" ).draggable({
+start: function (event, ui) {
+$(this).css({
+right: "auto",
+top: "auto",
+bottom: "auto"
+});
+}
+});
+		});
+
+</script>
+</head>
+<body>
+
+
+<div id='maplegend' class='maplegend'
+style='position: absolute; z-index:9999; border:2px solid grey; background-color:rgba(255, 255, 255, 0.8);
+border-radius:6px; padding: 10px; font-size:14px; right: 20px; bottom: 20px;'>
+
+<div class='legend-title'>Travel Mode</div>
+<div class='legend-scale'>
+<ul class='legend-labels'>
+<li><span style='background:red;opacity:0.7;'></span>Walking</li>
+<li><span style='background:blue;opacity:0.7;'></span>Driving</li>
+<li><span style='background:green;opacity:0.7;'></span>On a bus</li>
+<li><span style='background:purple;opacity:0.7;'></span>Cycling</li>
+<li><span style='background:orange;opacity:0.7;'></span>Flying</li>
+<li><span style='background:pink;opacity:0.7;'></span>On a train</li>
+
+</ul>
+</div>
+</div>
+
+</body>
+</html>
+
+<style type='text/css'>
+.maplegend .legend-title {
+	text-align: left;
+	margin-bottom: 5px;
+	font-weight: bold;
+	font-size: 90%;
+}
+.maplegend .legend-scale ul {
+margin: 0;
+	margin-bottom: 5px;
+padding: 0;
+float: left;
+       list-style: none;
+}
+.maplegend .legend-scale ul li {
+	font-size: 80%;
+	list-style: none;
+	margin-left: 0;
+	line-height: 18px;
+	margin-bottom: 2px;
+}
+.maplegend ul.legend-labels li span {
+display: block;
+float: left;
+height: 16px;
+width: 30px;
+       margin-right: 5px;
+       margin-left: 0;
+border: 1px solid #999;
+}
+.maplegend .legend-source {
+	font-size: 80%;
+color: #777;
+clear: both;
+}
+.maplegend a {
+color: #777;
+}
+</style>
+</body>
+<script>    
+    
+            var map_9889877d4dc345c1a353155f909377f4 = L.map(
+                "map_9889877d4dc345c1a353155f909377f4",
+                {
+                    center: [40.111558680826775, -88.22206485843643],
+                    crs: L.CRS.EPSG3857,
+                    preferCanvas: false,
+                    zoom: 14,
+                    zoomControl: true,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_d5716f6c44ee44c0a9963d0fb9936b39 = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_9889877d4dc345c1a353155f909377f4);
+        
+    
+            var marker_448b3a5ca0204a4f8db58febef77200d = L.marker(
+                [40.1092314, -88.2183757],
+                {}
+            ).addTo(map_9889877d4dc345c1a353155f909377f4);
+        
+    
+            var div_icon_7552044aafd146a387b74990e9536d57 = L.divIcon({"className": "empty", "html": "\u003cdiv style=\"font-size: 12pt\"\u003e\u003cb\u003eHome (804 W Illinois St)\u003c/b\u003e\u003c/div\u003e", "iconAncher": [0, 0], "iconSize": [160, 30]});
+            marker_448b3a5ca0204a4f8db58febef77200d.setIcon(div_icon_7552044aafd146a387b74990e9536d57);
+        
+    
+            var circle_marker_5b843dbb4c6e4bfbbb8bb29adc4a7609 = L.circleMarker(
+                [40.1096814, -88.2184257],
+                {"bubblingMouseEvents": true, "color": "gray", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3186cc", "fillOpacity": 1, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_9889877d4dc345c1a353155f909377f4);
+        
+    
+            circle_marker_5b843dbb4c6e4bfbbb8bb29adc4a7609.bindTooltip(
+                `<div>
+                     Arrived: 16:12, Left: 10:22
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var poly_line_9fc3e8ee4000483f9b56e397e4382e7b = L.polyline(
+                [[40.10943093231268, -88.21829445026977], [40.1094673, -88.2183754], [40.1095556, -88.2238449], [40.1118205, -88.2241215], [40.1149265, -88.2248243], [40.1149215, -88.2248604], [40.1149215, -88.2248604]],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_9889877d4dc345c1a353155f909377f4);
+        
+    
+        var popup_011baf17f63e4d01a6cd1351c7deb076 = L.popup({"autoClose": false, "closeOnClick": false, "maxWidth": 60});
+
+        
+            var html_3d23d598dd7747719d5be5fe061d830c = $(`<div id="html_3d23d598dd7747719d5be5fe061d830c" style="width: 100.0%; height: 100.0%;">12 minutes, 0.67 miles</div>`)[0];
+            popup_011baf17f63e4d01a6cd1351c7deb076.setContent(html_3d23d598dd7747719d5be5fe061d830c);
+        
+
+        poly_line_9fc3e8ee4000483f9b56e397e4382e7b.bindPopup(popup_011baf17f63e4d01a6cd1351c7deb076)
+        .openPopup();
+
+        
+    
+    
+            var marker_8e36eff8f0ba482ca1abfd91d4b2473e = L.marker(
+                [40.1144715, -88.2248104],
+                {}
+            ).addTo(map_9889877d4dc345c1a353155f909377f4);
+        
+    
+            var div_icon_77aff040306d4558a8eaa3167228907b = L.divIcon({"className": "empty", "html": "\u003cdiv style=\"font-size: 12pt\"\u003e\u003cb\u003eWork (National Center for Supercomputing Applications)\u003c/b\u003e\u003c/div\u003e", "iconAncher": [0, 0], "iconSize": [160, 30]});
+            marker_8e36eff8f0ba482ca1abfd91d4b2473e.setIcon(div_icon_77aff040306d4558a8eaa3167228907b);
+        
+    
+            var circle_marker_9fb04b4a580d42c0a663e5432f149683 = L.circleMarker(
+                [40.1149215, -88.2248604],
+                {"bubblingMouseEvents": true, "color": "gray", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3186cc", "fillOpacity": 1, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_9889877d4dc345c1a353155f909377f4);
+        
+    
+            circle_marker_9fb04b4a580d42c0a663e5432f149683.bindTooltip(
+                `<div>
+                     Arrived: 10:35, Left: 17:08
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var poly_line_da25543e689249a9a38526aa5a1d0918 = L.polyline(
+                [[40.1149215, -88.2248604], [40.1149215, -88.2248604], [40.1144327, -88.2242243], [40.1118003, -88.223982], [40.1094739, -88.2245797], [40.1091393, -88.2222074], [40.1091742, -88.2201788], [40.1091766, -88.2189584], [40.109402742111506, -88.2182763092295], [40.109402742111506, -88.2182763092295]],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_9889877d4dc345c1a353155f909377f4);
+        
+    
+        var popup_82c47406a0744c329374c0c53590b706 = L.popup({"autoClose": false, "closeOnClick": false, "maxWidth": 60});
+
+        
+            var html_9d93413508434447be812bc85ede0803 = $(`<div id="html_9d93413508434447be812bc85ede0803" style="width: 100.0%; height: 100.0%;">13 minutes, 0.73 miles</div>`)[0];
+            popup_82c47406a0744c329374c0c53590b706.setContent(html_9d93413508434447be812bc85ede0803);
+        
+
+        poly_line_da25543e689249a9a38526aa5a1d0918.bindPopup(popup_82c47406a0744c329374c0c53590b706)
+        .openPopup();
+
+        
+    
+    
+            var marker_885474cd9fdd461795b13e9add426d29 = L.marker(
+                [40.1092314, -88.2183757],
+                {}
+            ).addTo(map_9889877d4dc345c1a353155f909377f4);
+        
+    
+            var div_icon_4b85852799384ada8b5c8359ae2e3e14 = L.divIcon({"className": "empty", "html": "\u003cdiv style=\"font-size: 12pt\"\u003e\u003cb\u003eHome (804 W Illinois St)\u003c/b\u003e\u003c/div\u003e", "iconAncher": [0, 0], "iconSize": [160, 30]});
+            marker_885474cd9fdd461795b13e9add426d29.setIcon(div_icon_4b85852799384ada8b5c8359ae2e3e14);
+        
+    
+            var circle_marker_966934db88a44b129ab5c86d0a264c7f = L.circleMarker(
+                [40.1096814, -88.2184257],
+                {"bubblingMouseEvents": true, "color": "gray", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3186cc", "fillOpacity": 1, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_9889877d4dc345c1a353155f909377f4);
+        
+    
+            circle_marker_966934db88a44b129ab5c86d0a264c7f.bindTooltip(
+                `<div>
+                     Arrived: 17:21, Left: 10:06
+                 </div>`,
+                {"sticky": false}
+            );
+        
+</script>
