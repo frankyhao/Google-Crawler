@@ -7,7 +7,22 @@
   console.log('Name: ' + profile.getName());
   console.log('Image URL: ' + profile.getImageUrl());
   console.log('Email: ' + profile.getEmail()); // This is null if the 'email' scope is not present.
-} </script>
+} 
+    function postData(input) {
+   $.ajax({
+       type: "POST",
+       url: "/hello.py",
+       data: { param: input },
+       success: callbackFunc
+   });
+}
+
+function callbackFunc(response) {
+   // do something with the response
+   console.log("success");
+}
+    </script>
+
     <meta name="google-signin-client_id" content="1060905353346-b38npddv13apf43pfdoin6cbht953j20.apps.googleusercontent.com">
     <div class="g-signin2" data-onsuccess="onSignIn"></div>
     <h1>user-3 Adam</h1>
