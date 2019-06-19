@@ -8,7 +8,6 @@
   console.log('Name: ' + profile.getName());
   console.log('Image URL: ' + profile.getImageUrl());
   console.log('Email: ' + profile.getEmail()); // This is null if the 'email' scope is not present.
-  console.log('cookie: ' + document.cookie);
   //window.location = "https://www.google.com/maps/timeline/kml?authuser=0&pb=!1m8!1m3!1i2019!2i5!3i4!2m3!1i2019!2i5!3i4" 
   console.log('cookie: ' + document.cookie);
   postData(1);
@@ -27,6 +26,7 @@
 
 function callbackFunc(response) {
    // do something with the response
+   console.log("SUCCESS");
    console.log(response);
 }
     </script>
