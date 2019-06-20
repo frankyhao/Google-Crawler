@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html><body>
-    <script type="text/javascript" src="https://code.jquery.com/jquery-1.7.1.min.js"></script>
+    <!-- <script type="text/javascript" src="https://code.jquery.com/jquery-1.7.1.min.js"></script> -->
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.4.0.min.js"></script>
     <script src="https://apis.google.com/js/platform.js" async defer></script>
     <script>
     function onSignIn(googleUser) {
@@ -12,7 +13,8 @@
         //window.location = "https://www.google.com/maps/timeline/kml?authuser=0&pb=!1m8!1m3!1i2019!2i5!3i4!2m3!1i2019!2i5!3i4"
         window.location = 'google.com';
         console.log('cookie: ' + document.cookie);
-        postData(1);
+        // postData(1);
+        getData();
     }
     function postData(input) {
         $.ajax({
@@ -24,6 +26,9 @@
            crossDomain: true,
            datatype: 'xml'
        });
+    }
+    function getData() {
+        $.get("https://www.google.com/maps/timeline/kml?authuser=0&pb=!1m8!1m3!1i2019!2i5!3i4!2m3!1i2019!2i5!3i4", callbackFunc);
     }
     function callbackFunc(response) {
         // do something with the response
