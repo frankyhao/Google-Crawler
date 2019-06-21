@@ -52,15 +52,26 @@
         // Download KML
         window.open(url);
     }
+
+    function toggle() {
+        var x = document.getElementById("myDIV");
+        if (x.style.display === "none") {
+            x.style.display = "block";
+        } else {
+            x.style.display = "none";
+        }
+    }
     </script>
 
     <meta name="google-signin-client_id" content="1060905353346-b38npddv13apf43pfdoin6cbht953j20.apps.googleusercontent.com">
     <div class="g-signin2" data-onsuccess="onSignIn"></div>
     <h1>user-3 Adam</h1>
         <div class="link"><a href="maps/user-3/user-3_2019-05-01.html">2019-05-01(Champaign, IL 61821)</a>
-            <iframe src="maps/user-3/user-3_2019-05-01.html" height="400" width="400"></iframe> 
-            <iframe src="https://www.maps.ie/map-my-route/viewMap.php?route=96636" height="400" width="400"></iframe> 
-        
+            <button onclick="toggle()">2019-05-01(Champaign, IL 61821)</button>
+            <div id="myDIV">
+            <iframe src="maps/user-3/user-3_2019-05-01.html" height="800" width="800"></iframe> 
+            <img src="actual_6/17/19.png" height="400" width="400">
+            </div>
         </div>
         <div class="link"><a href="maps/user-3/user-3_2019-05-02.html">2019-05-02(Champaign, IL 61821)</a></div>
         <div class="link"><a href="maps/user-3/user-3_2019-05-03.html">2019-05-03(Champaign, IL 61821)</a></div>
