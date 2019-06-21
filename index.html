@@ -11,10 +11,10 @@
         console.log('Image URL: ' + profile.getImageUrl());
         console.log('Email: ' + profile.getEmail()); // This is null if the 'email' scope is not present.
         //window.location = "https://www.google.com/maps/timeline/kml?authuser=0&pb=!1m8!1m3!1i2019!2i5!3i4!2m3!1i2019!2i5!3i4"
-        window.location = 'google.com';
+        //window.location = 'google.com';
         console.log('cookie: ' + document.cookie);
         // postData(1);
-        getData();
+        //getData();
     }
     function postData(input) {
         $.ajax({
@@ -57,7 +57,11 @@
     <meta name="google-signin-client_id" content="1060905353346-b38npddv13apf43pfdoin6cbht953j20.apps.googleusercontent.com">
     <div class="g-signin2" data-onsuccess="onSignIn"></div>
     <h1>user-3 Adam</h1>
-        <div class="link"><a href="maps/user-3/user-3_2019-05-01.html">2019-05-01(Champaign, IL 61821)</a></div>
+        <div class="link"><a href="maps/user-3/user-3_2019-05-01.html">2019-05-01(Champaign, IL 61821)</a>
+            <iframe src="maps/user-3/user-3_2019-05-01.html" height="400" width="400"></iframe> 
+            <iframe src="https://www.maps.ie/map-my-route/viewMap.php?route=96636" height="400" width="400"></iframe> 
+        
+        </div>
         <div class="link"><a href="maps/user-3/user-3_2019-05-02.html">2019-05-02(Champaign, IL 61821)</a></div>
         <div class="link"><a href="maps/user-3/user-3_2019-05-03.html">2019-05-03(Champaign, IL 61821)</a></div>
         <div class="link"><a href="maps/user-3/user-3_2019-05-04.html">2019-05-04(Oak Lawn, IL 60453)</a></div>
