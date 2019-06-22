@@ -53,8 +53,8 @@
         window.open(url);
     }
 
-    function toggle() {
-        var x = document.getElementById("myDIV");
+    function toggle(id_val) {
+        var x = document.getElementById(id_val);
         if (x.style.display === "none") {
             x.style.display = "block";
         } else {
@@ -66,13 +66,7 @@
     <meta name="google-signin-client_id" content="1060905353346-b38npddv13apf43pfdoin6cbht953j20.apps.googleusercontent.com">
     <div class="g-signin2" data-onsuccess="onSignIn"></div>
     <h1>user-3 Adam</h1>
-        <div class="link"><a href="maps/user-3/user-3_2019-05-01.html">2019-05-01(Champaign, IL 61821)</a>
-            <button onclick="toggle()">2019-05-01(Champaign, IL 61821)</button>
-            <div id="myDIV" style="display:none">
-            <iframe src="maps/user-3/user-3_2019-05-01.html" height="700" width="700"></iframe> 
-            <img src="actual_6:17:19.png" height="700" width="700">
-            </div>
-        </div>
+        <div class="link"><a href="maps/user-3/user-3_2019-05-01.html">2019-05-01(Champaign, IL 61821)</a></div>
         <div class="link"><a href="maps/user-3/user-3_2019-05-02.html">2019-05-02(Champaign, IL 61821)</a></div>
         <div class="link"><a href="maps/user-3/user-3_2019-05-03.html">2019-05-03(Champaign, IL 61821)</a></div>
         <div class="link"><a href="maps/user-3/user-3_2019-05-04.html">2019-05-04(Oak Lawn, IL 60453)</a></div>
@@ -97,25 +91,42 @@
         <div class="link"><a href="maps/user-3/user-3_2019-05-23.html">2019-05-23(16 Saray El, Gezira St, Omar Al Khayam, Zamalek, Cairo Governorate 11211, Egypt)</a></div>
         <div class="link"><a href="maps/user-3/user-3_2019-05-24.html">2019-05-24(Oruba، Road، Qism El-Nozha, Cairo Governorate, Egypt)</a></div>
         <div class="link"><a href="maps/user-3/user-3_2019-05-25.html">2019-05-25(Oak Lawn, IL 60453)</a></div>
-    <h1>user-2</h1>
-        <div class="link"><a href="maps/user-2/user-2_2019-05-23.html">2019-05-23(Urbana, IL 61801)</a></div>
-        <div class="link"><a href="maps/user-2/user-2_2019-05-24.html">2019-05-24(Urbana, IL 61801)</a></div>
-        <div class="link"><a href="maps/user-2/user-2_2019-05-25.html">2019-05-25(Urbana, IL 61801)</a></div>
-        <div class="link"><a href="maps/user-2/user-2_2019-05-26.html">2019-05-26(Urbana, IL 61801)</a></div>
-        <div class="link"><a href="maps/user-2/user-2_2019-05-27.html">2019-05-27(Urbana, IL 61801)</a></div>
-        <div class="link"><a href="maps/user-2/user-2_2019-05-28.html">2019-05-28(Urbana, IL 61801)</a></div>
-        <div class="link"><a href="maps/user-2/user-2_2019-05-29.html">2019-05-29(Urbana, IL 61801)</a></div>
-        <div class="link"><a href="maps/user-2/user-2_2019-05-30.html">2019-05-30(2632 Gross Point Rd, Evanston, IL 60201)</a></div>
-        <div class="link"><a href="maps/user-2/user-2_2019-05-31.html">2019-05-31(Urbana, IL 61801)</a></div>
-        <div class="link"><a href="maps/user-2/user-2_2019-06-01.html">2019-06-01(Urbana, IL 61801)</a></div>
-        <div class="link"><a href="maps/user-2/user-2_2019-06-02.html">2019-06-02(710 W Ohio St, Urbana, IL 61801)</a></div>
-        <div class="link"><a href="maps/user-2/user-2_2019-06-03.html">2019-06-03(Urbana, IL 61801)</a></div>
-        <div class="link"><a href="maps/user-2/user-2_2019-06-04.html">2019-06-04(1205 W Clark St, Urbana, IL 61801)</a></div>
-        <div class="link"><a href="maps/user-2/user-2_2019-06-05.html">2019-06-05(Urbana, IL 61801)</a></div>
-        <div class="link"><a href="maps/user-2/user-2_2019-06-06.html">2019-06-06(Urbana, IL 61801)</a></div>
-        <div class="link"><a href="maps/user-2/user-2_2019-06-07.html">2019-06-07(Urbana, IL 61801)</a></div>
-        <div class="link"><a href="maps/user-2/user-2_2019-06-08.html">2019-06-08(Urbana, IL 61801)</a></div>
-        <div class="link"><a href="maps/user-2/user-2_2019-06-09.html">2019-06-09(Urbana, IL 61801)</a></div>
+    <h1>user-2 Andrew</h1>
+        <div class="link"><a href="maps/user-2/user-2_2019-06-17.html">2019-06-17 (1205 W Clark St, Urbana, IL 61801)</a>
+            <button value="div_2_0" onclick="toggle(this.value)">2019-06-17 (1205 W Clark St, Urbana, IL 61801)</button>
+            <div id="div_2_0" style="display:none">
+            <iframe src="maps/user-2/user-2_2019-06-17.html" height="700" width="700"></iframe> 
+            <img src="actual_maps/user-2/actual_6:17:19.png" height="700" width="700">
+            </div>
+        </div>
+        <div class="link"><a href="maps/user-2/user-2_2019-06-18.html">2019-06-18 (Urbana, IL 61801)</a>
+            <button value="div_2_1" onclick="toggle(this.value)">2019-06-18 (Urbana, IL 61801)</button>
+            <div id="div_2_1" style="display:none">
+            <iframe src="maps/user-2/user-2_2019-06-18.html" height="700" width="700"></iframe> 
+            <img src="actual_maps/user-2/actual_6:18:19.png" height="700" width="700">
+            </div>
+        </div>
+        <div class="link"><a href="maps/user-2/user-2_2019-06-19.html">2019-06-19 (Urbana, IL 61801)</a>
+            <button value="div_2_2" onclick="toggle(this.value)">2019-06-19 (Urbana, IL 61801)</button>
+            <div id="div_2_2" style="display:none">
+            <iframe src="maps/user-2/user-2_2019-06-19.html" height="700" width="700"></iframe> 
+            <img src="actual_maps/user-2/actual_6:19:19.png" height="700" width="700">
+            </div>
+        </div>
+        <div class="link"><a href="maps/user-2/user-2_2019-06-20.html">2019-06-20 (Urbana, IL 61801)</a>
+            <button value="div_2_3" onclick="toggle(this.value)">2019-06-20 (Urbana, IL 61801)</button>
+            <div id="div_2_3" style="display:none">
+            <iframe src="maps/user-2/user-2_2019-06-20.html" height="700" width="700"></iframe> 
+            <img src="actual_maps/user-2/actual_6:20:19.png" height="700" width="700">
+            </div>
+        </div>
+        <div class="link"><a href="maps/user-2/user-2_2019-06-21.html">2019-06-21 (Urbana, IL 61801)</a>
+            <button value="div_2_4" onclick="toggle(this.value)">2019-06-21 (Urbana, IL 61801)</button>
+            <div id="div_2_4" style="display:none">
+            <iframe src="maps/user-2/user-2_2019-06-21.html" height="700" width="700"></iframe> 
+            <img src="actual_maps/user-2/actual_6:21:19.png" height="700" width="700">
+            </div>
+        </div>
     <h1>user-1</h1>
         <div class="link"><a href="maps/user-1/user-1_2019-02-01.html">2019-02-01(Champaign, IL 61820)</a></div>
         <div class="link"><a href="maps/user-1/user-1_2019-02-02.html">2019-02-02(Champaign, IL 61820)</a></div>
