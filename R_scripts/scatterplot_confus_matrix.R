@@ -27,21 +27,21 @@ df_C$total = df_C$walking + df_C$driving + df_C$bus + df_C$train + df_C$plane + 
 # --------------------------- Scatterplot ---------------------------------------
 # walking
 png("R_Graphs/plot_walking_2.png")
-walking_error = 100 * abs(df_C$walking - df_A$walking) / df_A$walking
+walking_error = 100 * abs(df_C$walking - df_A$walking) / pmax(df_A$walking, df_C$walking)
 plot(x = df_A$walking, y = walking_error, xlab = "Walking Distance(miles)",
         ylab = "% Error", main = "Walking Error")
 dev.off()
 
 # driving
 png("R_Graphs/plot_driving_2.png")
-driving_error = 100 * abs(df_C$driving - df_A$driving) / df_A$driving
+driving_error = 100 * abs(df_C$driving - df_A$driving) / pmax(df_A$driving, df_C$driving)
 plot(x = df_A$driving, y = driving_error, xlab = "Driving Distance(miles)",
         ylab = "% Error", main = "Driving Error")
 dev.off()
 
 # bus
 png("R_Graphs/plot_bus_2.png")
-bus_error = 100 * abs(df_C$bus - df_A$bus) / df_A$bus
+bus_error = 100 * abs(df_C$bus - df_A$bus) / pmax(df_A$bus, df_C$bus)
 plot(x = df_A$bus, y = bus_error, xlab = "Bus Distance(miles)",
         ylab = "% Error", main = "Bus Error")	
 dev.off()
@@ -62,18 +62,29 @@ dev.off()
 
 # bike
 png("R_Graphs/plot_bike_2.png")
-bike_error = 100 * abs(df_C$bike - df_A$bike) / df_A$bike
+bike_error = 100 * abs(df_C$bike - df_A$bike) / pmax(df_A$bike, df_C$bike)
 plot(x = df_A$bike, y = bike_error, xlab = "Bike Distance(miles)",
         ylab = "% Error", main = "Bike Error")
 dev.off()
 
 # total
 png("R_Graphs/plot_total_2.png")
-total_error = 100 * abs(df_C$total - df_A$total) / df_A$total
+total_error = 100 * abs(df_C$total - df_A$total) / pmax(df_A$total, df_C$total)
 plot(x = df_A$total, y = total_error, xlab = "Total Distance(miles)",
         ylab = "% Error", main = "Total Error")
 dev.off()
 
+# stacked bar chart error
+labels = c("walking_error", "driving_error", "bus_error", "bike_error")
+colors = c("red", "blue", "green", "purple")
+all = c(walking_error, driving_error, bus_error, bike_error)
+values = matrix(all, ncol = length(walking_error), byrow = TRUE) 
+png("R_Graphs/bar_chart_stack.png")
+barplot(values, main = "Congruence", names.arg = df_A$date, xlab = "Dates", ylab = "% Error", col = colors, legend.text = labels)
+dev.off()
+
+
+if (FALSE) {
 # --------------------------- Confusion Matrix ---------------------------------------
 # Categorize data by percentile (using percnetile of Google Timeline data). Equal Depth
 print("Categorize data by percentile\n")
@@ -149,4 +160,4 @@ df_C$Cluster = factor(df_C$Cluster, levels = paste("Cluster", c(1:PAMK_A$nc)))
 x = confusionMatrix(df_C$Cluster, df_A$Cluster)
 print(x, mode = x$mode, digits = max(3,
   getOption("digits") - 3), printStats = TRUE)
-
+}
