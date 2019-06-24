@@ -35,7 +35,7 @@ title: travel logs
 - [2019-05-24(Oruba، Road، Qism El-Nozha, Cairo Governorate, Egypt)](maps/user-3/user-3_2019-05-24.html)
 - [2019-05-25(Oak Lawn, IL 60453)](maps/user-3/user-3_2019-05-25.html)
 
-# user-1 Andrew
+# user-2 Andrew
 ![bar_chart](R_Graphs/user-2/user-2_bar_chart.png)
 ![table](R_Graphs/user-2/user-2_table.png)
 
