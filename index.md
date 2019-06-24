@@ -35,38 +35,34 @@ title: travel logs
 - [2019-05-24(Oruba، Road، Qism El-Nozha, Cairo Governorate, Egypt)](maps/user-3/user-3_2019-05-24.html)
 - [2019-05-25(Oak Lawn, IL 60453)](maps/user-3/user-3_2019-05-25.html)
 
-# user-2 Andrew
+# user-1 Andrew
 ![bar_chart](R_Graphs/user-2/user-2_bar_chart.png)
 ![table](R_Graphs/user-2/user-2_table.png)
 
 - [2019-06-17 (1205 W Clark St, Urbana, IL 61801)](maps/user-2/user-2_2019-06-17.html)
 <button value="div_2_0" onclick="toggle(this.value)">2019-06-17 (1205 W Clark St, Urbana, IL 61801)</button>
 <div id="div_2_0" style="display:none">
-<iframe src="maps/user-2/user-2_2019-06-17.html" height="350" width="350"></iframe>
-<img src="actual_maps/user-2/actual_6:17:19.png" height="350" width="350">
+<iframe src="maps/user-2/user-2_2019-06-17.html" height="400" width="48%"></iframe>
+<img src="actual_maps/user-2/actual_6:17:19.png" height="400" width="48%">
 </div>
-
 - [2019-06-18 (Urbana, IL 61801)](maps/user-2/user-2_2019-06-18.html)
 <button value="div_2_1" onclick="toggle(this.value)">2019-06-18 (Urbana, IL 61801)</button>
 <div id="div_2_1" style="display:none">
-<iframe src="maps/user-2/user-2_2019-06-18.html" height="350" width="350"></iframe>
-<img src="actual_maps/user-2/actual_6:18:19.png" height="350" width="350">
+<iframe src="maps/user-2/user-2_2019-06-18.html" height="400" width="400"></iframe>
+<img src="actual_maps/user-2/actual_6:18:19.png" height="400" width="400">
 </div>
-
 - [2019-06-19 (Urbana, IL 61801)](maps/user-2/user-2_2019-06-19.html)
 <button value="div_2_2" onclick="toggle(this.value)">2019-06-19 (Urbana, IL 61801)</button>
 <div id="div_2_2" style="display:none">
 <iframe src="maps/user-2/user-2_2019-06-19.html" height="700" width="700"></iframe>
 <img src="actual_maps/user-2/actual_6:19:19.png" height="700" width="700">
 </div>
-
 - [2019-06-20 (Urbana, IL 61801)](maps/user-2/user-2_2019-06-20.html)
 <button value="div_2_3" onclick="toggle(this.value)">2019-06-20 (Urbana, IL 61801)</button>
 <div id="div_2_3" style="display:none">
 <iframe src="maps/user-2/user-2_2019-06-20.html" height="700" width="700"></iframe>
 <img src="actual_maps/user-2/actual_6:20:19.png" height="700" width="700">
 </div>
-
 - [2019-06-21 (Urbana, IL 61801)](maps/user-2/user-2_2019-06-21.html)
 <button value="div_2_4" onclick="toggle(this.value)">2019-06-21 (Urbana, IL 61801)</button>
 <div id="div_2_4" style="display:none">
