@@ -6,8 +6,8 @@ title: travel logs
 <script src="https://apis.google.com/js/platform.js" async defer></script>
 <script src="./helper.js"></script>
 
-<meta name="google-signin-client_id" content="1060905353346-b38npddv13apf43pfdoin6cbht953j20.apps.googleusercontent.com">
-<div class="g-signin2" data-onsuccess="onSignIn"></div>
+<!-- <meta name="google-signin-client_id" content="1060905353346-b38npddv13apf43pfdoin6cbht953j20.apps.googleusercontent.com">
+<div class="g-signin2" data-onsuccess="onSignIn"></div> -->
 # user-3 Adam
 ======
 - [2019-05-01(Champaign, IL 61821)](maps/user-3/user-3_2019-05-01.html)
