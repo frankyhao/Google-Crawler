@@ -1,13 +1,13 @@
 ---
 layout: default
-title: travel logs
+title: Travel Logs
 ---
 <script type="text/javascript" src="https://code.jquery.com/jquery-3.4.0.min.js"></script>
 <script src="https://apis.google.com/js/platform.js" async defer></script>
 <script src="./helper.js"></script>
 
-<!-- <meta name="google-signin-client_id" content="1060905353346-b38npddv13apf43pfdoin6cbht953j20.apps.googleusercontent.com">
-<div class="g-signin2" data-onsuccess="onSignIn"></div> -->
+<meta name="google-signin-client_id" content="1060905353346-b38npddv13apf43pfdoin6cbht953j20.apps.googleusercontent.com">
+<div class="g-signin2" data-onsuccess="onSignIn"></div>
 # user-3 Adam
 - [2019-05-18(Wien-Flughafen, 1300 Schwechat, Austria)](maps/user-3/user-3_2019-05-18.html)
 - [2019-05-19(Faiyum Desert Rd, Giza Governorate, Egypt)](maps/user-3/user-3_2019-05-19.html)
