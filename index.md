@@ -39,50 +39,49 @@ title: travel logs
 ![bar_chart](R_Graphs/user-2/user-2_bar_chart.png)
 ![table](R_Graphs/user-2/user-2_table.png)
 
-<div class="link"><a href="maps/user-2/user-2_2019-06-17.html">2019-06-17 (1205 W Clark St, Urbana, IL 61801)</a>
-    <button value="div_2_0" onclick="toggle(this.value)">2019-06-17 (1205 W Clark St, Urbana, IL 61801)</button>
-    <div id="div_2_0" style="display:none">
-    <iframe src="maps/user-2/user-2_2019-06-17.html" height="350" width="350"></iframe>
-    <img src="actual_maps/user-2/actual_6:17:19.png" height="350" width="350">
-    </div>
+- [2019-06-17 (1205 W Clark St, Urbana, IL 61801)](maps/user-2/user-2_2019-06-17.html)
+<button value="div_2_0" onclick="toggle(this.value)">2019-06-17 (1205 W Clark St, Urbana, IL 61801)</button>
+<div id="div_2_0" style="display:none">
+<iframe src="maps/user-2/user-2_2019-06-17.html" height="200" width="200"></iframe>
+<img src="actual_maps/user-2/actual_6:17:19.png" height="200" width="200">
 </div>
-<div class="link"><a href="maps/user-2/user-2_2019-06-18.html">2019-06-18 (Urbana, IL 61801)</a>
-    <button value="div_2_1" onclick="toggle(this.value)">2019-06-18 (Urbana, IL 61801)</button>
-    <div id="div_2_1" style="display:none">
-    <iframe src="maps/user-2/user-2_2019-06-18.html" height="700" width="700"></iframe>
-    <img src="actual_maps/user-2/actual_6:18:19.png" height="700" width="700">
-    </div>
+
+- [2019-06-18 (Urbana, IL 61801)](maps/user-2/user-2_2019-06-18.html)
+<button value="div_2_1" onclick="toggle(this.value)">2019-06-18 (Urbana, IL 61801)</button>
+<div id="div_2_1" style="display:none">
+<iframe src="maps/user-2/user-2_2019-06-18.html" height="700" width="700"></iframe>
+![6:18:19](actual_maps/user-2/actual_6:18:19.png =300*300)
 </div>
-<div class="link"><a href="maps/user-2/user-2_2019-06-19.html">2019-06-19 (Urbana, IL 61801)</a>
-    <button value="div_2_2" onclick="toggle(this.value)">2019-06-19 (Urbana, IL 61801)</button>
-    <div id="div_2_2" style="display:none">
-    <iframe src="maps/user-2/user-2_2019-06-19.html" height="700" width="700"></iframe>
-    <img src="actual_maps/user-2/actual_6:19:19.png" height="700" width="700">
-    </div>
+
+- [2019-06-19 (Urbana, IL 61801)](maps/user-2/user-2_2019-06-19.html)
+<button value="div_2_2" onclick="toggle(this.value)">2019-06-19 (Urbana, IL 61801)</button>
+<div id="div_2_2" style="display:none">
+<iframe src="maps/user-2/user-2_2019-06-19.html" height="700" width="700"></iframe>
+<img src="actual_maps/user-2/actual_6:19:19.png" height="700" width="700">
 </div>
-<div class="link"><a href="maps/user-2/user-2_2019-06-20.html">2019-06-20 (Urbana, IL 61801)</a>
-    <button value="div_2_3" onclick="toggle(this.value)">2019-06-20 (Urbana, IL 61801)</button>
-    <div id="div_2_3" style="display:none">
-    <iframe src="maps/user-2/user-2_2019-06-20.html" height="700" width="700"></iframe>
-    <img src="actual_maps/user-2/actual_6:20:19.png" height="700" width="700">
-    </div>
+
+- [2019-06-20 (Urbana, IL 61801)](maps/user-2/user-2_2019-06-20.html)
+<button value="div_2_3" onclick="toggle(this.value)">2019-06-20 (Urbana, IL 61801)</button>
+<div id="div_2_3" style="display:none">
+<iframe src="maps/user-2/user-2_2019-06-20.html" height="700" width="700"></iframe>
+<img src="actual_maps/user-2/actual_6:20:19.png" height="700" width="700">
 </div>
-<div class="link"><a href="maps/user-2/user-2_2019-06-21.html">2019-06-21 (Urbana, IL 61801)</a>
-    <button value="div_2_4" onclick="toggle(this.value)">2019-06-21 (Urbana, IL 61801)</button>
-    <div id="div_2_4" style="display:none">
-    <iframe src="maps/user-2/user-2_2019-06-21.html" height="700" width="700"></iframe>
-    <img src="actual_maps/user-2/actual_6:21:19.png" height="700" width="700">
-    </div>
+
+- [2019-06-21 (Urbana, IL 61801)](maps/user-2/user-2_2019-06-21.html)
+<button value="div_2_4" onclick="toggle(this.value)">2019-06-21 (Urbana, IL 61801)</button>
+<div id="div_2_4" style="display:none">
+<iframe src="maps/user-2/user-2_2019-06-21.html" height="700" width="700"></iframe>
+<img src="actual_maps/user-2/actual_6:21:19.png" height="700" width="700">
 </div>
+
 
 # user-1
 ![bar_chart](R_Graphs/user-1/user-1_bar_chart.png)
 ![table](R_Graphs/user-1/user-1_table.png)
 
-<div class="link"><a href="maps/user-1/user-1_2019-06-10.html">2019-06-10</a>
-    <button value="div_1_0" onclick="toggle(this.value)">2019-06-10</button>
-    <div id="div_1_0" style="display:none">
-    <iframe src="maps/user-1/user-1_2019-06-10.html" height="700" width="700"></iframe>
-    ![actual](actual_maps/user-1/actual_6:10:19.png =700x700)
-    </div>
+[2019-06-10](maps/user-1/user-1_2019-06-10.html)
+<button value="div_1_0" onclick="toggle(this.value)">2019-06-10</button>
+<div id="div_1_0" style="display:none">
+<iframe src="maps/user-1/user-1_2019-06-10.html" height="700" width="700"></iframe>
+![actual](actual_maps/user-1/actual_6:10:19.png =700*700)
 </div>
