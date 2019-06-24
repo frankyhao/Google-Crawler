@@ -35,7 +35,7 @@ title: travel logs
 - [2019-05-23(16 Saray El, Gezira St, Omar Al Khayam, Zamalek, Cairo Governorate 11211, Egypt)](maps/user-3/user-3_2019-05-23.html)
 - [2019-05-24(Oruba، Road، Qism El-Nozha, Cairo Governorate, Egypt)](maps/user-3/user-3_2019-05-24.html)
 - [2019-05-25(Oak Lawn, IL 60453)](maps/user-3/user-3_2019-05-25.html)
-
+<!--
 # user-2 Andrew
 ======
 ![bar_chart](R_Graphs/user-2/user-2_bar_chart.png)
@@ -88,4 +88,4 @@ title: travel logs
     <iframe src="maps/user-1/user-1_2019-06-10.html" height="700" width="700"></iframe>
     ![actual](actual_maps/user-1/actual_6:10:19.png =700x700)
     </div>
-</div>
+</div> -->
