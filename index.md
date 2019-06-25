@@ -10,10 +10,10 @@ title: Travel Logs
 <div class="g-signin2" data-onsuccess="onSignIn"></div>
 <style>
     .button {
-        background-color: #4CAF50;
+        background-color: #1c87c9;
         border: none;
         color: white;
-        padding: 16px 32px;
+        padding: 13px 25px;
         text-align: center;
         font-size: 16px;
         margin: 4px 2px;
@@ -46,7 +46,8 @@ Give us your cookie, and we will download your data on our end.
     Click the following button which will download a KML file of your Timeline data for today. Confirm that the following document appears in your Network tab.
     </p>
     <br><a href="https://www.google.com/maps/timeline/kml" class="button" target="_blank">Click to Download</a>
-    <div><img src="index_images/cookie_step2.png"></div>
+    <img src="index_images/cookie_step2.png">
+    <br>
     <button value="b_1_2" class="button" onclick="reveal_hidden(this.value)">Next</button>
 </div>
 <div id="b_1_2" style="display:none">
