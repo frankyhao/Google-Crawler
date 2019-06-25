@@ -17,7 +17,7 @@ title: Travel Logs
         text-align: center;
         font-size: 16px;
         margin: 4px 2px;
-        opacity: 0.6;
+        opacity: 0.8;
         transition: 0.3s;
         cursor: pointer;
         border-radius: 5px;
@@ -31,7 +31,7 @@ title: Travel Logs
 ___
 <h2>Option 1: Give us your Cookie</h2>
 Give us your cookie, and we will download your data on our end.
-<button value="b_1_0" class="button" onclick="reveal_hidden(this.value)">Start</button>
+<br><button value="b_1_0" class="button" onclick="reveal_hidden(this.value)">Start</button>
 <div id="b_1_0" style="display:none">
     <h3>Step 1:</h3>
     <p>
@@ -45,8 +45,8 @@ Give us your cookie, and we will download your data on our end.
     <p>
     Click the following button which will download a KML file of your Timeline data for today. Confirm that the following document appears in your Network tab.
     </p>
-    <a href="https://www.google.com/maps/timeline/kml" class="button" target="_blank">Click to Download</a>
-    <img src="index_images/cookie_step2.png">
+    <br><a href="https://www.google.com/maps/timeline/kml" class="button" target="_blank">Click to Download</a>
+    <div><img src="index_images/cookie_step2.png"></div>
     <button value="b_1_2" class="button" onclick="reveal_hidden(this.value)">Next</button>
 </div>
 <div id="b_1_2" style="display:none">
