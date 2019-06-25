@@ -23,6 +23,9 @@ title: Travel Logs
         border-radius: 5px;
         box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
     }
+    a.button{
+        background-color: #1c87c9;
+    }
     .img {
         box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     }
@@ -58,6 +61,7 @@ Give us your cookie, and we will download your data on our end.
     Right click on this file and select Copy -> Copy as cURL (it does not matter what is in parenthesis after it)Paste this link in to the text box.
     </p>
     <img src="index_images/cookie_step3.png" class="img">
+    <br>
     <form action="/action_page.txt" method="post">
         <textarea name="cookie" rows="10" cols="50"></textarea>
         <br>
