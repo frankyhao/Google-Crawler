@@ -10,7 +10,7 @@ title: Travel Logs
 <div class="g-signin2" data-onsuccess="onSignIn"></div>
 <style>
     .button {
-        background-color: #4CAF50;
+        background-color: #4CAF50;  <!-- #1c87c9; -->
         border: none;
         color: white;
         padding: 10px 22px;
