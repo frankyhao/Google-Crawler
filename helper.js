@@ -53,7 +53,7 @@ function download_kml(user, date) {
 function reveal_hidden(id_val) {
     $(document).ready(function(){
         $(this).click(function(){
-            $("div[id=id_val]").fadeIn();
+            $("#".concat(id_val)).fadeIn();
         });
     });
 }
