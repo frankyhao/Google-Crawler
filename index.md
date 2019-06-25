@@ -10,7 +10,7 @@ title: Travel Logs
 <div class="g-signin2" data-onsuccess="onSignIn"></div>
 <style>
     .button {
-        background-color: #1c87c9;
+        background-color: #4CAF50;
         border: none;
         color: white;
         padding: 10px 22px;
@@ -21,8 +21,11 @@ title: Travel Logs
         transition: 0.3s;
         cursor: pointer;
         border-radius: 5px;
+        box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
     }
-
+    .img {
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    }
     .button:hover {
         opacity: 1
     }
@@ -37,7 +40,7 @@ Give us your cookie, and we will download your data on our end.
     <p>
      Open a Browser (Google Chrome Recommended) and open the developer console windowby pressing Ctrl-Shift-i on windows or Command-Option-i on Mac. You should see something like this on the right side of your screen. Navigate to the Network tab.
     </p>
-    <img src="index_images/cookie_step1.png">
+    <img src="index_images/cookie_step1.png" class="img">
     <button value="b_1_1" class="button" onclick="reveal_hidden(this.value)">Next</button>
 </div>
 <div id="b_1_1" style="display:none">
@@ -46,7 +49,7 @@ Give us your cookie, and we will download your data on our end.
     Click the following button which will download a KML file of your Timeline data for today. Confirm that the following document appears in your Network tab.
     </p>
     <br><a href="https://www.google.com/maps/timeline/kml" class="button" target="_blank">Click to Download</a>
-    <br><br><img src="index_images/cookie_step2.png">
+    <br><br><img src="index_images/cookie_step2.png" class="img">
     <button value="b_1_2" class="button" onclick="reveal_hidden(this.value)">Next</button>
 </div>
 <div id="b_1_2" style="display:none">
@@ -54,11 +57,11 @@ Give us your cookie, and we will download your data on our end.
     <p>
     Right click on this file and select Copy -> Copy as cURL (it does not matter what is in parenthesis after it)Paste this link in to the text box.
     </p>
-    <img src="index_images/cookie_step3.png">
+    <img src="index_images/cookie_step3.png" class="img">
     <form action="/action_page.txt" method="post">
         <textarea name="cookie" rows="10" cols="50"></textarea>
         <br>
-        <input type="submit">
+        <input type="submit" class="button">
     </form>
 </div>
 <h2>Option 2: Download Locally</h2>
