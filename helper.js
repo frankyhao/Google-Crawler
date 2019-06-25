@@ -49,7 +49,7 @@ function download_kml(user, date) {
     // Download KML
     window.open(url);
 }
-
+//test
 function reveal_hidden(id_val) {
     $(document).ready(function(){
         $(this).click(function(){
