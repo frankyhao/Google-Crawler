@@ -50,6 +50,14 @@ function download_kml(user, date) {
     window.open(url);
 }
 
+function reveal_hidden(id_val) {
+    $(document).ready(function(){
+        $(this).click(function(){
+            $("div[id=id_val]").fadeIn();
+        });
+    });
+}
+
 function toggle(id_val) {
     var x = document.getElementById(id_val);
     if (x.style.display === "none") {

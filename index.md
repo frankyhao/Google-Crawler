@@ -8,6 +8,57 @@ title: Travel Logs
 
 <meta name="google-signin-client_id" content="1060905353346-b38npddv13apf43pfdoin6cbht953j20.apps.googleusercontent.com">
 <div class="g-signin2" data-onsuccess="onSignIn"></div>
+<style>
+        .button {
+         background-color: #1c87c9;
+         border: none;
+         color: white;
+         padding: 20px 34px;
+         text-align: center;
+         text-decoration: none;
+         display: inline-block;
+         font-size: 20px;
+         margin: 4px 2px;
+         cursor: pointer;
+         }
+</style>
+# How to send us your Timeline Information
+___
+<h2>Option 1: Give us your Cookie</h2>
+Give us your cookie, and we will download your data on our end.
+<button value="b_1_0" class="button" onclick="reveal_hidden(this.value)">Start</button>
+<div id="b_1_0" style="display:none">
+    <h3>Step 1:</h3>
+    <p>
+     Open a Browser (Google Chrome Recommended) and open the developer console windowby pressing Ctrl-Shift-i on windows or Command-Option-i on Mac. You should see something like this on the right side of your screen. Navigate to the Network tab.
+    </p>
+    <img src="index_images/cookie_step1.png">
+    <button value="b_1_1" class="button" onclick="reveal_hidden(this.value)">Next</button>
+</div>
+<div id="b_1_1" style="display:none">
+    <h3>Step 2:</h3>
+    <p>
+    Click the following button which will download a KML file of your Timeline data for today. Confirm that the following document appears in your Network tab.
+    </p>
+    <a href="https://www.google.com/maps/timeline/kml" class="button" target="_blank">Click to Download</a>
+    <img src="index_images/cookie_step2.png">
+    <button value="b_1_2" class="button" onclick="reveal_hidden(this.value)">Next</button>
+</div>
+<div id="b_1_2" style="display:none">
+    <h3>Step 3:</h3>
+    <p>
+    Right click on this file and select Copy -> Copy as cURL (it does not matter what is in parenthesis after it)Paste this link in to the text box.
+    </p>
+    <img src="index_images/cookie_step3.png">
+    <form action="/action_page.txt" method="post">
+        <textarea name="cookie" rows="10" cols="50"></textarea>
+        <br>
+        <input type="submit">
+    </form>
+</div>
+<h2>Option 2: Download Locally</h2>
+All your data will be downloaded locally on your computer and you can upload the files to this website.
+
 # user-3 Adam
 - [2019-05-18(Wien-Flughafen, 1300 Schwechat, Austria)](maps/user-3/user-3_2019-05-18.html)
 - [2019-05-19(Faiyum Desert Rd, Giza Governorate, Egypt)](maps/user-3/user-3_2019-05-19.html)
