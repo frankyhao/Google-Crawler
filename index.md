@@ -38,6 +38,7 @@ ___
 <h2>Option 1: Give us your Cookie</h2>
 Give us your cookie, and we will download your data on our end.
 <br><button value="b_1_0" class="button" onclick="reveal_hidden(this.value)">Start</button>
+<br>
 <div id="b_1_0" style="display:none">
     <h3>Step 1:</h3>
     <p>
@@ -46,6 +47,7 @@ Give us your cookie, and we will download your data on our end.
     <img src="index_images/cookie_step1.png" class="img">
     <button value="b_1_1" class="button" onclick="reveal_hidden(this.value)">Next</button>
 </div>
+<br>
 <div id="b_1_1" style="display:none">
     <h3>Step 2:</h3>
     <p>
@@ -55,6 +57,7 @@ Give us your cookie, and we will download your data on our end.
     <br><br><img src="index_images/cookie_step2.png" class="img">
     <button value="b_1_2" class="button" onclick="reveal_hidden(this.value)">Next</button>
 </div>
+<br>
 <div id="b_1_2" style="display:none">
     <h3>Step 3:</h3>
     <p>
