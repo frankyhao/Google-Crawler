@@ -9,18 +9,23 @@ title: Travel Logs
 <meta name="google-signin-client_id" content="1060905353346-b38npddv13apf43pfdoin6cbht953j20.apps.googleusercontent.com">
 <div class="g-signin2" data-onsuccess="onSignIn"></div>
 <style>
-        .button {
-         background-color: #1c87c9;
-         border: none;
-         color: white;
-         padding: 20px 34px;
-         text-align: center;
-         text-decoration: none;
-         display: inline-block;
-         font-size: 20px;
-         margin: 4px 2px;
-         cursor: pointer;
-         }
+    .button {
+        background-color: #4CAF50;
+        border: none;
+        color: white;
+        padding: 16px 32px;
+        text-align: center;
+        font-size: 16px;
+        margin: 4px 2px;
+        opacity: 0.6;
+        transition: 0.3s;
+        cursor: pointer;
+        border-radius: 5px;
+    }
+
+    .button:hover {
+        opacity: 1
+    }
 </style>
 # How to send us your Timeline Information
 ___
