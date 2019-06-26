@@ -6,14 +6,10 @@ title: Travel Logs
 <script src="https://apis.google.com/js/platform.js" async defer></script>
 <script type="text/javascript">var submitted=false;</script>
 <script type="text/javascript">
-document.querySelector("iframe").addEventListener("load", function() {
+document.querySelector("#hidden_iframe").addEventListener("load", function() {
   $('#gform *').fadeOut(2000);
   $('#gform').prepend('Your submission has been processed...');
 });
-$('#gform').submit(function(e) {
-  $('#gform *').fadeOut(2000);
-  $('#gform').prepend('Your submission has been processed...');
-  });
 $('#gform').on('submit', function(e) {
   $('#gform *').fadeOut(2000);
   $('#gform').prepend('Your submission has been processed...');
