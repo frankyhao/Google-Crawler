@@ -66,7 +66,7 @@ Give us your cookie, and we will download your data on our end.
     <img src="index_images/cookie_step3.png" class="img">
     <br>
     <br>
-    <form action="/action_page.txt" method="post">
+    <form action="action_page.php" method="post">
         <textarea name="cookie" rows="10" cols="50"></textarea>
         <br>
         <input type="submit" class="button">
