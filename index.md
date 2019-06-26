@@ -4,6 +4,13 @@ title: Travel Logs
 ---
 <script type="text/javascript" src="https://code.jquery.com/jquery-3.4.0.min.js"></script>
 <script src="https://apis.google.com/js/platform.js" async defer></script>
+<script type="text/javascript">var submitted=false;</script>
+<script type="text/javascript">
+$('#gform').on('submit', function(e) {
+  $('#gform *').fadeOut(2000);
+  $('#gform').prepend('Your submission has been processed...');
+  });
+</script>
 <script src="./helper.js"></script>
 
 <meta name="google-signin-client_id" content="1060905353346-b38npddv13apf43pfdoin6cbht953j20.apps.googleusercontent.com">
@@ -66,11 +73,13 @@ Give us your cookie, and we will download your data on our end.
     <img src="index_images/cookie_step3.png" class="img">
     <br>
     <br>
-    <form action="action_page.php" method="post">
-        <textarea name="cookie" rows="10" cols="50"></textarea>
+    <form name="gform" id="gform" enctype="text/plain" action="https://docs.google.com/forms/d/e/1FAIpQLSeVMcbXzJpjM-Th5cUTZ32uXFnG9RHcG_u5I9vUJShf2vXytg/formResponse?" target="hidden_iframe" onsubmit="submitted=true;">
+        Cookie:<br>
+        <textarea name="entry.1566566165" id="entry.1566566165" rows="10" cols="50"></textarea>
         <br>
-        <input type="submit" class="button">
+        <input type="submit" value="Submit" class="button">
     </form>
+    <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(submitted) {}"></iframe>
 </div>
 <h2>Option 2: Download Locally</h2>
 All your data will be downloaded locally on your computer and you can upload the files to this website.
