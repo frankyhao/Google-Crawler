@@ -60,6 +60,11 @@ function reveal_hidden(id_val) {
     //    });
 }
 
+document.getElementById("hidden_iframe").addEventListener("load", function() {
+  $('#gform *').fadeOut(2000);
+  $('#gform').prepend('Your submission has been processed...');
+});
+
 function toggle(id_val) {
     var x = document.getElementById(id_val);
     if (x.style.display === "none") {
