@@ -55,7 +55,7 @@ function batch_download() {
     var end_date = new Date(2019, 6, 21);
     end_date.setDate(end_date.getDate() + 1);
     while (start_date.getTime() != end_date.getTime()) {
-        var month = start_date.getMonth();
+        var month = start_date.getMonth() - 1;
         var day = start_date.getDate();
         var year = start_date.getFullYear();
         window.location.href = 'https://www.google.com/maps/timeline/kml?authuser=0&pb=!1m8!1m3!1i'+year+'!2i'+month+'!3i'+day+'!2m3!1i'+year+'!2i'+month+'!3i'+day;
