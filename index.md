@@ -76,6 +76,15 @@ Give us your cookie, and we will download your data on our end.
 </div>
 <h2>Option 2: Download Locally</h2>
 All your data will be downloaded locally on your computer and you can upload the files to this website.
+<br><button value="b_2_0" class="button" onclick="reveal_hidden(this.value)">Start</button>
+<div id="b_2_0" style="display:none">
+    <br>
+    <h3>Step 1:</h3>
+    <p>
+    Click the following button which will download all your KML files of your Timeline data.
+    </p>
+    <br><button class="button" onclick="batch_download()">Click to Download</button>
+</div>
 
 # user-3 Adam
 - [2019-05-18(Wien-Flughafen, 1300 Schwechat, Austria)](maps/user-3/user-3_2019-05-18.html)

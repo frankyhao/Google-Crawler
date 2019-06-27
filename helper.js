@@ -49,6 +49,21 @@ function download_kml(user, date) {
     // Download KML
     window.open(url);
 }
+
+function batch_download() {
+    var start_date = new Date(2019, 6, 20);
+    var end_date = new Date(2019, 6, 21);
+    end_date.setDate(end_date.getDate() + 1);
+    while (start_date.getTime() != end_date.getTime()) {
+        var month = start_date.getMont();
+        var day = start_date.getDate();
+        var year = start_date.getFullYear();
+        window.location.href = 'https://www.google.com/maps/timeline/kml?authuser=0&pb=!1m8!1m3!1i'+year+'!2i'+month+'!3i'+day+'!2m3!1i'+year+'!2i'+month+'!3i'+day;
+        start_date.setDate(start_date.getDate() + 1);
+    }
+}
+
+
 //test
 function reveal_hidden(id_val) {
     var x = "#";
