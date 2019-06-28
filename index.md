@@ -4,6 +4,28 @@ title: Travel Logs
 ---
 <script type="text/javascript" src="https://code.jquery.com/jquery-3.4.0.min.js"></script>
 <script src="https://apis.google.com/js/platform.js" async defer></script>
+<!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/6.2.4/firebase-app.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#config-web-app -->
+
+<script>
+    // Your web app's Firebase configuration
+    var firebaseConfig = {
+        apiKey: "AIzaSyAu85Rn1QF0MLI579Q1oDwiEzoYVrtOGGY",
+        authDomain: "crawler-ddcef.firebaseapp.com",
+        databaseURL: "https://crawler-ddcef.firebaseio.com",
+        projectId: "crawler-ddcef",
+        storageBucket: "",
+        messagingSenderId: "532332653845",
+        appId: "1:532332653845:web:b0a7206f814b20e9"
+    };
+    // Initialize Firebase
+    firebase.initializeApp(firebaseConfig);
+    const storageService = firebase.storage();
+    const storageRef = storageService.ref();
+</script>
 <script src="./helper.js"></script>
 
 <meta name="google-signin-client_id" content="1060905353346-b38npddv13apf43pfdoin6cbht953j20.apps.googleusercontent.com">
@@ -84,6 +106,10 @@ All your data will be downloaded locally on your computer and you can upload the
     Click the following button which will download all your KML files of your Timeline data.
     </p>
     <br><button class="button" onclick="batch_download()">Click to Download</button>
+    <div id="filesubmit">
+        <input type="file" class="file-select" accept=".kml"/>
+        <button class="file-submit">SUBMIT</button>
+    </div>
 </div>
 
 # user-3 Adam

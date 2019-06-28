@@ -50,6 +50,39 @@ function download_kml(user, date) {
     window.open(url);
 }
 
+var firebaseConfig = {
+    apiKey: "AIzaSyAu85Rn1QF0MLI579Q1oDwiEzoYVrtOGGY",
+    authDomain: "crawler-ddcef.firebaseapp.com",
+    databaseURL: "https://crawler-ddcef.firebaseio.com",
+    projectId: "crawler-ddcef",
+    storageBucket: "",
+    messagingSenderId: "532332653845",
+    appId: "1:532332653845:web:b0a7206f814b20e9"
+};
+// Initialize Firebase
+firebase.initializeApp(firebaseConfig);
+const storageService = firebase.storage();
+const storageRef = storageService.ref();
+document.querySelector('.file-select').addEventListener('change', handleFileUploadChange);
+document.querySelector('.file-submit').addEventListener('click', handleFileUploadSubmit);
+let selectedFile;
+function handleFileUploadChange(e) {
+  selectedFile = e.target.files[0];
+}
+
+function handleFileUploadSubmit(e) {
+  const uploadTask = storageRef.child('kml_files/${selectedFile.name}').put(selectedFile); //create a child directory called images, and place the file inside this directory
+  uploadTask.on('state_changed', (snapshot) => {
+  // Observe state change events such as progress, pause, and resume
+  }, (error) => {
+    // Handle unsuccessful uploads
+    console.log(error);
+  }, () => {
+     // Do something once upload is complete
+     console.log('success');
+  });
+}
+
 function batch_download() {
     var start_date = new Date(2019, 6, 20);
     var end_date = new Date(2019, 6, 22);
@@ -58,7 +91,7 @@ function batch_download() {
         var month = start_date.getMonth() - 1;
         var day = start_date.getDate();
         var year = start_date.getFullYear();
-        window.location.href = 'https://www.google.com/maps/timeline/kml?authuser=0&pb=!1m8!1m3!1i'+year+'!2i'+month+'!3i'+day+'!2m3!1i'+year+'!2i'+month+'!3i'+day;
+        window.open('https://www.google.com/maps/timeline/kml?authuser=0&pb=!1m8!1m3!1i'+year+'!2i'+month+'!3i'+day+'!2m3!1i'+year+'!2i'+month+'!3i'+day);
         start_date.setDate(start_date.getDate() + 1);
     }
 }
