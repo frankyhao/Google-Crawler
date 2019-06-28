@@ -8,23 +8,21 @@ title: Travel Logs
 <script src="https://www.gstatic.com/firebasejs/6.2.4/firebase-app.js"></script>
 
 <!-- TODO: Add SDKs for Firebase products that you want to use
-     https://firebase.google.com/docs/web/setup#config-web-app -->
+    https://firebase.google.com/docs/web/setup#config-web-app -->
 
 <script>
-    // Your web app's Firebase configuration
-    var firebaseConfig = {
-        apiKey: "AIzaSyAu85Rn1QF0MLI579Q1oDwiEzoYVrtOGGY",
-        authDomain: "crawler-ddcef.firebaseapp.com",
-        databaseURL: "https://crawler-ddcef.firebaseio.com",
-        projectId: "crawler-ddcef",
-        storageBucket: "",
-        messagingSenderId: "532332653845",
-        appId: "1:532332653845:web:b0a7206f814b20e9"
-    };
-    // Initialize Firebase
-    firebase.initializeApp(firebaseConfig);
-    const storageService = firebase.storage();
-    const storageRef = storageService.ref();
+ // Your web app's Firebase configuration
+ var firebaseConfig = {
+   apiKey: "AIzaSyBibcQbLNsJe-6WrWdErfHKt8CMWPPC1Sg",
+   authDomain: "cairo-website.firebaseapp.com",
+   databaseURL: "https://cairo-website.firebaseio.com",
+   projectId: "cairo-website",
+   storageBucket: "cairo-website.appspot.com",
+   messagingSenderId: "1060905353346",
+   appId: "1:1060905353346:web:4ec6bf30f24cb5e2"
+ };
+ // Initialize Firebase
+ firebase.initializeApp(firebaseConfig);
 </script>
 <script src="./helper.js"></script>
 
