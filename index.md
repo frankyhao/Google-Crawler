@@ -24,6 +24,7 @@ title: Travel Logs
  };
  // Initialize Firebase
  firebase.initializeApp(firebaseConfig);
+ var submitted = false;
 </script>
 
 <meta name="google-signin-client_id" content="1060905353346-b38npddv13apf43pfdoin6cbht953j20.apps.googleusercontent.com">
