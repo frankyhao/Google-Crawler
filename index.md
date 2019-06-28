@@ -4,26 +4,7 @@ title: Travel Logs
 ---
 <script type="text/javascript" src="https://code.jquery.com/jquery-3.4.0.min.js"></script>
 <script src="https://apis.google.com/js/platform.js" async defer></script>
-<!-- The core Firebase JS SDK is always required and must be listed first -->
-<script src="https://www.gstatic.com/firebasejs/6.2.4/firebase-app.js"></script>
-<script src="https://www.gstatic.com/firebasejs/6.2.4/firebase-storage.js"></script>
-
-<!-- TODO: Add SDKs for Firebase products that you want to use
-    https://firebase.google.com/docs/web/setup#config-web-app -->
-
 <script>
- // Your web app's Firebase configuration
- var firebaseConfig = {
-   apiKey: "AIzaSyBibcQbLNsJe-6WrWdErfHKt8CMWPPC1Sg",
-   authDomain: "cairo-website.firebaseapp.com",
-   databaseURL: "https://cairo-website.firebaseio.com",
-   projectId: "cairo-website",
-   storageBucket: "cairo-website.appspot.com",
-   messagingSenderId: "1060905353346",
-   appId: "1:1060905353346:web:4ec6bf30f24cb5e2"
- };
- // Initialize Firebase
- firebase.initializeApp(firebaseConfig);
  var submitted = false;
 </script>
 
