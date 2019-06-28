@@ -25,7 +25,6 @@ title: Travel Logs
  // Initialize Firebase
  firebase.initializeApp(firebaseConfig);
 </script>
-<script src="./helper.js"></script>
 
 <meta name="google-signin-client_id" content="1060905353346-b38npddv13apf43pfdoin6cbht953j20.apps.googleusercontent.com">
 <div class="g-signin2" data-onsuccess="onSignIn"></div>
@@ -167,3 +166,4 @@ All your data will be downloaded locally on your computer and you can upload the
 <iframe src="maps/user-1/user-1_2019-06-10.html" height="400" width="49%"></iframe>
 <img src="actual_maps/user-1/actual_6:10:19.png" height="400" width="49%">
 </div>
+<script src="./helper.js"></script>
