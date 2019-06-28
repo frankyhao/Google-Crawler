@@ -49,18 +49,6 @@ function download_kml(user, date) {
     // Download KML
     window.open(url);
 }
-
-var firebaseConfig = {
-    apiKey: "AIzaSyAu85Rn1QF0MLI579Q1oDwiEzoYVrtOGGY",
-    authDomain: "crawler-ddcef.firebaseapp.com",
-    databaseURL: "https://crawler-ddcef.firebaseio.com",
-    projectId: "crawler-ddcef",
-    storageBucket: "",
-    messagingSenderId: "532332653845",
-    appId: "1:532332653845:web:b0a7206f814b20e9"
-};
-// Initialize Firebase
-firebase.initializeApp(firebaseConfig);
 const storageService = firebase.storage();
 const storageRef = storageService.ref();
 document.querySelector('.file-select').addEventListener('change', handleFileUploadChange);
