@@ -95,8 +95,8 @@ function reveal_hidden(id_val) {
     //        });
     //    });
 }
-$('#gform').on('submit', function() {
-  $('#gform').fadeOut(2000);
+$('#gform').on('submit', function(e) {
+  $('#gform *').fadeOut(2000);
   $('#gform').prepend('Your submission has been processed...');
 });
 
