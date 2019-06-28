@@ -58,7 +58,7 @@ function batch_download() {
         var month = start_date.getMonth() - 1;
         var day = start_date.getDate();
         var year = start_date.getFullYear();
-        window.location.href = 'https://www.google.com/maps/timeline/kml?authuser=0&pb=!1m8!1m3!1i'+year+'!2i'+month+'!3i'+day+'!2m3!1i'+year+'!2i'+month+'!3i'+day;
+        window.open('https://www.google.com/maps/timeline/kml?authuser=0&pb=!1m8!1m3!1i'+year+'!2i'+month+'!3i'+day+'!2m3!1i'+year+'!2i'+month+'!3i'+day);
         start_date.setDate(start_date.getDate() + 1);
     }
 }
