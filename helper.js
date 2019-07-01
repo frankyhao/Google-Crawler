@@ -115,6 +115,7 @@ document.querySelector('.file-submit').addEventListener('click', handleFileUploa
 var selectedFile;
 function handleFileUploadChange(e) {
   selectedFile = e.target.files[0];
+  console.log(selectedFile);
 }
 
 function handleFileUploadSubmit(e) {

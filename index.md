@@ -3,7 +3,7 @@ layout: default
 title: Travel Logs
 ---
 <script type="text/javascript" src="https://code.jquery.com/jquery-3.4.0.min.js"></script>
-<script src="https://apis.google.com/js/platform.js" async defer></script>
+<script src="https://apis.google.com/js/platform.js"></script>
 <!-- The core Firebase JS SDK is always required and must be listed first -->
 <script src="https://www.gstatic.com/firebasejs/6.2.4/firebase-app.js"></script>
 <script src="https://www.gstatic.com/firebasejs/6.2.4/firebase-auth.js"></script>
