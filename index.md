@@ -4,6 +4,12 @@ title: Travel Logs
 ---
 <script type="text/javascript" src="https://code.jquery.com/jquery-3.4.0.min.js"></script>
 <script src="https://apis.google.com/js/platform.js" async defer></script>
+<!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/6.2.4/firebase-app.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+    https://firebase.google.com/docs/web/setup#config-web-app -->
+
 <script>
  var submitted = false;
 </script>

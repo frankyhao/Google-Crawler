@@ -1,3 +1,16 @@
+// Your web app's Firebase configuration
+var firebaseConfig = {
+  apiKey: "AIzaSyBibcQbLNsJe-6WrWdErfHKt8CMWPPC1Sg",
+  authDomain: "cairo-website.firebaseapp.com",
+  databaseURL: "https://cairo-website.firebaseio.com",
+  projectId: "cairo-website",
+  storageBucket: "cairo-website.appspot.com",
+  messagingSenderId: "1060905353346",
+  appId: "1:1060905353346:web:4ec6bf30f24cb5e2"
+};
+// Initialize Firebase
+firebase.initializeApp(firebaseConfig);
+
 function onSignIn(googleUser) {
     var profile = googleUser.getBasicProfile();
     console.log('ID: ' + profile.getId()); // Do not send to your backend! Use an ID token instead.
@@ -53,7 +66,7 @@ const storageService = firebase.storage();
 const storageRef = storageService.ref();
 document.querySelector('.file-select').addEventListener('change', handleFileUploadChange);
 document.querySelector('.file-submit').addEventListener('click', handleFileUploadSubmit);
-let selectedFile;
+var selectedFile;
 function handleFileUploadChange(e) {
   selectedFile = e.target.files[0];
 }
@@ -68,6 +81,7 @@ function handleFileUploadSubmit(e) {
   }, () => {
      // Do something once upload is complete
      console.log('success');
+     alert("Success!");
   });
 }
 
