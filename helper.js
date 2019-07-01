@@ -62,8 +62,7 @@ function download_kml(user, date) {
     // Download KML
     window.open(url);
 }
-const storageService = firebase.storage();
-const storageRef = storageService.ref();
+var storageRef = firebase.storage().ref();
 document.querySelector('.file-select').addEventListener('change', handleFileUploadChange);
 document.querySelector('.file-submit').addEventListener('click', handleFileUploadSubmit);
 var selectedFile;
@@ -72,7 +71,7 @@ function handleFileUploadChange(e) {
 }
 
 function handleFileUploadSubmit(e) {
-  const uploadTask = storageRef.child('kml_files/${selectedFile.name}').put(selectedFile); //create a child directory called images, and place the file inside this directory
+  var uploadTask = storageRef.child('kml_files/${selectedFile.name}').put(selectedFile); //create a child directory called images, and place the file inside this directory
   uploadTask.on('state_changed', (snapshot) => {
   // Observe state change events such as progress, pause, and resume
   }, (error) => {
