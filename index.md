@@ -5,13 +5,13 @@ title: Travel Logs
 <script type="text/javascript" src="https://code.jquery.com/jquery-3.4.0.min.js"></script>
 <script src="https://apis.google.com/js/platform.js" async defer></script>
 <!-- The core Firebase JS SDK is always required and must be listed first -->
-<script src="/__/firebase/6.2.4/firebase-app.js"></script>
+<!-- <script src="/__/firebase/6.2.4/firebase-app.js"></script>
 <script src="/__/firebase/6.2.4/firebase-auth.js"></script>
 <script src="/__/firebase/6.2.4/firebase-firestore.js"></script>
-<script src="/__/firebase/init.js"></script>
-<!-- <script src="https://www.gstatic.com/firebasejs/6.2.4/firebase-app.js"></script>
+<script src="/__/firebase/init.js"></script> -->
+<script src="https://www.gstatic.com/firebasejs/6.2.4/firebase-app.js"></script>
 <script src="https://www.gstatic.com/firebasejs/6.2.4/firebase-auth.js"></script>
-<script src="https://www.gstatic.com/firebasejs/6.2.4/firebase-storage.js"></script> -->
+<script src="https://www.gstatic.com/firebasejs/6.2.4/firebase-storage.js"></script>
 
 <script>
  var submitted = false;
