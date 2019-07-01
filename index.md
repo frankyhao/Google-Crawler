@@ -6,10 +6,8 @@ title: Travel Logs
 <script src="https://apis.google.com/js/platform.js" async defer></script>
 <!-- The core Firebase JS SDK is always required and must be listed first -->
 <script src="https://www.gstatic.com/firebasejs/6.2.4/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/6.2.4/firebase-auth.js"></script>
 <script src="https://www.gstatic.com/firebasejs/6.2.4/firebase-storage.js"></script>
-
-<!-- TODO: Add SDKs for Firebase products that you want to use
-    https://firebase.google.com/docs/web/setup#config-web-app -->
 
 <script>
  var submitted = false;
@@ -17,6 +15,7 @@ title: Travel Logs
 
 <meta name="google-signin-client_id" content="1060905353346-b38npddv13apf43pfdoin6cbht953j20.apps.googleusercontent.com">
 <div class="g-signin2" data-onsuccess="onSignIn"></div>
+<div id="firebaseui-auth-container"></div>
 <style>
     .button {
         background-color: #4CAF50;  <!-- #1c87c9; -->
