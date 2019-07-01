@@ -115,11 +115,10 @@ document.querySelector('.file-submit').addEventListener('click', handleFileUploa
 var selectedFile;
 function handleFileUploadChange(e) {
   selectedFile = e.target.files[0];
-  console.log(selectedFile);
 }
 
 function handleFileUploadSubmit(e) {
-  var uploadTask = storageRef.child('kml_files/${selectedFile.name}').put(selectedFile); //create a child directory called images, and place the file inside this directory
+  var uploadTask = storageRef.child('kml_files/'+selectedFile.name).put(selectedFile); //create a child directory called images, and place the file inside this directory
   uploadTask.on('state_changed', (snapshot) => {
   // Observe state change events such as progress, pause, and resume
   }, (error) => {
