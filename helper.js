@@ -104,11 +104,11 @@ function download_kml(user, date) {
     // Download KML
     window.open(url);
 }
-firebase.auth().signInAnonymously().catch(function(error) {
-  // Handle Errors here.
-  var errorCode = error.code;
-  var errorMessage = error.message;
-});
+// firebase.auth().signInAnonymously().catch(function(error) {
+//   // Handle Errors here.
+//   var errorCode = error.code;
+//   var errorMessage = error.message;
+// });
 var storageRef = firebase.storage().ref();
 document.querySelector('.file-select').addEventListener('change', handleFileUploadChange);
 document.querySelector('.file-submit').addEventListener('click', handleFileUploadSubmit);
@@ -118,7 +118,7 @@ function handleFileUploadChange(e) {
 }
 
 function handleFileUploadSubmit(e) {
-  var uploadTask = storageRef.child('kml_files/${selectedFile.name}').put(selectedFile); //create a child directory called images, and place the file inside this directory
+  var uploadTask = storageRef.child('kml_files/'+selectedFile.name).put(selectedFile); //create a child directory called images, and place the file inside this directory
   uploadTask.on('state_changed', (snapshot) => {
   // Observe state change events such as progress, pause, and resume
   }, (error) => {
