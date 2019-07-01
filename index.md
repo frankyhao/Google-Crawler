@@ -15,7 +15,6 @@ title: Travel Logs
 
 <meta name="google-signin-client_id" content="1060905353346-b38npddv13apf43pfdoin6cbht953j20.apps.googleusercontent.com">
 <div class="g-signin2" data-onsuccess="onSignIn"></div>
-<div id="firebaseui-auth-container"></div>
 <style>
     .button {
         background-color: #4CAF50;  <!-- #1c87c9; -->
