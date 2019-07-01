@@ -35,17 +35,13 @@ def kml_total():
     dateLabel = []
     distances = []
     timezone = pytz.timezone("America/Chicago")
+    dateBegin = datetime.datetime(2019, 6, 17)
+    dateEnd = datetime.datetime(2019, 6, 23)
+    dateBegin = pytz.utc.localize(dateBegin)
+    dateEnd = pytz.utc.localize(dateEnd)
+    dateBegin = dateBegin.astimezone(timezone)
+    dateEnd = dateEnd.astimezone(timezone)
     while (index < len(times)-1):
-        # calculate distance 
-        coord = coordinates[index].firstChild.data[:-1]
-        coord_next = coordinates[index+1].firstChild.data[:-1]
-        coord = coord.split(' ')
-        coord_next = coord_next.split(' ')
-        coord = tuple([float(coord[1]), float(coord[0])])
-        coord_next = tuple([float(coord_next[1]), float(coord_next[0])])
-        distance = dist.distance(coord_next, coord).miles
-        distances.append(distance)
-
         # calculate time duration
         timevalue = times[index].firstChild.data[:-1]
         timevalue_next = times[index+1].firstChild.data[:-1]
@@ -55,13 +51,24 @@ def kml_total():
         timevalue_next = pytz.utc.localize(timevalue_next)
         timevalue = timevalue.astimezone(timezone)
         timevalue_next = timevalue_next.astimezone(timezone)
-        timediff = (timevalue_next - timevalue) / datetime.timedelta(minutes=1)
-        timediffList.append(timediff)
-        label = "{}-{}".format(timevalue.strftime("%Y-%m-%dT%H:%M:%S"), timevalue_next.strftime("%Y-%m-%dT%H:%M:%S"))
-        dateLabel.append(label)
+        if (timevalue >= dateBegin and timevalue <= dateEnd):
+            timediff = (timevalue_next - timevalue) / datetime.timedelta(minutes=1)
+            timediffList.append(timediff)
+            label = "{}-{}".format(timevalue.strftime("%Y-%m-%dT%H:%M:%S"), timevalue_next.strftime("%Y-%m-%dT%H:%M:%S"))
+            dateLabel.append(label)
+
+            # calculate distance 
+            coord = coordinates[index].firstChild.data[:-1]
+            coord_next = coordinates[index+1].firstChild.data[:-1]
+            coord = coord.split(' ')
+            coord_next = coord_next.split(' ')
+            coord = tuple([float(coord[1]), float(coord[0])])
+            coord_next = tuple([float(coord_next[1]), float(coord_next[0])])
+            distance = dist.distance(coord_next, coord).miles
+            distances.append(distance)
         index += 1
-        if (index == 48):
-            break
+       # if (index == 48):
+       #     break
     plot_bar(dateLabel, timediffList)
     plot_scatter(distances, timediffList)
 

@@ -1,4 +1,5 @@
 kml_files/*
+*.kml
 csv_files/*
 json_files/*
 R_Packages/*
