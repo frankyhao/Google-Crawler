@@ -1,28 +1,28 @@
 // Your web app's Firebase configuration
-//var firebaseConfig = {
-//  apiKey: "AIzaSyBibcQbLNsJe-6WrWdErfHKt8CMWPPC1Sg",
-//  authDomain: "cairo-website.firebaseapp.com",
-//  databaseURL: "https://cairo-website.firebaseio.com",
-//  projectId: "cairo-website",
-//  storageBucket: "cairo-website.appspot.com",
-//  messagingSenderId: "1060905353346",
-//  appId: "1:1060905353346:web:4ec6bf30f24cb5e2"
-//};
-//// Initialize Firebase
-//firebase.initializeApp(firebaseConfig);
+var firebaseConfig = {
+  apiKey: "AIzaSyBibcQbLNsJe-6WrWdErfHKt8CMWPPC1Sg",
+  authDomain: "cairo-website.firebaseapp.com",
+  databaseURL: "https://cairo-website.firebaseio.com",
+  projectId: "cairo-website",
+  storageBucket: "cairo-website.appspot.com",
+  messagingSenderId: "1060905353346",
+  appId: "1:1060905353346:web:4ec6bf30f24cb5e2"
+};
+// Initialize Firebase
+firebase.initializeApp(firebaseConfig);
 
  // Your web app's Firebase configuration
- var firebaseConfig = {
-   apiKey: "AIzaSyBAO8jnDYomlA4UWg6y-YP0AUD2i5aNsig",
-   authDomain: "sturdy-bastion-122722.firebaseapp.com",
-   databaseURL: "https://sturdy-bastion-122722.firebaseio.com",
-   projectId: "sturdy-bastion-122722",
-   storageBucket: "",
-   messagingSenderId: "386403629897",
-   appId: "1:386403629897:web:f2bc75cf7c176ae6"
- };
- // Initialize Firebase
- firebase.initializeApp(firebaseConfig);
+// var firebaseConfig = {
+//   apiKey: "AIzaSyBAO8jnDYomlA4UWg6y-YP0AUD2i5aNsig",
+//   authDomain: "sturdy-bastion-122722.firebaseapp.com",
+//   databaseURL: "https://sturdy-bastion-122722.firebaseio.com",
+//   projectId: "sturdy-bastion-122722",
+//   storageBucket: "",
+//   messagingSenderId: "386403629897",
+//   appId: "1:386403629897:web:f2bc75cf7c176ae6"
+// };
+// // Initialize Firebase
+// firebase.initializeApp(firebaseConfig);
 
 
 //function onSignIn(googleUser) {
