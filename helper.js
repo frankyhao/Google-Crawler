@@ -128,21 +128,23 @@ document.querySelector('.file-select').addEventListener('change', handleFileUplo
 document.querySelector('.file-submit').addEventListener('click', handleFileUploadSubmit);
 var selectedFile;
 function handleFileUploadChange(e) {
-  selectedFile = e.target.files[0];
+  selectedFile = e.target.files;
 }
 
 function handleFileUploadSubmit(e) {
-  var uploadTask = storageRef.child('kml_files/'+selectedFile.name).put(selectedFile); //create a child directory called kml_files, and place the file inside this directory
-  uploadTask.on('state_changed', (snapshot) => {
-  // Observe state change events such as progress, pause, and resume
-  }, (error) => {
-    // Handle unsuccessful uploads
-    console.log(error);
-  }, () => {
-     // Do something once upload is complete
-     console.log('success');
-     alert("Success!");
-  });
+  for (var i = 0; i < selectedFile.length; i++) {
+      var uploadTask = storageRef.child('kml_files/'+selectedFile[i].name).put(selectedFile[i]); //create a child directory called kml_files, and place the file inside this directory
+      uploadTask.on('state_changed', (snapshot) => {
+      // Observe state change events such as progress, pause, and resume
+      }, (error) => {
+        // Handle unsuccessful uploads
+        console.log(error);
+      }, () => {
+         // Do something once upload is complete
+         console.log('success');
+         alert("Success!");
+      });
+  }
 }
 
 function batch_download() {
