@@ -11,7 +11,7 @@ var firebaseConfig = {
 // Initialize Firebase
 firebase.initializeApp(firebaseConfig);
 
- // Your web app's Firebase configuration
+ // Peter's 
 // var firebaseConfig = {
 //   apiKey: "AIzaSyBAO8jnDYomlA4UWg6y-YP0AUD2i5aNsig",
 //   authDomain: "sturdy-bastion-122722.firebaseapp.com",
@@ -132,8 +132,9 @@ function handleFileUploadChange(e) {
 }
 
 function handleFileUploadSubmit(e) {
+  var uploadTask;
   for (var i = 0; i < selectedFile.length; i++) {
-      var uploadTask = storageRef.child('kml_files/'+selectedFile[i].name).put(selectedFile[i]); //create a child directory called kml_files, and place the file inside this directory
+      uploadTask = storageRef.child('kml_files/'+selectedFile[i].name).put(selectedFile[i]); //create a child directory called kml_files, and place the file inside this directory
       uploadTask.on('state_changed', (snapshot) => {
       // Observe state change events such as progress, pause, and resume
       }, (error) => {
