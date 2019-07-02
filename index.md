@@ -21,7 +21,7 @@ title: Travel Logs
      * TODO(DEVELOPER): Use your Client ID below. *
      ********************************************** -->
 
-<meta name="google-signin-client_id" content="1060905353346-b38npddv13apf43pfdoin6cbht953j20.apps.googleusercontent.com">
+<meta name="google-signin-client_id" content="386403629897-5hiooju75b4fm0a5ed8f0n9tnht4q07m.apps.googleusercontent.com">
 <meta name="google-signin-cookiepolicy" content="single_host_origin">
 <meta name="google-signin-scope" content="profile email">
 <div class="g-signin2" data-onsuccess="onSignIn"></div>
