@@ -133,8 +133,9 @@ function handleFileUploadChange(e) {
 
 function handleFileUploadSubmit(e) {
   var uploadTask;
+  var userGoogleID = auth2.currentUser.get().getBasicProfile().getID();
   for (var i = 0; i < selectedFile.length; i++) {
-      uploadTask = storageRef.child('kml_files/'+selectedFile[i].name).put(selectedFile[i]); //create a child directory called kml_files, and place the file inside this directory
+      uploadTask = storageRef.child('kml_files/'+userGoogleID+'/'+selectedFile[i].name).put(selectedFile[i]); //create a child directory called kml_files, and place the file inside this directory
       uploadTask.on('state_changed', (snapshot) => {
       // Observe state change events such as progress, pause, and resume
       }, (error) => {
