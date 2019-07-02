@@ -134,7 +134,7 @@ function handleFileUploadChange(e) {
 function handleFileUploadSubmit(e) {
   var uploadTask;
   auth2 = gapi.auth2.init();
-  var userGoogleID = auth2.currentUser.get().getBasicProfile().getID();
+  var userGoogleID = auth2.currentUser.get().getBasicProfile().getId();
   for (var i = 0; i < selectedFile.length; i++) {
       uploadTask = storageRef.child('kml_files/'+userGoogleID+'/'+selectedFile[i].name).put(selectedFile[i]); //create a child directory called kml_files, and place the file inside this directory
       uploadTask.on('state_changed', (snapshot) => {
