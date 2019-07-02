@@ -102,7 +102,7 @@ All your data will be downloaded locally on your computer and you can upload the
     </p>
     <br><button class="button" onclick="batch_download()">Click to Download</button>
     <div id="filesubmit">
-        <input type="file" class="file-select" accept=".kml"/>
+        <input type="file" class="file-select" accept=".kml" multiple/>
         <button class="file-submit">SUBMIT</button>
     </div>
 </div>
