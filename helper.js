@@ -11,7 +11,7 @@ var firebaseConfig = {
 // Initialize Firebase
 firebase.initializeApp(firebaseConfig);
 
- // Peter's 
+ // Peter's
 // var firebaseConfig = {
 //   apiKey: "AIzaSyBAO8jnDYomlA4UWg6y-YP0AUD2i5aNsig",
 //   authDomain: "sturdy-bastion-122722.firebaseapp.com",
@@ -144,10 +144,10 @@ function handleFileUploadSubmit(e) {
         console.log(error);
       }, () => {
          // Do something once upload is complete
-         console.log('success');
-         alert("Success!");
+         console.log('finished ' + i + '/' + selectedFile.length);
       });
   }
+  alert("Success!");
 }
 
 function batch_download() {
