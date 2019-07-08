@@ -84,15 +84,14 @@ Give us your cookie, and we will download your data on our end.
     <img src="index_images/cookie_step3.png" class="img">
     <br>
     <br>
-    <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSeVMcbXzJpjM-Th5cUTZ32uXFnG9RHcG_u5I9vUJShf2vXytg/viewform?embedded=true" width="640" height="488" frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe>
-
-    <form name="gform" id="gform" enctype="text/plain" action="https://docs.google.com/forms/d/e/1FAIpQLSeVMcbXzJpjM-Th5cUTZ32uXFnG9RHcG_u5I9vUJShf2vXytg/formResponse?" target="hidden_iframe" onsubmit="submitted=true;">
+    <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSeVMcbXzJpjM-Th5cUTZ32uXFnG9RHcG_u5I9vUJShf2vXytg/viewform?embedded=true" width="60%" height="488" frameborder="10" marginheight="10" marginwidth="10">Loading...</iframe>
+    <!-- <form name="gform" id="gform" enctype="text/plain" action="https://docs.google.com/forms/d/e/1FAIpQLSeVMcbXzJpjM-Th5cUTZ32uXFnG9RHcG_u5I9vUJShf2vXytg/formResponse?" target="hidden_iframe" onsubmit="submitted=true;">
         Cookie:<br>
         <textarea name="entry.1566566165" id="entry.1566566165" rows="10" cols="50"></textarea>
         <br>
         <input type="submit" value="Submit" class="button">
     </form>
-    <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(submitted) {}"></iframe>
+    <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(submitted) {}"></iframe> -->
 </div>
 <h2>Option 2: Download Locally</h2>
 All your data will be downloaded locally on your computer and you can upload the files to this website.
