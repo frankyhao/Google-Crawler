@@ -183,11 +183,6 @@ function reveal_hidden(id_val) {
     //    });
 }
 
-$('#gform').submit(function() {
-    var txt = $('#entry.1566566165');
-    txt.val(txt.val() + "hhhhhhhhhhhhhhhhhh");
-});
-
 $('#gform').on('submit', function(e) {
   console.log($('#entry.1566566165').val());
   $('#gform *').fadeOut(2000);
