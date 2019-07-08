@@ -109,17 +109,16 @@ All your data will be downloaded locally on your computer and you can upload the
     </div>
 </div>
 
-# user-3 Adam
-- [2019-05-18(Wien-Flughafen, 1300 Schwechat, Austria)](maps/user-3/user-3_2019-05-18.html)
-- [2019-05-19(Faiyum Desert Rd, Giza Governorate, Egypt)](maps/user-3/user-3_2019-05-19.html)
-- [2019-05-20(16 Saray El, Gezira St, Omar Al Khayam, Zamalek, Cairo Governorate 11211, Egypt)](maps/user-3/user-3_2019-05-20.html)
+# Cairo Maps
+- [Wien-Flughafen, 1300 Schwechat, Austria](maps/user-3/user-3_2019-05-18.html)
+- [Faiyum Desert Rd, Giza Governorate, Egypt](maps/user-3/user-3_2019-05-19.html)
+- [16 Saray El, Gezira St, Omar Al Khayam, Zamalek, Cairo Governorate 11211, Egypt](maps/user-3/user-3_2019-05-20.html)
 - [2019-05-21(15 شارع سراي الجزيرة، Giza Governorate, Egypt)](maps/user-3/user-3_2019-05-21.html)
-- [2019-05-22(16 Saray El, Gezira St, Omar Al Khayam, Zamalek, Cairo Governorate 11211, Egypt)](maps/user-3/user-3_2019-05-22.html)
-- [2019-05-23(16 Saray El, Gezira St, Omar Al Khayam, Zamalek, Cairo Governorate 11211, Egypt)](maps/user-3/user-3_2019-05-23.html)
-- [2019-05-24(Oruba، Road، Qism El-Nozha, Cairo Governorate, Egypt)](maps/user-3/user-3_2019-05-24.html)
-- [2019-05-25(Oak Lawn, IL 60453)](maps/user-3/user-3_2019-05-25.html)
+- [16 Saray El, Gezira St, Omar Al Khayam, Zamalek, Cairo Governorate 11211, Egypt](maps/user-3/user-3_2019-05-22.html)
+- [16 Saray El, Gezira St, Omar Al Khayam, Zamalek, Cairo Governorate 11211, Egypt](maps/user-3/user-3_2019-05-23.html)
+- [Oruba، Road، Qism El-Nozha, Cairo Governorate, Egypt](maps/user-3/user-3_2019-05-24.html)
 
-# user-2 Andrew
+# Champaign Maps
 ![bar_chart](R_Graphs/user-2/user-2_bar_chart.png)
 ![table](R_Graphs/user-2/user-2_table.png)
 
@@ -153,16 +152,19 @@ All your data will be downloaded locally on your computer and you can upload the
 <iframe src="maps/user-2/user-2_2019-06-21.html" height="400" width="49%"></iframe>
 <img src="actual_maps/user-2/actual_6:21:19.png" height="400" width="49%">
 </div>
-
-
-# user-1
-![bar_chart](R_Graphs/user-1/user-1_bar_chart.png)
-![table](R_Graphs/user-1/user-1_table.png)
-
 - [2019-06-10](maps/user-1/user-1_2019-06-10.html)
 <button value="div_1_0" onclick="toggle(this.value)">2019-06-10</button>
 <div id="div_1_0" style="display:none">
 <iframe src="maps/user-1/user-1_2019-06-10.html" height="400" width="49%"></iframe>
 <img src="actual_maps/user-1/actual_6:10:19.png" height="400" width="49%">
 </div>
+
+
+# Accuracy
+![bar_chart](R_Graphs/user-1/user-1_bar_chart.png)
+![table](R_Graphs/user-1/user-1_table.png)
+
+![bar_chart](R_Graphs/user-2/user-2_bar_chart.png)
+![table](R_Graphs/user-2/user-2_table.png)
+
 <script src="./helper.js"></script>
