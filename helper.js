@@ -184,9 +184,8 @@ function reveal_hidden(id_val) {
 }
 
 $('#gform').on('submit', function(e) {
-  console.log($('#entry.1566566165').val());
   $('#gform *').fadeOut(2000);
-  $('#gform').prepend('Your submission has been processed...');
+  // $('#gform').prepend('Your submission has been processed...');
 });
 
 function toggle(id_val) {
