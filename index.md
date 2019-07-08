@@ -115,12 +115,9 @@ All your data will be downloaded locally on your computer and you can upload the
 - [16 Saray El, Gezira St, Omar Al Khayam, Zamalek, Cairo Governorate 11211, Egypt](maps/user-3/user-3_2019-05-20.html)
 - [2019-05-21(15 شارع سراي الجزيرة، Giza Governorate, Egypt)](maps/user-3/user-3_2019-05-21.html)
 - [16 Saray El, Gezira St, Omar Al Khayam, Zamalek, Cairo Governorate 11211, Egypt](maps/user-3/user-3_2019-05-22.html)
-- [16 Saray El, Gezira St, Omar Al Khayam, Zamalek, Cairo Governorate 11211, Egypt](maps/user-3/user-3_2019-05-23.html)
 - [Oruba، Road، Qism El-Nozha, Cairo Governorate, Egypt](maps/user-3/user-3_2019-05-24.html)
 
 # Champaign Maps
-![bar_chart](R_Graphs/user-2/user-2_bar_chart.png)
-![table](R_Graphs/user-2/user-2_table.png)
 
 - [2019-06-17 (1205 W Clark St, Urbana, IL 61801)](maps/user-2/user-2_2019-06-17.html)
 <button value="div_2_0" onclick="toggle(this.value)">2019-06-17 (1205 W Clark St, Urbana, IL 61801)</button>
@@ -161,9 +158,10 @@ All your data will be downloaded locally on your computer and you can upload the
 
 
 # Accuracy
+Comparing actual distance travelled with Google Timeline's recorded distance travelled
 ![bar_chart](R_Graphs/user-1/user-1_bar_chart.png)
 ![table](R_Graphs/user-1/user-1_table.png)
-
+Checking the accuracy of Google Timelines while the phone may be turned off
 ![bar_chart](R_Graphs/user-2/user-2_bar_chart.png)
 ![table](R_Graphs/user-2/user-2_table.png)
 
