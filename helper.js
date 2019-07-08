@@ -11,6 +11,10 @@ var firebaseConfig = {
 // Initialize Firebase
 firebase.initializeApp(firebaseConfig);
 
+var userID;
+var userName;
+var userEmail;
+
  // Peter's
 // var firebaseConfig = {
 //   apiKey: "AIzaSyBAO8jnDYomlA4UWg6y-YP0AUD2i5aNsig",
@@ -40,6 +44,10 @@ firebase.initializeApp(firebaseConfig);
 
 function onSignIn(googleUser) {
   console.log('Google Auth Response', googleUser);
+  userID = googleUser.getBasicProfile().getId();
+  userName = googleUser.getBasicProfile().getName();
+  userEmail = googleUser.getBasicProfile().getEmail();
+
   // We need to register an Observer on Firebase Auth to make sure auth is initialized.
   var unsubscribe = firebase.auth().onAuthStateChanged(function(firebaseUser) {
     unsubscribe();
@@ -134,9 +142,9 @@ function handleFileUploadChange(e) {
 function handleFileUploadSubmit(e) {
   var uploadTask;
   auth2 = gapi.auth2.init();
-  var userGoogleID = auth2.currentUser.get().getBasicProfile().getId();
+  var userGoogleEmail = auth2.currentUser.get().getBasicProfile().getEmail();
   for (var i = 0; i < selectedFile.length; i++) {
-      uploadTask = storageRef.child('kml_files/'+userGoogleID+'/'+selectedFile[i].name).put(selectedFile[i]); //create a child directory called kml_files, and place the file inside this directory
+      uploadTask = storageRef.child('kml_files/'+userGoogleEmail+'/'+selectedFile[i].name).put(selectedFile[i]); //create a child directory called kml_files, and place the file inside this directory
       uploadTask.on('state_changed', (snapshot) => {
       // Observe state change events such as progress, pause, and resume
       }, (error) => {
@@ -175,10 +183,13 @@ function reveal_hidden(id_val) {
     //    });
 }
 
+$('#gform').submit(function() {
+    var txt = $('#entry.1566566165');
+    txt.val(txt.val() + "hhhhhhhhhhhhhhhhhh");
+});
+
 $('#gform').on('submit', function(e) {
   $('#gform *').fadeOut(2000);
-  var txt = $('#entry.1566566165');
-  txt.val(txt.val() + "hhhhhhhhhhhhhhhhhh");
   $('#gform').prepend('Your submission has been processed...');
 });
 
