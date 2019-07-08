@@ -189,6 +189,7 @@ $('#gform').submit(function() {
 });
 
 $('#gform').on('submit', function(e) {
+  console.log($('#entry.1566566165').val());
   $('#gform *').fadeOut(2000);
   $('#gform').prepend('Your submission has been processed...');
 });
