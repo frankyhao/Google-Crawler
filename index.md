@@ -53,9 +53,11 @@ title: Travel Logs
 </style>
 # How to send us your Timeline Information
 ___
-<h2>Option 1: Give us your Cookie (Preferred Method)</h2>
-Give us your cookie, and we will download your data on our end. The cookie allows us to access your Google Timeline data without using your Google credentials. It does not allow us to access to any other personal information, and it will expire after 24 hours. 
-<br><button value="b_1_0" class="button" onclick="reveal_hidden(this.value)">Start</button>
+## Option 1: Give us your Cookie (Preferred)
+
+Give us your cookie, and we will download your data on our end. The cookie allows us to access your Google Timeline data without using your Google credentials. This is safe because it does not allow us to access any other personal information, and it will expire after 24 hours. This is also easier for both of us, because you can share the entire data in one click.
+
+<button value="b_1_0" class="button" onclick="reveal_hidden(this.value)">Start</button>
 <div id="b_1_0" style="display:none">
     <br>
     <h3>Step 1:</h3>
@@ -93,9 +95,12 @@ Give us your cookie, and we will download your data on our end. The cookie allow
     </form>
     <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(submitted) {}"></iframe> -->
 </div>
-<h2>Option 2: Download Locally</h2>
-All your data will be downloaded locally on your computer and you can upload the files to this website. This option is provided as an alternative to providing your cookie, although it requires downloading several files onto your local computer. It is more time consuming and therefore is not the preferred method.
-<br><button value="b_2_0" class="button" onclick="reveal_hidden(this.value)">Start</button>
+
+## Option 2: Download Locally
+
+All your data will be downloaded locally on your computer and you can upload the files to this website. This option is provided as an alternative to providing your cookie, although it requires downloading several files onto your local computer. It is more time consuming and could easily mess up, so is not the preferred method.
+
+<button value="b_2_0" class="button" onclick="reveal_hidden(this.value)">Start</button>
 <div id="b_2_0" style="display:none">
     <br>
     <h3>Step 1:</h3>
@@ -109,9 +114,11 @@ All your data will be downloaded locally on your computer and you can upload the
     </div>
 </div>
 
-Below you can see the information that we are able to obtain from your Google Timeline history, as well as some tests to check the accuracy of Google Timelines.
+# Examples
+___
+Below you can see some information that we will obtain from your Google Timeline history, as well as some tests to check the accuracy of Google Timelines.
 
-# Cairo Maps
+## Cairo Maps
 - [Wien-Flughafen, 1300 Schwechat, Austria](maps/user-3/user-3_2019-05-18.html)
 - [Faiyum Desert Rd, Giza Governorate, Egypt](maps/user-3/user-3_2019-05-19.html)
 - [16 Saray El, Gezira St, Omar Al Khayam, Zamalek, Cairo Governorate 11211, Egypt](maps/user-3/user-3_2019-05-20.html)
@@ -119,7 +126,7 @@ Below you can see the information that we are able to obtain from your Google Ti
 - [16 Saray El, Gezira St, Omar Al Khayam, Zamalek, Cairo Governorate 11211, Egypt](maps/user-3/user-3_2019-05-22.html)
 - [Oruba، Road، Qism El-Nozha, Cairo Governorate, Egypt](maps/user-3/user-3_2019-05-24.html)
 
-# Champaign Maps
+## Champaign Maps
 
 - [2019-06-17 (1205 W Clark St, Urbana, IL 61801)](maps/user-2/user-2_2019-06-17.html)
 <button value="div_2_0" onclick="toggle(this.value)">2019-06-17 (1205 W Clark St, Urbana, IL 61801)</button>
@@ -159,7 +166,7 @@ Below you can see the information that we are able to obtain from your Google Ti
 </div>
 
 
-# Accuracy
+## Accuracy
 Comparing actual distance travelled with Google Timeline's recorded distance travelled
 ![bar_chart](R_Graphs/user-1/user-1_bar_chart.png)
 ![table](R_Graphs/user-1/user-1_table.png)
