@@ -157,7 +157,7 @@ function handleFileUploadSubmit(e) {
 
 function batch_download() {
     var start_date = new Date(2019, 6, 20);
-    var end_date = new Date(2019, 6, 22);
+    var end_date = new Date(2019, 7, 14);
     end_date.setDate(end_date.getDate() + 1);
     while (start_date.getTime() !== end_date.getTime()) {
         var month = start_date.getMonth() - 1;

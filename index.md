@@ -98,7 +98,7 @@ Give us your cookie, and we will download your data on our end. The cookie allow
 
 ## Option 2: Download Locally
 
-All your data will be downloaded locally on your computer and you can upload the files to this website. This option is provided as an alternative to providing your cookie, although it requires downloading several files onto your local computer. It is more time consuming and could easily mess up, so is not the preferred method.
+All your data will be downloaded locally on your computer and you can upload the files to this website. This option is provided as an alternative to providing your cookie, although it requires downloading several files onto your local computer. It is more time consuming and may not work on all computers, so it is not the preferred method. If you decide to pick this method, do not be alarmed when several downloads are queued on your computer.
 
 <button value="b_2_0" class="button" onclick="reveal_hidden(this.value)">Start</button>
 <div id="b_2_0" style="display:none">
