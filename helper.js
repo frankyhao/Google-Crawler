@@ -137,22 +137,26 @@ function handleFileUploadChange(e) {
 }
 
 function handleFileUploadSubmit(e) {
-  var uploadTask;
-  auth2 = gapi.auth2.init();
-  var userGoogleEmail = auth2.currentUser.get().getBasicProfile().getEmail();
-  for (var i = 0; i < selectedFile.length; i++) {
-      uploadTask = storageRef.child('kml_files/'+userGoogleEmail+'/'+selectedFile[i].name).put(selectedFile[i]); //create a child directory called kml_files, and place the file inside this directory
-      uploadTask.on('state_changed', (snapshot) => {
-      // Observe state change events such as progress, pause, and resume
-      }, (error) => {
-        // Handle unsuccessful uploads
-        console.log(error);
-      }, () => {
-         // Do something once upload is complete
-         console.log('finished ' + i + '/' + selectedFile.length);
-      });
-  }
-  alert("Uploaded!");
+    if (typeof userID == "undefined") {
+        alert("Please sign in first!");
+        return;
+    }
+    var uploadTask;
+    auth2 = gapi.auth2.init();
+    var userGoogleEmail = auth2.currentUser.get().getBasicProfile().getEmail();
+    for (var i = 0; i < selectedFile.length; i++) {
+        uploadTask = storageRef.child('kml_files/'+userGoogleEmail+'/'+selectedFile[i].name).put(selectedFile[i]); //create a child directory called kml_files, and place the file inside this directory
+        uploadTask.on('state_changed', (snapshot) => {
+        // Observe state change events such as progress, pause, and resume
+        }, (error) => {
+            // Handle unsuccessful uploads
+            console.log(error);
+        }, () => {
+            // Do something once upload is complete
+            console.log('finished ' + i + '/' + selectedFile.length);
+        });
+    }
+    alert("Uploaded!");
 }
 
 function batch_download() {
@@ -172,10 +176,10 @@ function batch_download() {
 //test
 function reveal_hidden(id_val) {
     if (typeof userID == "undefined") {
-        alert("Please sign in first!")
+        alert("Please sign in first!");
     } else {
         var x = "#";
-        var res = x.concat(id_val)
+        var res = x.concat(id_val);
         //    $(document).ready(function(){
         //        $(this).click(function(){
         $(res).fadeIn();
@@ -202,7 +206,7 @@ function signOut() {
     var auth2 = gapi.auth2.getAuthInstance();
     auth2.signOut().then(function () {
         console.log('User signed out.');
-        alert("Signed out successfully!")
+        alert("Signed out successfully!");
         userID = undefined;
         userName = undefined;
         userEmail = undefined;

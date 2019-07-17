@@ -115,6 +115,11 @@ All your data will be downloaded locally on your computer and you can upload the
     </div>
 </div>
 
+
+
+
+
+
 # Examples
 ___
 Below you can see some information that we will obtain from your Google Timeline history, as well as some tests to check the accuracy of Google Timelines.
