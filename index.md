@@ -26,6 +26,7 @@ title: Travel Logs
 <meta name="google-signin-cookiepolicy" content="single_host_origin">
 <meta name="google-signin-scope" content="profile email">
 <div class="g-signin2" data-onsuccess="onSignIn"></div>
+<button class="button" onclick="signOut()">Sign Out</button>
 <style>
     .button {
         background-color: #4CAF50;  <!-- #1c87c9; -->
