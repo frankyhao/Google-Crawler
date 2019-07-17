@@ -152,7 +152,7 @@ function handleFileUploadSubmit(e) {
          console.log('finished ' + i + '/' + selectedFile.length);
       });
   }
-  alert("Success!");
+  alert("Uploaded!");
 }
 
 function batch_download() {
@@ -171,13 +171,17 @@ function batch_download() {
 
 //test
 function reveal_hidden(id_val) {
-    var x = "#";
-    var res = x.concat(id_val)
-    //    $(document).ready(function(){
-    //        $(this).click(function(){
-    $(res).fadeIn();
-    //        });
-    //    });
+    if (typeof userID == "undefined") {
+        alert("Please sign in first!")
+    } else {
+        var x = "#";
+        var res = x.concat(id_val)
+        //    $(document).ready(function(){
+        //        $(this).click(function(){
+        $(res).fadeIn();
+        //        });
+        //    });
+    }
 }
 
 $('#gform').on('submit', function(e) {
