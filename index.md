@@ -59,7 +59,7 @@ ___
 
 Give us your cookie, and we will download your data on our end. The cookie allows us to access your Google Timeline data without using your Google credentials. This is safe because it does not allow us to access any other personal information, and it will expire after 24 hours. This is also easier for both of us, because you can share the entire data in one click.
 
-<button value="b_f_0" class="button" onclick="reveal_hidden(this.value)"><i class="fab fa-firefox fa-lg"></i> Firefox</button>
+<button value="b_f_0" class="button" onclick="reveal_hidden(this.value)"><i class="fab fa-firefox fa-2x"></i> Firefox</button>
 <div id="b_f_0" style="display:none">
     <br>
     <h3>Step 1:</h3>
@@ -99,7 +99,7 @@ Give us your cookie, and we will download your data on our end. The cookie allow
 </div>
 
 
-<button value="b_c_0" class="button" onclick="reveal_hidden(this.value)"><i class="fab fa-chrome fa-lg"></i> Chrome</button>
+<button value="b_c_0" class="button" onclick="reveal_hidden(this.value)"><i class="fab fa-chrome fa-2x"></i> Chrome</button>
 <div id="b_c_0" style="display:none">
     <br>
     <h3>Step 1:</h3>
@@ -138,7 +138,7 @@ Give us your cookie, and we will download your data on our end. The cookie allow
     <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(submitted) {}"></iframe> -->
 </div>
 
-<button value="b_s_0" class="button" onclick="reveal_hidden(this.value)"><i class="fab fa-safari fa-lg"></i> Safari</button>
+<button value="b_s_0" class="button" onclick="reveal_hidden(this.value)"><i class="fab fa-safari fa-2x"></i> Safari</button>
 <div id="b_s_0" style="display:none">
     <br>
     <h3>Step 1:</h3>
