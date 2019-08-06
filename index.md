@@ -12,10 +12,11 @@ title: Travel Logs
 <script src="https://www.gstatic.com/firebasejs/6.2.4/firebase-app.js"></script>
 <script src="https://www.gstatic.com/firebasejs/6.2.4/firebase-auth.js"></script>
 <script src="https://www.gstatic.com/firebasejs/6.2.4/firebase-storage.js"></script>
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 <script>
  var submitted = false;
 </script>
+<!-- Place your kit's code here -->
+<script src="https://kit.fontawesome.com/211dde5d51.js"></script>
 
 <!-- **********************************************
      * TODO(DEVELOPER): Use your Client ID below. *
