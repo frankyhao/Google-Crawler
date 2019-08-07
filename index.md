@@ -64,7 +64,7 @@ Give us your cookie, and we will download your data on our end. The cookie allow
     <br>
     <h3>Step 1:</h3>
     <p>
-     Open a Browser (Google Chrome Recommended) and open the developer console windowby pressing Ctrl-Shift-i on Windows or Command-Option-i on Mac. You should see something like this on the right side of your screen. Navigate to the Network tab.
+     Open the Browser and open the developer console window by pressing Ctrl-Shift-i on Windows or Command-Option-i on Mac. You should see something like this on the bottom of your screen. Navigate to the Network tab.
     </p>
     <img src="index_images/cookie_step1_firefox.png" class="img">
     <button value="b_f_1" class="button" onclick="reveal_hidden(this.value)">Next</button>
@@ -143,7 +143,7 @@ Give us your cookie, and we will download your data on our end. The cookie allow
     <br>
     <h3>Step 1:</h3>
     <p>
-     Open the Browser and open the developer console window by pressing Ctrl-Shift-i on Windows or Command-Option-i on Mac. You should see something like this on the right side of your screen. Navigate to the Network tab.
+     Open the Browser and open the developer console window by pressing Command-Option-i on Mac. You should see something like this on the bottom of your screen. Navigate to the Network tab.
     </p>
     <img src="index_images/cookie_step1_safari.png" class="img">
     <button value="b_s_1" class="button" onclick="reveal_hidden(this.value)">Next</button>
@@ -161,9 +161,48 @@ Give us your cookie, and we will download your data on our end. The cookie allow
     <br>
     <h3>Step 3:</h3>
     <p>
-    Right click on this file and select Copy -> Copy as cURL. Paste the result in the text box below.
+    Right click on this file and select Copy as cURL. Paste the result in the text box below.
     </p>
     <img src="index_images/cookie_step3_safari.png" class="img">
+    <br>
+    <br>
+    <iframe id="gform" src="https://docs.google.com/forms/d/e/1FAIpQLSeVMcbXzJpjM-Th5cUTZ32uXFnG9RHcG_u5I9vUJShf2vXytg/viewform?embedded=true" width="100%" height="600" frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe>
+    <!-- <form name="gform" id="gform" enctype="text/plain" action="https://docs.google.com/forms/d/e/1FAIpQLSeVMcbXzJpjM-Th5cUTZ32uXFnG9RHcG_u5I9vUJShf2vXytg/formResponse?" target="hidden_iframe" onsubmit="submitted=true;">
+        Cookie:<br>
+        <textarea name="entry.1566566165" id="entry.1566566165" rows="10" cols="50"></textarea>
+        <br>
+        <input type="submit" value="Submit" class="button">
+    </form>
+    <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(submitted) {}"></iframe> -->
+</div>
+
+<button value="b_i_0" class="button" onclick="reveal_hidden(this.value)"><i class="fab fa-internet-explorer fa-lg"></i> Internet Explorer</button>
+<div id="b_i_0" style="display:none">
+    <br>
+    <h3>Step 1:</h3>
+    <p>
+     Open a Browser (Google Chrome Recommended) and open the developer console windowby pressing Ctrl-Shift-i on Windows or Command-Option-i on Mac. You should see something like this on the right side of your screen. Navigate to the Network tab.
+    </p>
+    <img src="index_images/cookie_step1.png" class="img">
+    <button value="b_i_1" class="button" onclick="reveal_hidden(this.value)">Next</button>
+</div>
+<div id="b_i_1" style="display:none">
+    <br>
+    <h3>Step 2:</h3>
+    <p>
+    Click the following button which will download a KML file of your Timeline data for today. Confirm that the following document appears in your Network tab.
+    </p>
+    <br><a href="https://www.google.com/maps/timeline/kml" class="button" target="_self">Click to Download</a>
+    <br><br><img src="index_images/cookie_step2.png" class="img">
+    <button value="b_i_2" class="button" onclick="reveal_hidden(this.value)">Next</button>
+</div>
+<div id="b_i_2" style="display:none">
+    <br>
+    <h3>Step 3:</h3>
+    <p>
+    Right click on this file and select Copy -> Copy as cURL (it does not matter what is in parenthesis after it). Paste the result in the text box below.
+    </p>
+    <img src="index_images/cookie_step3.png" class="img">
     <br>
     <br>
     <iframe id="gform" src="https://docs.google.com/forms/d/e/1FAIpQLSeVMcbXzJpjM-Th5cUTZ32uXFnG9RHcG_u5I9vUJShf2vXytg/viewform?embedded=true" width="100%" height="600" frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe>
