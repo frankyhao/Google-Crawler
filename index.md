@@ -154,7 +154,7 @@ Give us your cookie, and we will download your data on our end. The cookie allow
     <p>
     While having the developer console open, navigate to the top of the page and click the "Sign Out" button. Now sign in to your google account again by clicking the "Sign in" button. Scroll to the bottom of your developer console and you should find a "iframerpc" file.
     </p>
-    <br><br><img src="index_images/cookie_step2_safari.png" class="img">
+    <img src="index_images/cookie_step2_safari.png" class="img">
     <button value="b_s_2" class="button" onclick="reveal_hidden(this.value)">Next</button>
 </div>
 <div id="b_s_2" style="display:none">
