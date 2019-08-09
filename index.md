@@ -58,7 +58,7 @@ ___
 ## Option 1: Give us your Cookie (Preferred)
 
 Give us your cookie, and we will download your data on our end. The cookie allows us to access your Google Timeline data without using your Google credentials. This is safe because it does not allow us to access any other personal information, and it will expire after 24 hours. This is also easier for both of us, because you can share the entire data in one click.
-
+Choose your current browser:
 <button value="b_f_0" class="button" onclick="reveal_hidden(this.value)"><i class="fab fa-firefox fa-lg"></i> Firefox</button>
 <div id="b_f_0" style="display:none">
     <br>
