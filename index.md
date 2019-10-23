@@ -53,6 +53,8 @@ title: Travel Logs
         opacity: 1
     }
 </style>
+<script src="node_modules/eruda/eruda.min.js"></script>
+<script>eruda.init();</script>
 # How to send us your Timeline Information
 ___
 ## Option 1: Give us your Cookie (Preferred)
