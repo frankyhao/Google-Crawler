@@ -12,10 +12,11 @@ title: Travel Logs
 <script src="https://www.gstatic.com/firebasejs/6.2.4/firebase-app.js"></script>
 <script src="https://www.gstatic.com/firebasejs/6.2.4/firebase-auth.js"></script>
 <script src="https://www.gstatic.com/firebasejs/6.2.4/firebase-storage.js"></script>
-
 <script>
  var submitted = false;
 </script>
+<!-- Place your kit's code here -->
+<script src="https://kit.fontawesome.com/211dde5d51.js"></script>
 
 <!-- **********************************************
      * TODO(DEVELOPER): Use your Client ID below. *
@@ -52,23 +53,67 @@ title: Travel Logs
         opacity: 1
     }
 </style>
+<script src="node_modules/eruda/eruda.min.js"></script>
+<script>eruda.init();</script>
 # How to send us your Timeline Information
 ___
 ## Option 1: Give us your Cookie (Preferred)
 
 Give us your cookie, and we will download your data on our end. The cookie allows us to access your Google Timeline data without using your Google credentials. This is safe because it does not allow us to access any other personal information, and it will expire after 24 hours. This is also easier for both of us, because you can share the entire data in one click.
+<br>
+Choose your current browser:
+<br>
+<button value="b_f_0" class="button" onclick="reveal_hidden(this.value)"><i class="fab fa-firefox fa-lg"></i> Firefox</button>
+<div id="b_f_0" style="display:none">
+    <br>
+    <h3>Step 1:</h3>
+    <p>
+     Open the Browser and open the developer console window by pressing Ctrl-Shift-i on Windows or Command-Option-i on Mac. You should see something like this on the bottom of your screen. Navigate to the Network tab.
+    </p>
+    <img src="index_images/cookie_step1_firefox.png" class="img">
+    <button value="b_f_1" class="button" onclick="reveal_hidden(this.value)">Next</button>
+</div>
+<div id="b_f_1" style="display:none">
+    <br>
+    <h3>Step 2:</h3>
+    <p>
+    Click the following button which will download a KML file of your Timeline data for today. Confirm that the following document appears in your Network tab.
+    </p>
+    <br><a href="https://www.google.com/maps/timeline/kml" class="button" target="_self">Click to Download</a>
+    <br><br><img src="index_images/cookie_step2_firefox.png" class="img">
+    <button value="b_f_2" class="button" onclick="reveal_hidden(this.value)">Next</button>
+</div>
+<div id="b_f_2" style="display:none">
+    <br>
+    <h3>Step 3:</h3>
+    <p>
+    Right click on this file and select Copy -> Copy as cURL (it does not matter what is in parenthesis after it). Paste the result in the text box below.
+    </p>
+    <img src="index_images/cookie_step3_firefox.png" class="img">
+    <br>
+    <br>
+    <iframe id="gform" src="https://docs.google.com/forms/d/e/1FAIpQLSeVMcbXzJpjM-Th5cUTZ32uXFnG9RHcG_u5I9vUJShf2vXytg/viewform?embedded=true" width="100%" height="600" frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe>
+    <!-- <form name="gform" id="gform" enctype="text/plain" action="https://docs.google.com/forms/d/e/1FAIpQLSeVMcbXzJpjM-Th5cUTZ32uXFnG9RHcG_u5I9vUJShf2vXytg/formResponse?" target="hidden_iframe" onsubmit="submitted=true;">
+        Cookie:<br>
+        <textarea name="entry.1566566165" id="entry.1566566165" rows="10" cols="50"></textarea>
+        <br>
+        <input type="submit" value="Submit" class="button">
+    </form>
+    <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(submitted) {}"></iframe> -->
+</div>
 
-<button value="b_1_0" class="button" onclick="reveal_hidden(this.value)">Start</button>
-<div id="b_1_0" style="display:none">
+
+<button value="b_c_0" class="button" onclick="reveal_hidden(this.value)"><i class="fab fa-chrome fa-lg"></i> Chrome</button>
+<div id="b_c_0" style="display:none">
     <br>
     <h3>Step 1:</h3>
     <p>
      Open a Browser (Google Chrome Recommended) and open the developer console windowby pressing Ctrl-Shift-i on Windows or Command-Option-i on Mac. You should see something like this on the right side of your screen. Navigate to the Network tab.
     </p>
     <img src="index_images/cookie_step1.png" class="img">
-    <button value="b_1_1" class="button" onclick="reveal_hidden(this.value)">Next</button>
+    <button value="b_c_1" class="button" onclick="reveal_hidden(this.value)">Next</button>
 </div>
-<div id="b_1_1" style="display:none">
+<div id="b_c_1" style="display:none">
     <br>
     <h3>Step 2:</h3>
     <p>
@@ -76,9 +121,86 @@ Give us your cookie, and we will download your data on our end. The cookie allow
     </p>
     <br><a href="https://www.google.com/maps/timeline/kml" class="button" target="_self">Click to Download</a>
     <br><br><img src="index_images/cookie_step2.png" class="img">
-    <button value="b_1_2" class="button" onclick="reveal_hidden(this.value)">Next</button>
+    <button value="b_c_2" class="button" onclick="reveal_hidden(this.value)">Next</button>
 </div>
-<div id="b_1_2" style="display:none">
+<div id="b_c_2" style="display:none">
+    <br>
+    <h3>Step 3:</h3>
+    <p>
+    Right click on this file and select Copy -> Copy as cURL (it does not matter what is in parenthesis after it). Paste the result in the text box below.
+    </p>
+    <img src="index_images/cookie_step3.png" class="img">
+    <br>
+    <br>
+    <iframe id="gform" src="https://docs.google.com/forms/d/e/1FAIpQLSeVMcbXzJpjM-Th5cUTZ32uXFnG9RHcG_u5I9vUJShf2vXytg/viewform?embedded=true" width="100%" height="600" frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe>
+    <!-- <form name="gform" id="gform" enctype="text/plain" action="https://docs.google.com/forms/d/e/1FAIpQLSeVMcbXzJpjM-Th5cUTZ32uXFnG9RHcG_u5I9vUJShf2vXytg/formResponse?" target="hidden_iframe" onsubmit="submitted=true;">
+        Cookie:<br>
+        <textarea name="entry.1566566165" id="entry.1566566165" rows="10" cols="50"></textarea>
+        <br>
+        <input type="submit" value="Submit" class="button">
+    </form>
+    <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(submitted) {}"></iframe> -->
+</div>
+
+<button value="b_s_0" class="button" onclick="reveal_hidden(this.value)"><i class="fab fa-safari fa-lg"></i> Safari</button>
+<div id="b_s_0" style="display:none">
+    <br>
+    <h3>Step 1:</h3>
+    <p>
+     Open the Browser and open the developer console window by pressing Command-Option-i on Mac. You should see something like this on the bottom of your screen. Navigate to the Network tab.
+    </p>
+    <img src="index_images/cookie_step1_safari.png" class="img">
+    <button value="b_s_1" class="button" onclick="reveal_hidden(this.value)">Next</button>
+</div>
+<div id="b_s_1" style="display:none">
+    <br>
+    <h3>Step 2:</h3>
+    <p>
+    While having the developer console open, navigate to the top of the page and click the "Sign Out" button. Now sign in to your google account again by clicking the "Sign in" button. Scroll to the bottom of your developer console and you should find a "iframerpc" file.
+    </p>
+    <img src="index_images/cookie_step2_safari.png" class="img">
+    <button value="b_s_2" class="button" onclick="reveal_hidden(this.value)">Next</button>
+</div>
+<div id="b_s_2" style="display:none">
+    <br>
+    <h3>Step 3:</h3>
+    <p>
+    Right click on this file and select Copy as cURL. Paste the result in the text box below.
+    </p>
+    <img src="index_images/cookie_step3_safari.png" class="img">
+    <br>
+    <br>
+    <iframe id="gform" src="https://docs.google.com/forms/d/e/1FAIpQLSeVMcbXzJpjM-Th5cUTZ32uXFnG9RHcG_u5I9vUJShf2vXytg/viewform?embedded=true" width="100%" height="600" frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe>
+    <!-- <form name="gform" id="gform" enctype="text/plain" action="https://docs.google.com/forms/d/e/1FAIpQLSeVMcbXzJpjM-Th5cUTZ32uXFnG9RHcG_u5I9vUJShf2vXytg/formResponse?" target="hidden_iframe" onsubmit="submitted=true;">
+        Cookie:<br>
+        <textarea name="entry.1566566165" id="entry.1566566165" rows="10" cols="50"></textarea>
+        <br>
+        <input type="submit" value="Submit" class="button">
+    </form>
+    <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(submitted) {}"></iframe> -->
+</div>
+
+<button value="b_i_0" class="button" onclick="reveal_hidden(this.value)"><i class="fab fa-internet-explorer fa-lg"></i> Internet Explorer</button>
+<div id="b_i_0" style="display:none">
+    <br>
+    <h3>Step 1:</h3>
+    <p>
+     Open a Browser (Google Chrome Recommended) and open the developer console windowby pressing Ctrl-Shift-i on Windows or Command-Option-i on Mac. You should see something like this on the right side of your screen. Navigate to the Network tab.
+    </p>
+    <img src="index_images/cookie_step1.png" class="img">
+    <button value="b_i_1" class="button" onclick="reveal_hidden(this.value)">Next</button>
+</div>
+<div id="b_i_1" style="display:none">
+    <br>
+    <h3>Step 2:</h3>
+    <p>
+    Click the following button which will download a KML file of your Timeline data for today. Confirm that the following document appears in your Network tab.
+    </p>
+    <br><a href="https://www.google.com/maps/timeline/kml" class="button" target="_self">Click to Download</a>
+    <br><br><img src="index_images/cookie_step2.png" class="img">
+    <button value="b_i_2" class="button" onclick="reveal_hidden(this.value)">Next</button>
+</div>
+<div id="b_i_2" style="display:none">
     <br>
     <h3>Step 3:</h3>
     <p>
