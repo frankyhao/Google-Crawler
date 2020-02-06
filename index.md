@@ -55,6 +55,9 @@ title: Travel Logs
 </style>
 <script src="node_modules/eruda/eruda.min.js"></script>
 <script>eruda.init();</script>
+
+<p>Hello. Do you want to view <a href="homepage.html">page 2</a> ?</p>
+
 # How to send us your Timeline Information
 ___
 ## Option 1: Give us your Cookie (Preferred)
@@ -68,7 +71,7 @@ Choose your current browser:
     <br>
     <h3>Step 1:</h3>
     <p>
-     TEST TEST TEST TEST TEST Open the Browser and open the developer console window by pressing Ctrl-Shift-i on Windows or Command-Option-i on Mac. You should see something like this on the bottom of your screen. Navigate to the Network tab.
+     Open the Browser and open the developer console window by pressing Ctrl-Shift-i on Windows or Command-Option-i on Mac. You should see something like this on the bottom of your screen. Navigate to the Network tab.
     </p>
     <img src="index_images/cookie_step1_firefox.png" class="img">
     <button value="b_f_1" class="button" onclick="reveal_hidden(this.value)">Next</button>
