@@ -57,7 +57,7 @@ title: Travel Logs
 <script>eruda.init();</script>
 # How to send us your Timeline Information
 ___
-## TEST TESTOption 1: Give us your Cookie (Preferred)
+## Option 1: Give us your Cookie (Preferred)
 
 Give us your cookie, and we will download your data on our end. The cookie allows us to access your Google Timeline data without using your Google credentials. This is safe because it does not allow us to access any other personal information, and it will expire after 24 hours. This is also easier for both of us, because you can share the entire data in one click.
 <br>
@@ -68,7 +68,7 @@ Choose your current browser:
     <br>
     <h3>Step 1:</h3>
     <p>
-     Open the Browser and open the developer console window by pressing Ctrl-Shift-i on Windows or Command-Option-i on Mac. You should see something like this on the bottom of your screen. Navigate to the Network tab.
+     TEST TEST TEST TEST TEST Open the Browser and open the developer console window by pressing Ctrl-Shift-i on Windows or Command-Option-i on Mac. You should see something like this on the bottom of your screen. Navigate to the Network tab.
     </p>
     <img src="index_images/cookie_step1_firefox.png" class="img">
     <button value="b_f_1" class="button" onclick="reveal_hidden(this.value)">Next</button>
