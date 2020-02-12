@@ -72,17 +72,27 @@ title: Registration
 	</p>
 	<ol>
 	    <li>
-	        Download Google Maps from the App Store or Google Play: 
-		<a href=https://apps.apple.com/us/app/google-maps-transit-food/id585027354>For iOS</a> <a href=https://play.google.com/store/apps/details?id=com.google.android.apps.maps&hl=en_US>For Android</a>
+	        Download Google Maps from the App Store or Google Play: </br>
+		<a class="button" href=https://apps.apple.com/us/app/google-maps-transit-food/id585027354>For iOS</a> <\br>
+		<a class="button" href=https://play.google.com/store/apps/details?id=com.google.android.apps.maps&hl=en_US>For Android</a>
 	    </li>
             <li>
-	        Now Click the button below that corresponds to your phone operating system:
-		<button>Android</button>   
-		<button>iOS</button>
+	        Now Click the button below that corresponds to your phone operating system: </br>
+		<button value="android-instruction" class="button" onclick="reveal_hidden(this.value)">Android</button> </br> 
+		<div id="android-instruction" style="display:none">
+		    Add instructions here...
+		</div>
+		<button value="ios-instruction" class="button" onclick="reveal_hidden(this.value)">iOS</button>
+		<div id="ios-instruction" style=display:none">
+		    Add instructions here...
+		</div>
 	    </li>
 	    <li>
 	        Now that you have Google Timelines set up, please fill out the survey below so we can get a little bit more information about you!
-		<button>Reveal Survey</button>
+		<button value="survey" class="button" onclick="reveal-hidden(this.value)">Reveal Survey</button>
+		<div id="survey" style="display:none">
+		    <iframe src="https://docs.google.com/forms/d/e//1FAIpQLSfFjFkz78m28-bprmfbc6I_jhp1lh61hbKJrNmGV_V8A6tW7A/viewform?embedded=true" width="640" height"1033" frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe>
+		</div>
 	    </li>
         </ol>
 	<p>
