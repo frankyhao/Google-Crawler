@@ -69,7 +69,6 @@ Choose your current browser:
 <div id="b_f_0" style="display:none">
     <br>
     <h3>Step 1:</h3>
-    <p>Hello. Do you want to view <a href="homepage.html">page 2</a> ?</p>
     <p>
      Open the Browser and open the developer console window by pressing Ctrl-Shift-i on Windows or Command-Option-i on Mac. You should see something like this on the bottom of your screen. Navigate to the Network tab.
     </p>
