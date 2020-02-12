@@ -1,0 +1,91 @@
+---
+layout: default
+title: Registration
+---
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Registration</title>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.4.0.min.js"></script>
+    <script src="https://apis.google.com/js/platform.js" async defer></script>
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <!-- <script src="/__/firebase/6.2.4/firebase-app.js"></script>
+    <script src="/__/firebase/6.2.4/firebase-auth.js"></script>
+    <script src="/__/firebase/6.2.4/firebase-firestore.js"></script>
+    <script src="/__/firebase/init.js"></script> -->
+    <script src="https://www.gstatic.com/firebasejs/6.2.4/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/6.2.4/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/6.2.4/firebase-storage.js"></script>
+    <script>
+        var submitted = false;
+    </script>
+    <!-- Place your kit's code here -->
+    <script src="https://kit.fontawesome.com/211dde5d51.js"></script>
+
+    <!-- **********************************************
+         * TODO(DEVELOPER): Use your Client ID below. *
+         ********************************************** -->
+    <!-- <meta name="google-signin-client_id" content="1060905353346-b38npddv13apf43pfdoin6cbht953j20.apps.googleusercontent.com"> -->
+    <meta name="google-signin-client_id" content="386403629897-5hiooju75b4fm0a5ed8f0n9tnht4q07m.apps.googleusercontent.com">
+    <meta name="google-signin-cookiepolicy" content="single_host_origin">
+    <meta name="google-signin-scope" content="profile email">
+    <div class="g-signin2" data-onsuccess="onSignIn"></div>
+    <button class="button" onclick="signOut()">Sign Out</button>
+    <style>
+        .button {
+            background-color: #4CAF50;  <!-- #1c87c9; -->
+            border: none;
+            color: white;
+            padding: 10px 22px;
+            text-align: center;
+            font-size: 16px;
+            margin: 4px 2px;
+            opacity: 0.8;
+            transition: 0.3s;
+            cursor: pointer;
+            border-radius: 5px;
+            box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+        }
+
+        a.button{
+            background-color: #1c87c9;
+        }
+
+        .img {
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        }
+
+        .button:hover {
+            opacity: 1
+        }   
+    </style>
+    <script src="node_modules/eruda/eruda.min.js"></script>
+    <script>eruda.init();</script>
+</head>
+<body>
+    <h2>New Participant Registration</h3>
+    <div>
+        <p>
+	    Hello, welcome to the new participant registration page. Here is where we make sure you have all the proper settings ready for us to crawl your data.
+	</p>
+	<ol>
+	    <li>
+	        Download Google Maps from the App Store or Google Play: 
+		<a href=https://apps.apple.com/us/app/google-maps-transit-food/id585027354>For iOS</a> <a href=https://play.google.com/store/apps/details?id=com.google.android.apps.maps&hl=en_US>For Android</a>
+	    </li>
+            <li>
+	        Now Click the button below that corresponds to your phone operating system:
+		<button>Android</button>   
+		<button>iOS</button>
+	    </li>
+	    <li>
+	        Now that you have Google Timelines set up, please fill out the survey below so we can get a little bit more information about you!
+		<button>Reveal Survey</button>
+	    </li>
+        </ol>
+	<p>
+	    Thank you for your time in participating with this survey, you will receive an email a week from now to make sure that your timeline was successfully set up!
+	</p> 
+</body>
