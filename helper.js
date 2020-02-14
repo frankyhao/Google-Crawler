@@ -203,10 +203,10 @@ function toggle(id_val) {
 }
 
 ;(function () {
-    var src = 'node_modules/eruda/eruda.min.js';
-    if (!/eruda=true/.test(window.location) && localStorage.getItem('active-eruda') != 'true') return;
-    document.write('<scr' + 'ipt src="' + src + '"></scr' + 'ipt>');
-    document.write('<scr' + 'ipt>eruda.init();</scr' + 'ipt>');
+    //var src = 'node_modules/eruda/eruda.min.js';
+    //if (!/eruda=true/.test(window.location) && localStorage.getItem('active-eruda') != 'true') return;
+    //document.write('<scr' + 'ipt src="' + src + '"></scr' + 'ipt>');
+    //document.write('<scr' + 'ipt>eruda.init();</scr' + 'ipt>');
 })();
 
 function signOut() {

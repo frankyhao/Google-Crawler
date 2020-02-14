@@ -53,8 +53,6 @@ title: Travel Logs
         opacity: 1
     }
 </style>
-<script src="node_modules/eruda/eruda.min.js"></script>
-<script>eruda.init();</script>
 
 
 # How to send us your Timeline Information
@@ -304,6 +302,4 @@ Checking the accuracy of Google Timelines while the phone may be turned off
 ![bar_chart](R_Graphs/user-2/user-2_bar_chart.png)
 ![table](R_Graphs/user-2/user-2_table.png)
 
-<script src="node_modules/eruda/eruda.min.js"></script>
-<script>eruda.init();</script>
 <script src="./helper.js"></script>
