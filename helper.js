@@ -39,6 +39,10 @@ var userEmail;
 //   //getData();
 //}
 
+document.getElementsById("dl-button").addEventListener("click", function() {
+    window.location.href = "https://www.google.com/maps/timeline/kml";
+});
+
 function onSignIn(googleUser) {
   console.log('Google Auth Response', googleUser);
   userID = googleUser.getBasicProfile().getId();

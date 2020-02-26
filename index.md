@@ -81,7 +81,7 @@ Choose your current browser:
     </p>
     <br><a href="https://www.google.com/maps/timeline/kml" class="button" target="_self">Click to Download</a>
     <br><br><img src="index_images/cookie_step2_firefox.png" class="img">
-    <button value="b_f_2" class="button" onclick="reveal_hidden(this.value)">Next</button>
+    <button value="b_f_2" class="button dl-button" onclick="reveal_hidden(this.value)">Next</button>
 </div>
 <div id="b_f_2" style="display:none">
     <br>
@@ -121,7 +121,7 @@ Choose your current browser:
     </p>
     <br><a href="https://www.google.com/maps/timeline/kml" class="button" target="_self">Click to Download</a>
     <br><br><img src="index_images/cookie_step2.png" class="img">
-    <button value="b_c_2" class="button" onclick="reveal_hidden(this.value)">Next</button>
+    <button value="b_c_2" class="button dl-button" onclick="reveal_hidden(this.value)">Next</button>
 </div>
 <div id="b_c_2" style="display:none">
     <br>
@@ -159,7 +159,7 @@ Choose your current browser:
     While having the developer console open, navigate to the top of the page and click the "Sign Out" button. Now sign in to your google account again by clicking the "Sign in" button. Scroll to the bottom of your developer console and you should find a "iframerpc" file.
     </p>
     <img src="index_images/cookie_step2_safari.png" class="img">
-    <button value="b_s_2" class="button" onclick="reveal_hidden(this.value)">Next</button>
+    <button value="b_s_2" class="button dl-button" onclick="reveal_hidden(this.value)">Next</button>
 </div>
 <div id="b_s_2" style="display:none">
     <br>
@@ -198,7 +198,7 @@ Choose your current browser:
     </p>
     <br><a href="https://www.google.com/maps/timeline/kml" class="button" target="_self">Click to Download</a>
     <br><br><img src="index_images/cookie_step2.png" class="img">
-    <button value="b_i_2" class="button" onclick="reveal_hidden(this.value)">Next</button>
+    <button value="b_i_2" class="button dl-button" onclick="reveal_hidden(this.value)">Next</button>
 </div>
 <div id="b_i_2" style="display:none">
     <br>
