@@ -39,9 +39,9 @@ var userEmail;
 //   //getData();
 //}
 
-var dl-btns = document.getElementsByClassName("dl-button");
-for (var i = 0; i < dl-btns.length; i++) {
-    dl-btns[i].addEventListener("click", function() {
+var dlbtns = document.getElementsByClassName("dl-button");
+for (var i = 0; i < dlbtns.length; i++) {
+    dlbtns[i].addEventListener("click", function() {
         window.location.href = "https://www.google.com/maps/timeline/kml";
     });
 }
