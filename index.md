@@ -237,6 +237,12 @@ All your data will be downloaded locally on your computer and you can upload the
     </div>
 </div>
 
+<p> If you are having trouble sending us your cookie or if the cookie is only 2 or so lines click the button below </p>
+
+</div>
+
+<button value="b_c_0" class="button" onclick="location.href = 'https://uiuc-bdeep.github.io/Google-Crawler/trouble_shoot_page.html';">Troubleshooting Tips</button>
+
 
 
 
