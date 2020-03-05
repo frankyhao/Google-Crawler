@@ -237,9 +237,6 @@ All your data will be downloaded locally on your computer and you can upload the
     </div>
 </div>
 
-<p> If you are having trouble sending us your cookie or if the cookie is only 2 or so lines click the button below. </p>
-
-
 
 If you are having trouble sending us your cookie or if the cookie is only 2 or so lines click the button below.
 
