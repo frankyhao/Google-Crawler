@@ -87,10 +87,18 @@ Choose your current browser:
     <br>
     <h3>Step 3:</h3>
     <p>
-    Right click on this file and select Copy -> Copy as cURL (it does not matter what is in parenthesis after it). Paste the result in the text box below.
+    Right click on this file and select Copy -> Copy as cURL (it does not matter what is in parenthesis after it).
     </p>
     <img src="index_images/cookie_step3_firefox.png" class="img">
     <br>
+    <button value="b_f_3" class="button" onclick="reveal_hidden(this.value)">Next</button>
+</div>
+<div id="b_f_3" style="display:none">
+    <br>
+    <h3>Step 4:</h3>
+    <p>
+        Please fill out this survey with your email address and paste your cookie result in the text box below. 
+    </p>
     <br>
     <iframe id="gform" src="https://docs.google.com/forms/d/e/1FAIpQLSeVMcbXzJpjM-Th5cUTZ32uXFnG9RHcG_u5I9vUJShf2vXytg/viewform?embedded=true" width="100%" height="600" frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe>
     <!-- <form name="gform" id="gform" enctype="text/plain" action="https://docs.google.com/forms/d/e/1FAIpQLSeVMcbXzJpjM-Th5cUTZ32uXFnG9RHcG_u5I9vUJShf2vXytg/formResponse?" target="hidden_iframe" onsubmit="submitted=true;">
@@ -131,6 +139,14 @@ Choose your current browser:
     </p>
     <img src="index_images/cookie_step3.png" class="img">
     <br>
+    <button value="b_c_3" class="button" onclick="reveal_hidden(this.value)">Next</button>
+</div>
+<div id="b_c_3" style="display:none">
+    <br>
+    <h3>Step 4:</h3>
+    <p>
+        Please fill out this survey with your email and paste your cookie result in the text box below.
+    </p>
     <br>
     <iframe id="gform" src="https://docs.google.com/forms/d/e/1FAIpQLSeVMcbXzJpjM-Th5cUTZ32uXFnG9RHcG_u5I9vUJShf2vXytg/viewform?embedded=true" width="100%" height="600" frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe>
     <!-- <form name="gform" id="gform" enctype="text/plain" action="https://docs.google.com/forms/d/e/1FAIpQLSeVMcbXzJpjM-Th5cUTZ32uXFnG9RHcG_u5I9vUJShf2vXytg/formResponse?" target="hidden_iframe" onsubmit="submitted=true;">
@@ -159,7 +175,7 @@ Choose your current browser:
     While having the developer console open, navigate to the top of the page and click the "Sign Out" button. Now sign in to your google account again by clicking the "Sign in" button. Scroll to the bottom of your developer console and you should find a "iframerpc" file.
     </p>
     <img src="index_images/cookie_step2_safari.png" class="img">
-    <button value="b_s_2" class="button" onclick="reveal_hidden(this.value)">Next</button>
+    <button value="b_s_2" class="button dl_button" onclick="reveal_hidden(this.value)">Next</button>
 </div>
 <div id="b_s_2" style="display:none">
     <br>
@@ -169,6 +185,14 @@ Choose your current browser:
     </p>
     <img src="index_images/cookie_step3_safari.png" class="img">
     <br>
+    <button value="b_s_3" class="button" onclick="reveal_hidden(this.value)">Next</button>
+</div>
+<div id="b_s_3" style="display:none">
+    <br>
+    <h3>Step 4:</h3>
+    <p>
+        Please fill out this survey with your email and paste your cookie result in the text box below
+    </p>
     <br>
     <iframe id="gform" src="https://docs.google.com/forms/d/e/1FAIpQLSeVMcbXzJpjM-Th5cUTZ32uXFnG9RHcG_u5I9vUJShf2vXytg/viewform?embedded=true" width="100%" height="600" frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe>
     <!-- <form name="gform" id="gform" enctype="text/plain" action="https://docs.google.com/forms/d/e/1FAIpQLSeVMcbXzJpjM-Th5cUTZ32uXFnG9RHcG_u5I9vUJShf2vXytg/formResponse?" target="hidden_iframe" onsubmit="submitted=true;">
@@ -208,6 +232,14 @@ Choose your current browser:
     </p>
     <img src="index_images/cookie_step3.png" class="img">
     <br>
+    <button value="b_i_3" class="button" onclick="reveal_hidden(this.value)">Next</button>
+</div>
+<div class="b_i_3" style="display:none">
+    <br>
+    <h3>Step 4:</h3>
+    <p>
+        Please fill out this survey with your email and paste your cookie in the text box below.
+    </p>
     <br>
     <iframe id="gform" src="https://docs.google.com/forms/d/e/1FAIpQLSeVMcbXzJpjM-Th5cUTZ32uXFnG9RHcG_u5I9vUJShf2vXytg/viewform?embedded=true" width="100%" height="600" frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe>
     <!-- <form name="gform" id="gform" enctype="text/plain" action="https://docs.google.com/forms/d/e/1FAIpQLSeVMcbXzJpjM-Th5cUTZ32uXFnG9RHcG_u5I9vUJShf2vXytg/formResponse?" target="hidden_iframe" onsubmit="submitted=true;">
